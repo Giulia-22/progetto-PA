@@ -1,1 +1,8 @@
-Info: Nothing to build for progettoC++
+17:29:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+
+17:29:17 Build Finished. 0 errors, 0 warnings. (took 1s.171ms)
+

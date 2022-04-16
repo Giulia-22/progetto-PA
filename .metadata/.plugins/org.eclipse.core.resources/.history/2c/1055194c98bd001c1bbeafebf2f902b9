@@ -12,7 +12,6 @@ int main() {
 	char scelta;
 	Metodi *m = new Metodi;
 	do{
-		cout<<endl;
 		cout<<"***** Benvenuto nel menu *****"<<endl;
 		cout<<"Digita la lettera corrispondente all'azione che desideri eseguire. "<<endl;
 		cout<<"Digita 0 se desideri terminare il programma."<<endl;

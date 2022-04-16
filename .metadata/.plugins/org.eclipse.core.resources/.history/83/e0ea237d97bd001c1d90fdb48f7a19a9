@@ -9,8 +9,8 @@
 #define FUNZIONALITA_COMPARATORI_H_
 
 
-static bool compareByCategoria(paziente_ref &a, paziente_ref &b) {
-	return a->getCategoria() < b->getCategoria();
+static bool compareByCognome(paziente_ref &a, paziente_ref &b) {
+	return a->getCognome() < b->getCognome();
 }
 
 static bool compareByID(paziente_ref &a, paziente_ref &b) {

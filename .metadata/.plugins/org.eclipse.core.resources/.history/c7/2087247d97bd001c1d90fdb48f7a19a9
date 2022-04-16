@@ -8,15 +8,20 @@ Metodi::Metodi(){
 
 void Metodi::caricadati(){
 	// Paziente
-	lista_pazienti.push_back(creaPaziente(1956,"codFiscmr","Mario","Rossi","1"));
-	lista_pazienti.push_back(creaPaziente(1965,"codFiscmv","Mario","Verdi","2"));
-	lista_pazienti.push_back(creaPaziente(1932,"codFiscmb","Mario","Bianchi","1"));
+	lista_pazienti.push_back(inserisciPaziente(1956,"codFiscmr","Mario","Rossi","1"));
+	lista_pazienti.push_back(inserisciPaziente(1965,"codFiscmv","Mario","Verdi","2"));
+	lista_pazienti.push_back(inserisciPaziente(1932,"codFiscmb","Mario","Bianchi","1"));
 	// Stampe e ordinamenti vari
+	stampaElenco_paz();
+	ordinaElenco_Cognome_paz();
+	stampaElenco_paz();
+	ordinaElenco_ID_paz();
+	stampaElenco_paz();
 }
 
 // PERSONA
 // Costruttore con parametri chiesti utente
-persona_ref Metodi::creaPersona(){
+persona_ref Metodi::inserisciPersona(){
 	int an;
 	string cod, name, surname;
 	do{
@@ -33,14 +38,14 @@ persona_ref Metodi::creaPersona(){
 	return p;
 }
 // Costruttore con passaggio parametri
-persona_ref Metodi::creaPersona(int an, string cod, string name, string surname){
+persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
 	persona_ref p (new Persona(an,cod,name,surname));
 	return p;
 }
 
 //PAZIENTE
 // Costruttore con parametri chiesti utente
-paziente_ref Metodi::creaPaziente(){
+paziente_ref Metodi::inserisciPaziente(){
 	int an;
 	string cod, name, surname, cat;
 	do{
@@ -53,6 +58,8 @@ paziente_ref Metodi::creaPaziente(){
 	cin>>name;
 	cout<<"Inserire cognome: ";
 	cin>>surname;
+	cout<<"Inserire codice fiscale: ";
+	cin>>cod;
 	cout<<"Inserire categoria: ";
 	cin>>cat;
 	paziente_ref p (new Paziente(an,cod,name,surname,cat));
@@ -60,13 +67,9 @@ paziente_ref Metodi::creaPaziente(){
 }
 
 // Costruttore con passaggio parametri
-paziente_ref Metodi::creaPaziente(int an, string cod, string name, string surname, string cat){
+paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string cat){
 	paziente_ref p (new Paziente(an,cod,name,surname,cat));
 	return p;
-}
-
-void Metodi::inserisciPaziente(){
-	lista_pazienti.push_back(creaPaziente());
 }
 
 void Metodi::stampaElenco_paz(){
@@ -80,8 +83,8 @@ void Metodi::stampaElenco_paz(){
 	}
 }
 
-void Metodi::ordinaElenco_Categoria_paz(){
-	sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+void Metodi::ordinaElenco_Cognome_paz(){
+	sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCognome);
 }
 
 void Metodi::ordinaElenco_ID_paz(){

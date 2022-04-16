@@ -66,7 +66,8 @@ paziente_ref Metodi::creaPaziente(int an, string cod, string name, string surnam
 }
 
 void Metodi::inserisciPaziente(){
-	lista_pazienti.push_back(creaPaziente());
+	paziente_ref nuovo = creaPaziente();
+	lista_pazienti.push_back(nuovo);
 }
 
 void Metodi::stampaElenco_paz(){

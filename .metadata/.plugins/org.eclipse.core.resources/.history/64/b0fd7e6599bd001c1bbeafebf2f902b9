@@ -65,10 +65,6 @@ paziente_ref Metodi::creaPaziente(int an, string cod, string name, string surnam
 	return p;
 }
 
-void Metodi::inserisciPaziente(){
-	lista_pazienti.push_back(creaPaziente());
-}
-
 void Metodi::stampaElenco_paz(){
 	for(vector<paziente_ref>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
 		cout<<"Nome: "<<i->get()->getNome()<<endl;

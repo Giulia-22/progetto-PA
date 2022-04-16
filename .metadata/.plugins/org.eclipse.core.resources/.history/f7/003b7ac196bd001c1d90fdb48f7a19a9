@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+#include <memory>
+
+#include "Funzionalita/Metodi.h"
+//#include "Utenti/Persona.h"
+//#include "Utenti/Paziente.h"
+
+using namespace std;
+
+int main() {
+	char scelta = '';
+	Metodi *m = new Metodi;
+	do{
+		cout<<"Benvenuto nel menu"<<endl;
+		cout<<"a) azione 1 "<<endl;
+		cout<<"b) azione 2 "<<endl;
+		cout<<"c) azione 3 "<<endl;
+		cout<<"0) TERMINA "<<endl;
+		cin>>scelta;
+		switch(scelta){
+		case 'a':
+			//TODO
+			cout<<m->getYear()<<endl;
+			break;
+		case 'b':
+			//TODO
+			cout<<"2"<<endl;
+			break;
+		case 'c':
+			//TODO
+			cout<<"3"<<endl;
+			break;
+		case '0':
+			//TODO
+			cout<<"Arrivederci"<<endl;
+			break;
+		default:
+			//TODO
+			cout<<"scelta non valida"<<endl;
+			break;
+		}
+	} while(scelta != '0');
+
+	return 0;
+}

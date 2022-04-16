@@ -22,18 +22,16 @@ private:
 	void caricadati();
 public:
 	Metodi();
+	persona_ref inserisciPersona();
+	persona_ref inserisciPersona(int, string, string, string);
+	paziente_ref inserisciPaziente();
+	paziente_ref inserisciPaziente(int, string, string, string, string);
 	// TODO stesso con dottore
-	void inserisciPaziente();
 	void stampaElenco_paz(); // da fare per le 2
 	void ordinaElenco_ID_paz(); // da fare per le 2
-	void ordinaElenco_Categoria_paz(); // da fare per le 2
+	void ordinaElenco_Cognome_paz(); // da fare per le 2
 	int getYear();
 	virtual ~Metodi();
-private:
-	persona_ref creaPersona();
-	persona_ref creaPersona(int, string, string, string);
-	paziente_ref creaPaziente();
-	paziente_ref creaPaziente(int, string, string, string, string);
 
 };
 

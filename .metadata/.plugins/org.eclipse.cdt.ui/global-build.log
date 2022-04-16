@@ -3011,3 +3011,105 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
 Info: Nothing to build for progettoC++
+17:05:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:12:16: error: invalid conversion from 'const char*' to 'char' [-fpermissive]
+  char scelta = "";
+                ^~
+17:06:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp:12:16: error: empty character constant
+  char scelta = '';
+                ^~
+17:06:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+17:11:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+17:13:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+17:15:08 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+c:/users/giuly/desktop/eclipsepa/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file progettoC++.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:15:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+17:21:08 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:11:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:11:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[8], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:13:87:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:11:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+17:25:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++allocator.h:33:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h:46,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h: In instantiation of 'void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::unique_ptr<Paziente>; _Args = {const std::unique_ptr<Paziente, std::default_delete<Paziente> >&}; _Tp = std::unique_ptr<Paziente>]':
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\alloc_traits.h:455:4:   required from 'static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = std::unique_ptr<Paziente>; _Args = {const std::unique_ptr<Paziente, std::default_delete<Paziente> >&}; _Tp = std::unique_ptr<Paziente>; std::allocator_traits<std::allocator<_CharT> >::allocator_type = std::allocator<std::unique_ptr<Paziente> >]'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:918:30:   required from 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::unique_ptr<Paziente>; _Alloc = std::allocator<std::unique_ptr<Paziente> >; std::vector<_Tp, _Alloc>::value_type = std::unique_ptr<Paziente>]'
+..\src\Funzionalita\Metodi.cpp:70:32:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h:120:4: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+17:25:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+17:29:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 

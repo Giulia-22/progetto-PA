@@ -12,7 +12,6 @@ int main() {
 	char scelta;
 	Metodi *m = new Metodi;
 	do{
-		cout<<endl;
 		cout<<"***** Benvenuto nel menu *****"<<endl;
 		cout<<"Digita la lettera corrispondente all'azione che desideri eseguire. "<<endl;
 		cout<<"Digita 0 se desideri terminare il programma."<<endl;
@@ -20,24 +19,23 @@ int main() {
 		cout<<"b) Visualizzazione di tutti i pazienti del sistema "<<endl;
 		cout<<"c) Ordinamento dei pazienti per categoria "<<endl;
 		cout<<"d) Ordinamento dei pazienti per ID "<<endl;
-		cout<<"0) TERMINA "<<endl<<endl;
-		cout<<"La tua scelta: ";
+		cout<<"0) TERMINA "<<endl;
 		cin>>scelta;
 		switch(scelta){
 		case 'a':
-			m->inserisciPaziente();
+			//TODO
+			cout<<m->getYear()<<endl;
 			break;
 		case 'b':
-			m->stampaElenco_paz();
+			//TODO
+			cout<<"2"<<endl;
 			break;
 		case 'c':
 			//TODO
-			m->ordinaElenco_Categoria_paz();
-			break;
-		case 'd':
-			m->ordinaElenco_ID_paz();
+			cout<<"3"<<endl;
 			break;
 		case '0':
+			//TODO
 			cout<<"Arrivederci"<<endl;
 			break;
 		default:
