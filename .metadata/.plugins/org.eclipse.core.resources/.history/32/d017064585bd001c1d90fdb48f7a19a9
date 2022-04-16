@@ -1,0 +1,90 @@
+
+#include "../Funzionalita/Metodi.h"
+
+Metodi::Metodi(){
+	caricadati();
+}
+
+void Metodi::caricadati(){
+	// Paziente
+	lista_pazienti.push
+}
+
+
+// PERSONA
+// Costruttore con parametri chiesti utente
+persona_ref Metodi::inserisciPersona(){
+	int an;
+	string cod, name, surname;
+	do{
+		cout<<"Inserisci anno di nascita: ";
+		cin>>an;
+	} while(an<1900 || an>annocorrente);
+	cout<<"Inserire codice fiscale: ";
+	cin>>cod;
+	cout<<"Inserire nome: ";
+	cin>>name;
+	cout<<"Inserire cognome: ";
+	cin>>surname;
+	persona_ref p (new Persona(an,cod,name,surname));
+	return p;
+}
+// Costruttore con passaggio parametri
+persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+	persona_ref p (new Persona(an,cod,name,surname));
+	return p;
+}
+/*
+//PAZIENTE
+// Costruttore con parametri chiesti utente
+paziente_ref Metodi::inserisciPaziente(){
+	int an;
+	string cod, name, surname, IDpaz, cat;
+	do{
+		cout<<"Inserisci anno di nascita: ";
+		cin>>an;
+	} while(an<1900 || an>annocorrente);
+	cout<<"Inserire codice fiscale: ";
+	cin>>cod;
+	cout<<"Inserire nome: ";
+	cin>>name;
+	cout<<"Inserire cognome: ";
+	cin>>surname;
+	cout<<"Inserire cognome: ";
+	cin>>surname;
+	cout<<"Inserire cognome: ";
+	cin>>surname;
+	persona_ref p (new Persona(an,cod,name,surname));
+	return p;
+}
+// Costruttore con passaggio parametri
+persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+	persona_ref p (new Persona(an,cod,name,surname));
+	return p;
+}
+*/
+// Usa stampa
+void Metodi::stampaElenco(vector<Persona> p){
+	for(vector<Persona>::iterator i = p.begin(); i != p.end(); ++i){
+		cout<<"Nome: "<<i->getNome()<<endl;
+		cout<<"Cognome: "<<i->getCognome()<<endl;
+		cout<<"Anno di nascita: "<<i->getAnnonascita()<<endl;
+		cout<<"Codifce fiscale: "<<i->getCf()<<endl<<endl;
+	}
+}
+
+paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+	paziente_ref p (new Paziente(an,cod,name,surname,cat));
+	return p;
+}
+paziente_ref Metodi::inserisciPaziente(){
+	paziente_ref paz (new Paziente());
+	return paz;
+}
+
+int Metodi::getYear(){
+	return this->annocorrente+1900;
+}
+
+Metodi::~Metodi() {
+}

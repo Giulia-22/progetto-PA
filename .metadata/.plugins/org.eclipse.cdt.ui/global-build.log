@@ -683,3 +683,2331 @@ g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "s
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+10:13:02 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp:4:1: error: definition of explicitly-defaulted 'Persona::Persona()'
+ Persona::Persona(){
+ ^~~~~~~
+In file included from ..\src\Utenti\Persona.cpp:2:0:
+..\src\Utenti\Persona.h:18:2: error: 'Persona::Persona()' explicitly defaulted here
+  Persona() = default;
+  ^~~~~~~
+10:13:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+10:20:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp:24:25: error: return type specification for constructor invalid
+ void Paziente::Paziente(){
+                         ^
+..\src\Utenti\Paziente.cpp:24:6: error: redefinition of 'Paziente::Paziente()'
+ void Paziente::Paziente(){
+      ^~~~~~~~
+..\src\Utenti\Paziente.cpp:4:1: note: 'Paziente::Paziente()' previously defined here
+ Paziente::Paziente() {
+ ^~~~~~~~
+10:20:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+10:23:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:30:23: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* paz1 = new Paziente;
+                       ^~~~~~~~
+In file included from ..\src\main.cpp:7:0:
+..\src\Utenti/Paziente.h:19:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+10:24:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:30:23: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* paz1 = new Paziente;
+                       ^~~~~~~~
+In file included from ..\src\main.cpp:7:0:
+..\src\Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+10:25:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:18:2: error: 'paziente_ref' does not name a type
+  paziente_ref inserisciPaziente();
+  ^~~~~~~~~~~~
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:30:23: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* paz1 = new Paziente;
+                       ^~~~~~~~
+In file included from ..\src\main.cpp:7:0:
+..\src\Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+10:25:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:21:13: error: redefinition of 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)'
+ persona_ref Metodi::inserisciPersona(int year, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:17:13: note: 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' previously defined here
+ persona_ref Metodi::inserisciPersona(int year, string cod, string name, string surname){
+             ^~~~~~
+10:26:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:30:23: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* paz1 = new Paziente;
+                       ^~~~~~~~
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+10:27:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:30:23: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* paz1 = new Paziente;
+                       ^~~~~~~~
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:19:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+10:27:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:30:24: error: 'm' was not declared in this scope
+  paziente_ref pazuni = m->in
+                        ^
+10:28:08 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:09:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp:25:5: error: prototype for 'int Persona::getAnnonascita() const' does not match any in class 'Persona'
+ int Persona::getAnnonascita() const {
+     ^~~~~~~
+In file included from ..\src\Utenti\Persona.cpp:2:0:
+..\src\Utenti\Persona.h:27:6: error: candidate is: int Persona::getAnnonascita()
+  int getAnnonascita();
+      ^~~~~~~~~~~~~~
+11:10:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+11:11:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+11:27:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:20: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(p);
+                    ^
+..\src\Utenti\Paziente.cpp:10:20: note: for a function-style cast, remove the redundant '::Persona'
+..\src\Utenti\Paziente.cpp:11:21: error: cannot call constructor 'Paziente::Paziente' directly [-fpermissive]
+  Paziente::Paziente();
+                     ^
+..\src\Utenti\Paziente.cpp:11:21: note: for a function-style cast, remove the redundant '::Paziente'
+11:27:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:20: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(p);
+                    ^
+..\src\Utenti\Paziente.cpp:10:20: note: for a function-style cast, remove the redundant '::Persona'
+11:30:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:20: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(p);
+                    ^
+..\src\Utenti\Paziente.cpp:10:20: note: for a function-style cast, remove the redundant '::Persona'
+11:31:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:11: error: declaration of 'Persona p' shadows a parameter
+  Persona(p);
+           ^
+..\src\Utenti\Paziente.cpp:10:11: error: 'Persona::Persona()' is protected within this context
+In file included from ..\src\Utenti\Paziente.h:9:0,
+                 from ..\src\Utenti\Paziente.cpp:2:
+..\src\Utenti\../Utenti/Persona.h:19:2: note: declared protected here
+  Persona();
+  ^~~~~~~
+11:37:24 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:20: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(p);
+                    ^
+..\src\Utenti\Paziente.cpp:10:20: note: for a function-style cast, remove the redundant '::Persona'
+11:37:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:11: error: declaration of 'Persona p' shadows a parameter
+  Persona(p);
+           ^
+11:38:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:14: error: declaration of 'Persona pers' shadows a parameter
+  Persona(pers);
+              ^
+..\src\Utenti\Paziente.cpp:10:14: error: 'Persona::Persona()' is protected within this context
+In file included from ..\src\Utenti\Paziente.h:9:0,
+                 from ..\src\Utenti\Paziente.cpp:2:
+..\src\Utenti\../Utenti/Persona.h:19:2: note: declared protected here
+  Persona();
+  ^~~~~~~
+11:38:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:23: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(pers);
+                       ^
+..\src\Utenti\Paziente.cpp:10:23: note: for a function-style cast, remove the redundant '::Persona'
+11:41:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:23: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(pers);
+                       ^
+..\src\Utenti\Paziente.cpp:10:23: note: for a function-style cast, remove the redundant '::Persona'
+11:42:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:10:23: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(pers);
+                       ^
+..\src\Utenti\Paziente.cpp:10:23: note: for a function-style cast, remove the redundant '::Persona'
+11:44:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp: In destructor 'virtual Persona::~Persona()':
+..\src\Utenti\Persona.cpp:65:26: error: type 'int' argument given to 'delete', expected pointer
+  delete(this->annonascita);
+                          ^
+..\src\Utenti\Persona.cpp:66:17: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->cf);
+                 ^
+..\src\Utenti\Persona.cpp:67:19: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->nome);
+                   ^
+..\src\Utenti\Persona.cpp:68:22: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->cognome);
+                      ^
+11:44:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp: In destructor 'virtual Persona::~Persona()':
+..\src\Utenti\Persona.cpp:66:17: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->cf);
+                 ^
+..\src\Utenti\Persona.cpp:67:19: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->nome);
+                   ^
+..\src\Utenti\Persona.cpp:68:22: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->cognome);
+                      ^
+11:44:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp: In destructor 'virtual Persona::~Persona()':
+..\src\Utenti\Persona.cpp:66:11: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(cf);
+           ^
+..\src\Utenti\Persona.cpp:67:19: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->nome);
+                   ^
+..\src\Utenti\Persona.cpp:68:22: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->cognome);
+                      ^
+11:45:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp: In destructor 'virtual Persona::~Persona()':
+..\src\Utenti\Persona.cpp:66:9: error: no match for 'operator*' (operand type is 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}')
+  delete(*cf);
+         ^~~
+..\src\Utenti\Persona.cpp:67:19: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->nome);
+                   ^
+..\src\Utenti\Persona.cpp:68:22: error: type 'std::__cxx11::string {aka class std::__cxx11::basic_string<char>}' argument given to 'delete', expected pointer
+  delete(this->cognome);
+                      ^
+11:45:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+11:46:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+11:57:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Persona*)':
+..\src\Utenti\Paziente.cpp:13:21: error: 'std::__cxx11::string Persona::nome' is protected within this context
+  this->nome = pers->nome;
+                     ^~~~
+In file included from ..\src\Utenti\Paziente.h:9:0,
+                 from ..\src\Utenti\Paziente.cpp:2:
+..\src\Utenti\../Utenti/Persona.h:16:9: note: declared protected here
+  string nome;
+         ^~~~
+..\src\Utenti\Paziente.cpp:14:24: error: 'std::__cxx11::string Persona::cognome' is protected within this context
+  this->cognome = pers->cognome;
+                        ^~~~~~~
+In file included from ..\src\Utenti\Paziente.h:9:0,
+                 from ..\src\Utenti\Paziente.cpp:2:
+..\src\Utenti\../Utenti/Persona.h:17:9: note: declared protected here
+  string cognome;
+         ^~~~~~~
+11:59:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+13:24:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+13:25:17 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+..\src\Utenti\Paziente.cpp:26:32: error: cannot call constructor 'Paziente::Persona' directly [-fpermissive]
+  Persona::Persona(a,codfisc,n,c);
+                                ^
+..\src\Utenti\Paziente.cpp:26:32: note: for a function-style cast, remove the redundant '::Persona'
+..\src\Utenti\Paziente.cpp:26:32: error: no matching function for call to 'Paziente::Paziente(int&, std::__cxx11::string&, std::__cxx11::string&, std::__cxx11::string&)'
+In file included from ..\src\Utenti\Paziente.cpp:2:0:
+..\src\Utenti\Paziente.h:21:2: note: candidate: Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  Paziente(int, string, string, string, string, string);
+  ^~~~~~~~
+..\src\Utenti\Paziente.h:21:2: note:   candidate expects 6 arguments, 4 provided
+..\src\Utenti\Paziente.cpp:10:1: note: candidate: Paziente::Paziente(Paziente*)
+ Paziente::Paziente(Paziente* pers){
+ ^~~~~~~~
+..\src\Utenti\Paziente.cpp:10:1: note:   candidate expects 1 argument, 4 provided
+..\src\Utenti\Paziente.cpp:4:1: note: candidate: Paziente::Paziente()
+ Paziente::Paziente() {
+ ^~~~~~~~
+..\src\Utenti\Paziente.cpp:4:1: note:   candidate expects 0 arguments, 4 provided
+In file included from ..\src\Utenti\Paziente.cpp:2:0:
+..\src\Utenti\Paziente.h:13:7: note: candidate: Paziente::Paziente(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Utenti\Paziente.h:13:7: note:   candidate expects 1 argument, 4 provided
+13:26:23 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+..\src\Utenti\Paziente.cpp:26:23: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona(a,codfisc,n,c);
+                       ^
+In file included from ..\src\Utenti\Paziente.h:9:0,
+                 from ..\src\Utenti\Paziente.cpp:2:
+..\src\Utenti\../Utenti/Persona.h:20:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+13:26:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+13:29:11 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+13:30:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:34:2: error: 'pazuni1' was not declared in this scope
+  pazuni1->stampa();
+  ^~~~~~~
+13:30:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+13:31:46 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+13:36:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+13:47:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:25: error: invalid conversion from 'tm*' to 'time_t {aka long int}' [-fpermissive]
+  time_t data = localtime(&data);
+                ~~~~~~~~~^~~~~~~
+..\src\Funzionalita/../Utenti/Persona.h:22:33: error: 'tm_year' was not declared in this scope
+  int annocorrente = tm_year(data);
+                                 ^
+13:48:56 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:23:25: error: base operand of '->' is not a pointer
+  int annocorrente = data->tm_year();
+                         ^~
+13:49:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:23:26: error: request for member 'tm_year' in '((Persona*)this)->Persona::data', which is of non-class type 'time_t {aka long int}'
+  int annocorrente = data.tm_year();
+                          ^~~~~~~
+13:50:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+In file included from ..\src\Utenti\Persona.cpp:2:0:
+..\src\Utenti\Persona.h:23:26: error: request for member 'tm_year' in '((Persona*)this)->Persona::data', which is of non-class type 'time_t {aka long int}'
+  int annocorrente = data.tm_year;
+                          ^~~~~~~
+..\src\Utenti\Persona.cpp: In constructor 'Persona::Persona()':
+..\src\Utenti\Persona.cpp:10:10: error: expected primary-expression before ')' token
+  } while();
+          ^
+14:00:17 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:24:13: error: redefinition of 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)'
+ persona_ref Metodi::inserisciPersona(int year, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:11:13: note: 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' previously defined here
+ persona_ref Metodi::inserisciPersona(int year, string cod, string name, string surname){
+             ^~~~~~
+14:01:24 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:24:13: error: redefinition of 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)'
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:11:13: note: 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' previously defined here
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+14:01:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp: In constructor 'Persona::Persona()':
+..\src\Utenti\Persona.cpp:10:10: error: expected primary-expression before ')' token
+  } while();
+          ^
+14:02:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+14:02:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:05:13 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:38:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p1 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:19:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:39:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p2 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:19:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:40:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p3 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:19:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:41:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p4 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:19:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:44:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p1);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:45:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p2);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:46:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p3);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:47:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p4);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:49:22: error: no matching function for call to 'Metodi::stampaElenco(std::vector<Paziente>&)'
+   m->stampaElenco(vp1);
+                      ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:21:7: note: candidate: void Metodi::stampaElenco(std::vector<Persona>)
+  void stampaElenco(vector<Persona> p);
+       ^~~~~~~~~~~~
+..\src\Funzionalita/Metodi.h:21:7: note:   no known conversion for argument 1 from 'std::vector<Paziente>' to 'std::vector<Persona>'
+14:06:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:38:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p1 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:39:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p2 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:40:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p3 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:41:30: error: 'Paziente::Paziente()' is protected within this context
+  Paziente* p4 = new Paziente();
+                              ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:20:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\main.cpp:44:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p1);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:21:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:45:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p2);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:21:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:46:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p3);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:21:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:47:19: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+   vp1.push_back(p4);
+                   ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:21:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\main.cpp:49:22: error: no matching function for call to 'Metodi::stampaElenco(std::vector<Paziente>&)'
+   m->stampaElenco(vp1);
+                      ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:21:7: note: candidate: void Metodi::stampaElenco(std::vector<Persona>)
+  void stampaElenco(vector<Persona> p);
+       ^~~~~~~~~~~~
+..\src\Funzionalita/Metodi.h:21:7: note:   no known conversion for argument 1 from 'std::vector<Paziente>' to 'std::vector<Persona>'
+14:06:54 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:11:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:15:34: error: 'T' was not declared in this scope
+ void Metodi::stampaElenco(vector<T> p){
+                                  ^
+..\src\Funzionalita\Metodi.cpp:15:35: error: template argument 1 is invalid
+ void Metodi::stampaElenco(vector<T> p){
+                                   ^
+..\src\Funzionalita\Metodi.cpp:15:35: error: template argument 2 is invalid
+..\src\Funzionalita\Metodi.cpp:15:6: error: prototype for 'void Metodi::stampaElenco(int)' does not match any in class 'Metodi'
+ void Metodi::stampaElenco(vector<T> p){
+      ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:21:7: error: candidate is: void Metodi::stampaElenco(std::vector<Persona>)
+  void stampaElenco(vector<Persona> p);
+       ^~~~~~~~~~~~
+14:11:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 1 is invalid
+ void Metodi::stampaElenco(vector<typename T> p){
+                                            ^
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 2 is invalid
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 1 is invalid
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 2 is invalid
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 1 is invalid
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 2 is invalid
+..\src\Funzionalita\Metodi.cpp:15:27: error: variable or field 'stampaElenco' declared void
+ void Metodi::stampaElenco(vector<typename T> p){
+                           ^~~~~~
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 1 is invalid
+ void Metodi::stampaElenco(vector<typename T> p){
+                                            ^
+..\src\Funzionalita\Metodi.cpp:15:44: error: template argument 2 is invalid
+14:16:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:21:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:28:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:29:06 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:13:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p1 = new Persona(1999, "1234567890udtqq", "1", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:14:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p2 = new Persona(1999, "1234567890udtqq", "2", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:15:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p3 = new Persona(1999, "1234567890udtqq", "3", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:16:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p4 = new Persona(1999, "1234567890udtqq", "4", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:18:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p1);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:19:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p2);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:20:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p3);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:21:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p4);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:25:26: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(puni.get());
+                          ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+14:29:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:13:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p1 = new Persona(1999, "1234567890udtqq", "1", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:14:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p2 = new Persona(1999, "1234567890udtqq", "2", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:15:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p3 = new Persona(1999, "1234567890udtqq", "3", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:16:61: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p4 = new Persona(1999, "1234567890udtqq", "4", "A");
+                                                             ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:21:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:18:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p1);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:19:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p2);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:20:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p3);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:21:18: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(p4);
+                  ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+..\src\main.cpp:25:26: error: 'Persona::Persona(Persona*)' is protected within this context
+  vp1.push_back(puni.get());
+                          ^
+In file included from ..\src\Funzionalita/Metodi.h:9:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: declared protected here
+  Persona(Persona*);
+  ^~~~~~~
+14:29:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+14:30:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:31:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:32:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+In file included from ..\src\Utenti\Paziente.h:9:0,
+                 from ..\src\Utenti\Paziente.cpp:2:
+..\src\Utenti\../Utenti/Persona.h:22:21: error: field 'persona_ref' has incomplete type 'Persona'
+  Persona(persona_ref);
+                     ^
+..\src\Utenti\../Utenti/Persona.h:11:7: note: definition of 'class Persona' is not complete until the closing brace
+ class Persona {
+       ^~~~~~~
+14:33:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:9:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Persona.h:11:20: error: 'Persona' was not declared in this scope
+ typedef unique_ptr<Persona> persona_ref;
+                    ^~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Persona.h:11:27: error: template argument 1 is invalid
+ typedef unique_ptr<Persona> persona_ref;
+                           ^
+..\src\Funzionalita\../Funzionalita/../Utenti/Persona.h:11:27: error: template argument 2 is invalid
+..\src\Funzionalita\Metodi.cpp: In member function 'persona_ref Metodi::inserisciPersona()':
+..\src\Funzionalita\Metodi.cpp:22:49: error: invalid conversion from 'Persona*' to 'persona_ref {aka int}' [-fpermissive]
+  persona_ref p (new Persona(an,cod,name,surname));
+                                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+..\src\Funzionalita\Metodi.cpp:27:49: error: invalid conversion from 'Persona*' to 'persona_ref {aka int}' [-fpermissive]
+  persona_ref p (new Persona(an,cod,name,surname));
+                                                 ^
+14:33:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:40:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:15:22: error: ISO C++ forbids in-class initialization of non-const static member 'Paziente::ID_paz'
+  static int ID_paz = 0;
+                      ^
+14:40:54 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp:4:11: error: 'ID_paz' in 'class Paziente' does not name a type
+ Paziente::ID_paz = 0;
+           ^~~~~~
+In file included from ..\src\Utenti\Paziente.cpp:2:0:
+..\src\Utenti\Paziente.h:15:13: note: 'Paziente::ID_paz' declared here
+  static int ID_paz;
+             ^~~~~~
+14:41:24 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'paziente_ref Metodi::inserisciPaziente()':
+..\src\Funzionalita\Metodi.cpp:51:9: error: could not convert 'p' from 'persona_ref {aka std::unique_ptr<Persona>}' to 'paziente_ref {aka std::unique_ptr<Paziente>}'
+  return p;
+         ^
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:54:13: error: redefinition of 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)'
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:26:13: note: 'persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' previously defined here
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+..\src\Funzionalita\Metodi.cpp:70:60: error: no matching function for call to 'Paziente::Paziente(int&, std::__cxx11::string&, std::__cxx11::string&, std::__cxx11::string&, std::__cxx11::string&, std::__cxx11::string&)'
+  paziente_ref p (new Paziente(an,cod,name,surname,IDpaz,cat));
+                                                            ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:21:2: note: candidate: Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:21:2: note:   candidate expects 5 arguments, 6 provided
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:20:2: note: candidate: Paziente::Paziente(Paziente*)
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:20:2: note:   candidate expects 1 argument, 6 provided
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:19:2: note: candidate: Paziente::Paziente()
+  Paziente();
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:19:2: note:   candidate expects 0 arguments, 6 provided
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:7: note: candidate: Paziente::Paziente(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:7: note:   candidate expects 1 argument, 6 provided
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:73:14: error: redefinition of 'paziente_ref Metodi::inserisciPaziente()'
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:33:14: note: 'paziente_ref Metodi::inserisciPaziente()' previously defined here
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+14:41:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp:4:1: error: 'ID_paz' does not name a type
+ ID_paz = 0;
+ ^~~~~~
+14:42:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+..\src\Funzionalita\Metodi.cpp:70:60: error: no matching function for call to 'Paziente::Paziente(int&, std::__cxx11::string&, std::__cxx11::string&, std::__cxx11::string&, std::__cxx11::string&, std::__cxx11::string&)'
+  paziente_ref p (new Paziente(an,cod,name,surname,IDpaz,cat));
+                                                            ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:21:2: note: candidate: Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:21:2: note:   candidate expects 5 arguments, 6 provided
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:20:2: note: candidate: Paziente::Paziente(Paziente*)
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:20:2: note:   candidate expects 1 argument, 6 provided
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:19:2: note: candidate: Paziente::Paziente()
+  Paziente();
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:19:2: note:   candidate expects 0 arguments, 6 provided
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:7: note: candidate: Paziente::Paziente(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:7: note:   candidate expects 1 argument, 6 provided
+14:42:23 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\Utenti\Paziente.o: In function `ZN8PazienteC2Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:5: undefined reference to `Paziente::ID_paz'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:5: undefined reference to `Paziente::ID_paz'
+src\Utenti\Paziente.o: In function `ZN8PazienteC2EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:14: undefined reference to `Paziente::ID_paz'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:14: undefined reference to `Paziente::ID_paz'
+src\Utenti\Paziente.o: In function `ZN8PazienteC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_S5_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:19: undefined reference to `Paziente::ID_paz'
+src\Utenti\Paziente.o:C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:19: more undefined references to `Paziente::ID_paz' follow
+collect2.exe: error: ld returned 1 exit status
+14:42:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz' defined but not used [-Wunused-variable]
+ static int ID_paz = 0;
+            ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz' defined but not used [-Wunused-variable]
+ static int ID_paz = 0;
+            ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In member function 'int Paziente::getIdPaz()':
+..\src\Utenti\Paziente.cpp:32:15: error: 'class Paziente' has no member named 'ID_paz'
+  return this->ID_paz;
+               ^~~~~~
+14:43:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:45:36 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:39:72: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Paziente* p1 = new Paziente(1925,"codice1","nome1","cognome1","categ1");
+                                                                        ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:22:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\main.cpp:40:72: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Paziente* p2 = new Paziente(1925,"codice2","nome2","cognome2","categ1");
+                                                                        ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:22:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\main.cpp:41:72: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Paziente* p3 = new Paziente(1925,"codice3","nome3","cognome3","categ1");
+                                                                        ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:22:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita/../Utenti/Paziente.h: At global scope:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz' defined but not used [-Wunused-variable]
+ static int ID_paz = 0;
+            ^~~~~~
+14:46:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz' defined but not used [-Wunused-variable]
+ static int ID_paz = 0;
+            ^~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz' defined but not used [-Wunused-variable]
+ static int ID_paz = 0;
+            ^~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+14:47:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+14:49:38 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:01:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:01:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:01:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:02:27 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:03:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:05:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::stampaElenco()':
+..\src\Funzionalita\Metodi.cpp:68:56: error: conversion from 'std::vector<std::unique_ptr<Paziente> >::iterator {aka __gnu_cxx::__normal_iterator<std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >}' to non-scalar type 'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' requested
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                    ~~~~~~~~~~~~~~~~~~~~^~
+..\src\Funzionalita\Metodi.cpp:68:62: error: no match for 'operator!=' (operand types are 'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' and 'std::vector<std::unique_ptr<Paziente> >::iterator {aka __gnu_cxx::__normal_iterator<std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >}')
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                            ~~^~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd:40:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h:221:5: note: candidate: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h:221:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::fpos<_StateT>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:64:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h:444:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h:444:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::pair<_T1, _T2>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:304:5: note: candidate: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:304:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::reverse_iterator<_Iterator>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:361:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:361:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::reverse_iterator<_Iterator>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1125:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator!=(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1125:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::move_iterator<_IteratorL>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1131:5: note: candidate: template<class _Iterator> bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator!=(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:1131:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::move_iterator<_IteratorL>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:41:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h:158:5: note: candidate: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h:158:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::allocator<_CharT>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:41:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h:164:5: note: candidate: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h:164:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::allocator<_CharT>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5097:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5097:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5110:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5110:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   mismatched types 'const _CharT*' and '__gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5122:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5122:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:46:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:311:3: note: candidate: bool std::operator!=(const std::error_code&, const std::error_code&)
+   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:311:3: note:   no known conversion for argument 1 from 'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' to 'const std::error_code&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:315:3: note: candidate: bool std::operator!=(const std::error_code&, const std::error_condition&)
+   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+   ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:315:3: note:   no known conversion for argument 1 from 'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' to 'const std::error_code&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:319:3: note: candidate: bool std::operator!=(const std::error_condition&, const std::error_code&)
+   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:319:3: note:   no known conversion for argument 1 from 'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' to 'const std::error_condition&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:323:3: note: candidate: bool std::operator!=(const std::error_condition&, const std::error_condition&)
+   operator!=(const error_condition& __lhs,
+   ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:323:3: note:   no known conversion for argument 1 from 'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' to 'const std::error_condition&'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_facets.h:48:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_ios.h:37,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:44,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\streambuf_iterator.h:210:5: note: candidate: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\streambuf_iterator.h:210:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:64:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:6,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:1533:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:1533:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::vector<_Tp, _Alloc>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple:39:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:55,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:79,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\array:246:5: note: candidate: template<class _Tp, unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\array:246:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::array<_Tp, _Nm>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:55:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:79,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple:1363:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Elements ...>&, const std::tuple<_Elements ...>&)
+     operator!=(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple:1363:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::tuple<_Elements ...>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:79:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2211:5: note: candidate: template<class _Res, class ... _Args> bool std::operator!=(const std::function<_Res(_ArgTypes ...)>&, std::nullptr_t)
+     operator!=(const function<_Res(_Args...)>& __f, nullptr_t) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2211:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::function<_Res(_ArgTypes ...)>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:79:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2217:5: note: candidate: template<class _Res, class ... _Args> bool std::operator!=(std::nullptr_t, const std::function<_Res(_ArgTypes ...)>&)
+     operator!=(nullptr_t, const function<_Res(_Args...)>& __f) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional:2217:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<std::unique_ptr<Paziente> >::iterator {aka __gnu_cxx::__normal_iterator<std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >}' is not derived from 'const std::function<_Res(_ArgTypes ...)>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:667:5: note: candidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:667:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:673:5: note: candidate: template<class _Tp, class _Dp> bool std::operator!=(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator!=(const unique_ptr<_Tp, _Dp>& __x, nullptr_t) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:673:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:678:5: note: candidate: template<class _Tp, class _Dp> bool std::operator!=(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator!=(nullptr_t, const unique_ptr<_Tp, _Dp>& __x) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:678:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<std::unique_ptr<Paziente> >::iterator {aka __gnu_cxx::__normal_iterator<std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >}' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h:1202:5: note: candidate: template<class _Tp1, class _Tp2, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator!=(const __shared_ptr<_Tp1, _Lp>& __a,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h:1202:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::__shared_ptr<_Tp1, _Lp>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h:1208:5: note: candidate: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator!=(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h:1208:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h:1213:5: note: candidate: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator!=(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator!=(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h:1213:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<std::unique_ptr<Paziente> >::iterator {aka __gnu_cxx::__normal_iterator<std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >}' is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:352:5: note: candidate: template<class _Tp1, class _Tp2> bool std::operator!=(const std::shared_ptr<_Tp1>&, const std::shared_ptr<_Tp2>&)
+     operator!=(const shared_ptr<_Tp1>& __a,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:352:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::shared_ptr<_Tp1>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:358:5: note: candidate: template<class _Tp> bool std::operator!=(const std::shared_ptr<_Tp1>&, std::nullptr_t)
+     operator!=(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:358:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const std::shared_ptr<_Tp1>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:363:5: note: candidate: template<class _Tp> bool std::operator!=(std::nullptr_t, const std::shared_ptr<_Tp1>&)
+     operator!=(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:363:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<std::unique_ptr<Paziente> >::iterator {aka __gnu_cxx::__normal_iterator<std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >}' is not derived from 'const std::shared_ptr<_Tp1>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++allocator.h:33:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h:46,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h:144:5: note: candidate: template<class _Tp> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<_Tp>&, const __gnu_cxx::new_allocator<_Tp>&)
+     operator!=(const new_allocator<_Tp>&, const new_allocator<_Tp>&)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h:144:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   'std::vector<Persona>::iterator {aka __gnu_cxx::__normal_iterator<Persona*, std::vector<Persona> >}' is not derived from 'const __gnu_cxx::new_allocator<_Tp>'
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:877:5: note: candidate: template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:877:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   deduced conflicting types for parameter '_Iterator' ('Persona*' and 'std::unique_ptr<Paziente>*')
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h:67:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h:39,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:5,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:870:5: note: candidate: template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)
+     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h:870:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:68:84: note:   deduced conflicting types for parameter '_Container' ('std::vector<Persona>' and 'std::vector<std::unique_ptr<Paziente> >')
+  for(vector<Persona>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+                                                                                    ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h: At global scope:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:07:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:09:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::stampaElenco_paz()':
+..\src\Funzionalita\Metodi.cpp:69:22: error: 'class std::unique_ptr<Paziente>' has no member named 'getNome'
+   cout<<"Nome: "<<i->getNome()<<endl;
+                      ^~~~~~~
+..\src\Funzionalita\Metodi.cpp:70:25: error: 'class std::unique_ptr<Paziente>' has no member named 'getCognome'
+   cout<<"Cognome: "<<i->getCognome()<<endl;
+                         ^~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:71:33: error: 'class std::unique_ptr<Paziente>' has no member named 'getAnnonascita'
+   cout<<"Anno di nascita: "<<i->getAnnonascita()<<endl;
+                                 ^~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:72:33: error: 'class std::unique_ptr<Paziente>' has no member named 'getCf'; did you mean 'get'?
+   cout<<"Codifce fiscale: "<<i->getCf()<<endl<<endl;
+                                 ^~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h: At global scope:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:11:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:11:46 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:14:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:15:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:16:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:17:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:17:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+15:17:31 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:18:23 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:18:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:23:37 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:83:14: error: redefinition of 'paziente_ref Metodi::inserisciPaziente()'
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: note: 'paziente_ref Metodi::inserisciPaziente()' previously defined here
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:24:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h: In instantiation of 'typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...) [with _Tp = Paziente; _Args = {int, const char (&)[10], const char (&)[6], const char (&)[6], const char (&)[2]}; typename std::_MakeUniq<_Tp>::__single_object = std::unique_ptr<Paziente>]':
+..\src\Funzionalita\Metodi.cpp:10:85:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:791:30: error: 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: declared protected here
+  Paziente(int, string, string, string, string);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:26:23 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:10:81: error: no matching function for call to 'Metodi::inserisciPaziente(int, const char [10], const char [6], const char [6], const char [2])'
+  lista_pazienti.push_back(inserisciPaziente(1956,"codFiscmr","Mario","Rossi","1"));
+                                                                                 ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:26:15: note: candidate: paziente_ref Metodi::inserisciPaziente()
+  paziente_ref inserisciPaziente();
+               ^~~~~~~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:26:15: note:   candidate expects 0 arguments, 5 provided
+..\src\Funzionalita\../Funzionalita/Metodi.h:27:15: note: candidate: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  paziente_ref inserisciPaziente(int, string, string, string, string, string);
+               ^~~~~~~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:27:15: note:   candidate expects 6 arguments, 5 provided
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h: At global scope:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:27:46 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:10:81: error: no matching function for call to 'Metodi::inserisciPaziente(int, const char [10], const char [6], const char [6], const char [2])'
+  lista_pazienti.push_back(inserisciPaziente(1956,"codFiscmr","Mario","Rossi","1"));
+                                                                                 ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:26:15: note: candidate: paziente_ref Metodi::inserisciPaziente()
+  paziente_ref inserisciPaziente();
+               ^~~~~~~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:26:15: note:   candidate expects 0 arguments, 5 provided
+..\src\Funzionalita\../Funzionalita/Metodi.h:27:15: note: candidate: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  paziente_ref inserisciPaziente(int, string, string, string, string, string);
+               ^~~~~~~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:27:15: note:   candidate expects 6 arguments, 5 provided
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:62:14: error: prototype for 'paziente_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPersona(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:33:13: error: candidates are: persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:16:13: error:                 persona_ref Metodi::inserisciPersona()
+ persona_ref Metodi::inserisciPersona(){
+             ^~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:29:44 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:62:14: error: prototype for 'paziente_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPersona(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:33:13: error: candidates are: persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:16:13: error:                 persona_ref Metodi::inserisciPersona()
+ persona_ref Metodi::inserisciPersona(){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:79:14: error: prototype for 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+              ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:27:15: error: candidates are: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  paziente_ref inserisciPaziente(int, string, string, string, string);
+               ^~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: error:                 paziente_ref Metodi::inserisciPaziente()
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:41:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:62:14: error: prototype for 'paziente_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPersona(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:33:13: error: candidates are: persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:16:13: error:                 persona_ref Metodi::inserisciPersona()
+ persona_ref Metodi::inserisciPersona(){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:79:14: error: prototype for 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+              ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:27:15: error: candidates are: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  paziente_ref inserisciPaziente(int, string, string, string, string);
+               ^~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: error:                 paziente_ref Metodi::inserisciPaziente()
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:10:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:13:12: warning: 'ID_paz_count' defined but not used [-Wunused-variable]
+ static int ID_paz_count = 0;
+            ^~~~~~~~~~~~
+15:42:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:62:14: error: prototype for 'paziente_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPersona(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:33:13: error: candidates are: persona_ref Metodi::inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ persona_ref Metodi::inserisciPersona(int an, string cod, string name, string surname){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:16:13: error:                 persona_ref Metodi::inserisciPersona()
+ persona_ref Metodi::inserisciPersona(){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:79:14: error: prototype for 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+              ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:27:15: error: candidates are: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  paziente_ref inserisciPaziente(int, string, string, string, string);
+               ^~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: error:                 paziente_ref Metodi::inserisciPaziente()
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+15:42:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:79:14: error: prototype for 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:62:14: error: candidates are: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: error:                 paziente_ref Metodi::inserisciPaziente()
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+15:43:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:79:14: error: prototype for 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:62:14: error: candidates are: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: error:                 paziente_ref Metodi::inserisciPaziente()
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+15:44:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:79:14: error: prototype for 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:62:14: error: candidates are: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: error:                 paziente_ref Metodi::inserisciPaziente()
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+15:45:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:79:14: error: prototype for 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' does not match any in class 'Metodi'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string IDpaz, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:62:14: error: candidates are: paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:40:14: error:                 paziente_ref Metodi::inserisciPaziente()
+ paziente_ref Metodi::inserisciPaziente(){
+              ^~~~~~
+15:46:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:79:14: error: redefinition of 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)'
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:62:14: note: 'paziente_ref Metodi::inserisciPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' previously defined here
+ paziente_ref Metodi::inserisciPaziente(int an, string cod, string name, string surname, string cat){
+              ^~~~~~
+15:46:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:47:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:47:56 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+15:59:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:00:46 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:02:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente()':
+..\src\Utenti\Paziente.cpp:6:14: error: cannot convert 'const char [1]' to 'categoria' in assignment
+  this->ctg = "";
+              ^~
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Paziente*)':
+..\src\Utenti\Paziente.cpp:15:14: error: cannot convert 'const char [1]' to 'categoria' in assignment
+  this->ctg = "";
+              ^~
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+..\src\Utenti\Paziente.cpp:20:14: error: cannot convert 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'categoria' in assignment
+  this->ctg = cat;
+              ^~~
+..\src\Utenti\Paziente.cpp: In member function 'std::__cxx11::string Paziente::getCategoria()':
+..\src\Utenti\Paziente.cpp:24:15: error: could not convert '((Paziente*)this)->Paziente::ctg' from 'categoria' to 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}'
+  return this->ctg;
+         ~~~~~~^~~
+..\src\Utenti\Paziente.cpp: In member function 'void Paziente::setCategoria(std::__cxx11::string)':
+..\src\Utenti\Paziente.cpp:28:14: error: cannot convert 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'categoria' in assignment
+  this->ctg = c;
+              ^
+16:04:55 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+16:14:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:6,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h: In instantiation of 'void std::_Construct(_T1*, _Args&& ...) [with _T1 = std::unique_ptr<Paziente>; _Args = {const std::unique_ptr<Paziente, std::default_delete<Paziente> >&}]':
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h:75:18:   required from 'static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >; _ForwardIterator = std::unique_ptr<Paziente>*; bool _TrivialValueTypes = false]'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h:126:15:   required from '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >; _ForwardIterator = std::unique_ptr<Paziente>*]'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h:281:37:   required from '_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >; _ForwardIterator = std::unique_ptr<Paziente>*; _Tp = std::unique_ptr<Paziente>]'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:324:31:   required from 'std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::unique_ptr<Paziente>; _Alloc = std::allocator<std::unique_ptr<Paziente> >]'
+..\src\Funzionalita\Metodi.cpp:81:33:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h:75:7: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+     { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+16:17:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:6,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h: In instantiation of 'void std::_Construct(_T1*, _Args&& ...) [with _T1 = std::unique_ptr<Paziente>; _Args = {const std::unique_ptr<Paziente, std::default_delete<Paziente> >&}]':
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h:75:18:   required from 'static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >; _ForwardIterator = std::unique_ptr<Paziente>*; bool _TrivialValueTypes = false]'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h:126:15:   required from '_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >; _ForwardIterator = std::unique_ptr<Paziente>*]'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h:281:37:   required from '_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::unique_ptr<Paziente>*, std::vector<std::unique_ptr<Paziente> > >; _ForwardIterator = std::unique_ptr<Paziente>*; _Tp = std::unique_ptr<Paziente>]'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:324:31:   required from 'std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::unique_ptr<Paziente>; _Alloc = std::allocator<std::unique_ptr<Paziente> >]'
+..\src\Funzionalita\Metodi.cpp:81:33:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h:75:7: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+     { ::new(static_cast<void*>(__p)) _T1(std::forward<_Args>(__args)...); }
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+16:17:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:18:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:18:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:22:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:29:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:12:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/Comparatori.h:16:13: warning: 'bool compareByID(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita/Comparatori.h:12:13: warning: 'bool compareByCognome(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByCognome(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+16:29:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:12:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/Comparatori.h:16:13: warning: 'bool compareByID(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita/Comparatori.h:12:13: warning: 'bool compareByCognome(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByCognome(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:31:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:12:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/Comparatori.h:16:13: warning: 'bool compareByID(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\main.o: In function `ZNSt10_Head_baseILj0EP8PazienteLb0EE7_M_headERKS2_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Comparatori.h:12: multiple definition of `compareByCognome(std::unique_ptr<Paziente, std::default_delete<Paziente> >&, std::unique_ptr<Paziente, std::default_delete<Paziente> >&)'
+src\Funzionalita\Metodi.o:C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/../Funzionalita/Comparatori.h:12: first defined here
+collect2.exe: error: ld returned 1 exit status
+16:32:06 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\Funzionalita/Metodi.h:12:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/Comparatori.h:16:13: warning: 'bool compareByID(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita/Comparatori.h:12:13: warning: 'bool compareByCognome(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByCognome(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:32:38 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+16:34:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:49:10: warning: unused variable 'm' [-Wunused-variable]
+  Metodi *m = new Metodi;
+          ^
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:34:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:50:5: error: invalid use of 'Metodi::Metodi'
+  m->Metodi();
+     ^~~~~~
+16:35:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:49:10: warning: unused variable 'm' [-Wunused-variable]
+  Metodi *m = new Metodi;
+          ^
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:35:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:36:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:48:7: warning: unused variable 'scelta' [-Wunused-variable]
+  char scelta;
+       ^~~~~~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:42:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:49:10: warning: unused variable 'm' [-Wunused-variable]
+  Metodi *m = new Metodi;
+          ^
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:43:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:49:10: warning: unused variable 'm' [-Wunused-variable]
+  Metodi *m = new Metodi;
+          ^
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+16:44:06 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++

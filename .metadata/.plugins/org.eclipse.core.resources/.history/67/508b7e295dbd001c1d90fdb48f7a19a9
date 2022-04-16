@@ -1,0 +1,32 @@
+/*
+ * Paziente.cpp
+ *
+ *  Created on: 16 apr 2022
+ *      Author: giuly
+ */
+
+#include "Paziente.h"
+
+Paziente::Paziente() {
+
+}
+
+string Paziente::getCategoria() {
+	return this->categoria;
+}
+
+void Paziente::setCategoria(string c) {
+	this->categoria = c;
+}
+
+string Paziente::getIdPaz() {
+	return this->ID_paz;
+}
+
+void Paziente::setIdPaz(string idPaz) {
+	this->ID_paz = idPaz;
+}
+
+Paziente::~Paziente() {
+}
+

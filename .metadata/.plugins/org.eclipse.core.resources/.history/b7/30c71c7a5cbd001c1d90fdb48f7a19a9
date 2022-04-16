@@ -1,0 +1,18 @@
+/*
+ * Paziente.cpp
+ *
+ *  Created on: 16 apr 2022
+ *      Author: giuly
+ */
+
+#include "Paziente.h"
+
+Paziente::Paziente() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Paziente::~Paziente() {
+	// TODO Auto-generated destructor stub
+}
+

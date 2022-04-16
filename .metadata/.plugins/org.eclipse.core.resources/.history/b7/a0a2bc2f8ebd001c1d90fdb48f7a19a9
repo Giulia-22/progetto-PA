@@ -1,0 +1,36 @@
+
+#ifndef UTENTI_PAZIENTE_H_
+#define UTENTI_PAZIENTE_H_
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <memory>
+#include "../Utenti/Persona.h"
+
+using namespace std;
+
+static int ID_paz_count = 0;
+
+enum class categoria {indefinito,bambino,adulto,anziano};
+
+class Paziente : public Persona {
+public:
+	int ID_paz = ID_paz_count;
+	categoria ctg = categoria.indefinito;
+	friend class Metodi;
+protected:
+	Paziente();
+	Paziente(Paziente*);
+	Paziente(int, string, string, string, categoria);
+	void setCategoria(string);
+public:
+	categoria getCategoria();
+	int getIdPaz();
+	void stampa();
+	virtual ~Paziente();
+};
+
+typedef unique_ptr<Paziente> paziente_ref;
+
+#endif /* UTENTI_PAZIENTE_H_ */

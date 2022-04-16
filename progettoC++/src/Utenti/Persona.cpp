@@ -1,6 +1,13 @@
 
 #include "Persona.h"
 
+Persona::Persona(){
+	this->annonascita = 1900;
+	this->cf = "";
+	this->nome = "";
+	this->cognome = "";
+}
+
 Persona::Persona(int a, string codfisc, string n, string c) {
 	this->annonascita = a;
 	this->cf = codfisc;
@@ -9,13 +16,13 @@ Persona::Persona(int a, string codfisc, string n, string c) {
 }
 
 Persona::Persona(Persona *p){
-	this->annonascita = p->annonascita;
-	this->cf = p->cf;
-	this->nome = p->nome;
-	this->cognome = p->cognome;
+	this->annonascita = p->getAnnonascita();
+	this->cf = p->getCf();
+	this->nome = p->getNome();
+	this->cognome = p->getCognome();
 }
 
-int Persona::getAnnonascita() const {
+int Persona::getAnnonascita() {
 	return this->annonascita;
 }
 

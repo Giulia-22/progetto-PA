@@ -1,0 +1,39 @@
+
+#include "Paziente.h"
+
+Paziente::Paziente() {
+	this->ID_paz = "";
+	this->categoria = "";
+}
+
+Paziente::Paziente(Persona* pers){
+	//Persona::Persona(pers);
+}
+
+string Paziente::getCategoria() {
+	return this->categoria;
+}
+
+void Paziente::setCategoria(string c) {
+	this->categoria = c;
+}
+
+string Paziente::getIdPaz() {
+	return this->ID_paz;
+}
+
+void Paziente::setIdPaz(string idPaz) {
+	this->ID_paz = idPaz;
+}
+void Paziente::stampa(){
+	cout<<"Nome: "<<this->getNome()<<endl;
+	cout<<"Cognome: "<<this->getCognome()<<endl;
+	cout<<"Anno di nascita: "<<this->getAnnonascita()<<endl;
+	cout<<"Codice fiscale: "<<this->getCf()<<endl;
+	cout<<"ID paziente: "<<this->getIdPaz()<<endl;
+	cout<<"Categoria: "<<this->getCategoria()<<endl<<endl;
+}
+
+Paziente::~Paziente() {
+}
+

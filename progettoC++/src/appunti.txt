@@ -1,0 +1,7 @@
+CHIEDERE: 
+	Come fare distruttore
+	Togliere warning su persona
+	
+	
+DA FARE PIU' TARDI: 
+	categoria enum

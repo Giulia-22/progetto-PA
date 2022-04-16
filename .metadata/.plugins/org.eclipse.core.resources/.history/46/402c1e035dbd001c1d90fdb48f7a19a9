@@ -1,0 +1,34 @@
+/*
+ * Paziente.cpp
+ *
+ *  Created on: 16 apr 2022
+ *      Author: giuly
+ */
+
+#include "Paziente.h"
+
+Paziente::Paziente() {
+	// TODO Auto-generated constructor stub
+
+}
+
+const string& Paziente::getCategoria() const {
+	return categoria;
+}
+
+void Paziente::setCategoria(const string &categoria = "") {
+	this->categoria = categoria;
+}
+
+const string& Paziente::getIdPaz() const {
+	return ID_paz;
+}
+
+void Paziente::setIdPaz(const string &idPaz = "") {
+	ID_paz = idPaz;
+}
+
+Paziente::~Paziente() {
+	// TODO Auto-generated destructor stub
+}
+

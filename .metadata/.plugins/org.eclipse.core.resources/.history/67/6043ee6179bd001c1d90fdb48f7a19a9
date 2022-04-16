@@ -1,0 +1,56 @@
+
+#include "Paziente.h"
+
+Paziente::Paziente() {
+	// TODO DA FARE CON COUT
+	this->ID_paz = "";
+	this->categoria = "";
+}
+
+Paziente::Paziente(Paziente* pers){
+	this->annonascita = pers->getAnnonascita();
+	this->cf = pers->getCf();
+	this->nome = pers->getNome();
+	this->cognome = pers->getCognome();
+	this->ID_paz = "";
+	this->categoria = "";
+}
+
+Paziente::Paziente(int a, string codfisc, string n, string c, string IDpaz, string cat){
+
+	this->annonascita = a;
+	this->cf = codfisc;
+	this->nome = n;
+	this->cognome = c;
+	//Persona(a,codfisc,n,c);
+	this->ID_paz = IDpaz;
+	this->categoria = cat;
+}
+
+string Paziente::getCategoria() {
+	return this->categoria;
+}
+
+void Paziente::setCategoria(string c) {
+	this->categoria = c;
+}
+
+string Paziente::getIdPaz() {
+	return this->ID_paz;
+}
+
+void Paziente::setIdPaz(string idPaz) {
+	this->ID_paz = idPaz;
+}
+void Paziente::stampa(){
+	cout<<"Nome: "<<this->getNome()<<endl;
+	cout<<"Cognome: "<<this->getCognome()<<endl;
+	cout<<"Anno di nascita: "<<this->getAnnonascita()<<endl;
+	cout<<"Codice fiscale: "<<this->getCf()<<endl;
+	cout<<"ID paziente: "<<this->getIdPaz()<<endl;
+	cout<<"Categoria: "<<this->getCategoria()<<endl<<endl;
+}
+
+Paziente::~Paziente() {
+}
+

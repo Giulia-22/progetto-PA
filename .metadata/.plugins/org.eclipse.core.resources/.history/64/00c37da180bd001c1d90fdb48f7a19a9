@@ -1,0 +1,31 @@
+
+#ifndef METODI_H_
+#define METODI_H_
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <memory>
+#include "../Utenti/Persona.h"
+#include "../Utenti/Paziente.h"
+
+using namespace std;
+
+class Metodi {
+private:
+	time_t data = time(0);
+	tm* now = localtime(&data);
+	int annocorrente = now->tm_year;
+public:
+	Metodi();
+	persona_ref inserisciPersona();
+	persona_ref inserisciPersona(int, string, string, string);
+	paziente_ref inserisciPaziente();
+	paziente_ref inserisciPaziente(int, string, string, string, string, string);
+	void stampaElenco(vector<Persona> p);
+	int getYear();
+	virtual ~Metodi();
+
+};
+
+#endif /* METODI_H_ */
