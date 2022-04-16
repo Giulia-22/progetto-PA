@@ -1,0 +1,11 @@
+
+#ifndef METODI_H_
+#define METODI_H_
+
+class metodi {
+public:
+	metodi();
+	virtual ~metodi();
+};
+
+#endif /* METODI_H_ */

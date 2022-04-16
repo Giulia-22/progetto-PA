@@ -1,0 +1,53 @@
+#include <iostream>
+#include "Persona.h"
+
+using namespace std;
+
+Persona::Persona(int a, char* const codfisc, char* const n, char* const c) {
+	this->annonascita = a;
+	this->cf = codfisc;
+	this->nome = n;
+	this->cognome = c;
+}
+
+int Persona::getAnnonascita() const {
+	return this->annonascita;
+}
+
+void Persona::setAnnonascita(int a) {
+	this->annonascita = a;
+}
+
+char* Persona::getCf() const {
+	return this->cf;
+}
+
+void Persona::setCf(char *codfisc) {
+	this->cf = cf;
+}
+
+char* Persona::getCognome() const {
+	return cognome;
+}
+
+void Persona::setCognome(char *c) {
+	this->cognome = c;
+}
+
+char* Persona::getNome() const {
+	return this->nome;
+}
+
+void Persona::setNome(char *n) {
+	this->nome = n;
+}
+
+void stampa(Persona *p){
+	cout<<"Codice fiscale: "<<p->cf<<endl;
+	cout<<"Anno di nascita: "<<p->annonascita<<endl;
+	cout<<endl;
+}
+
+Persona::~Persona() {
+}
+

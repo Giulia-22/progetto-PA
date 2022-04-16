@@ -1,0 +1,18 @@
+/*
+ * metodi.cpp
+ *
+ *  Created on: 15 apr 2022
+ *      Author: giuly
+ */
+
+#include "metodi.h"
+
+metodi::metodi() {
+	// TODO Auto-generated constructor stub
+
+}
+
+metodi::~metodi() {
+	// TODO Auto-generated destructor stub
+}
+

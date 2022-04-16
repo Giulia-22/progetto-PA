@@ -1,0 +1,13 @@
+
+#ifndef METODI_H_
+#define METODI_H_
+
+#include "Persona.h"
+
+class metodi {
+public:
+	metodi();
+	virtual ~metodi();
+};
+
+#endif /* METODI_H_ */

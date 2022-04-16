@@ -1,0 +1,32 @@
+
+#ifndef PERSONA_H_
+#define PERSONA_H_
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Persona {
+public:
+	int annonascita;
+	string cf;
+protected:
+	string nome;
+	string cognome;
+public:
+	Persona(int, string, string, string);
+	Persona(Persona*);
+	int getAnnonascita() const;
+	void setAnnonascita(int);
+	string getCf();
+	void setCf(string);
+	string getCognome();
+	void setCognome(string);
+	string getNome();
+	void setNome(string);
+	void stampa();
+	void stampa(vector<Persona>);
+	virtual ~Persona();
+};
+
+#endif /* PERSONA_H_ */

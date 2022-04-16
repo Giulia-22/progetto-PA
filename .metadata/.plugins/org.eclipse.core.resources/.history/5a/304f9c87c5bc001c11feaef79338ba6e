@@ -1,0 +1,28 @@
+
+#ifndef PERSONA_H_
+#define PERSONA_H_
+
+#include <string>
+
+class Persona {
+public:
+	int annonascita;
+	char* cf;
+protected:
+	char* nome;
+	char* cognome;
+public:
+	Persona(int, string, string, string);
+	int getAnnonascita() const;
+	void setAnnonascita(int);
+	char* getCf() const;
+	void setCf(char*);
+	char* getCognome() const;
+	void setCognome(char*);
+	char* getNome() const;
+	void setNome(char*);
+	void stampa(Persona*);
+	virtual ~Persona();
+};
+
+#endif /* PERSONA_H_ */

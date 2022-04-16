@@ -1,0 +1,12 @@
+#include "Persona.h"
+#include "metodi.h"
+
+metodi::metodi() {
+	// TODO Auto-generated constructor stub
+
+}
+
+metodi::~metodi() {
+	// TODO Auto-generated destructor stub
+}
+

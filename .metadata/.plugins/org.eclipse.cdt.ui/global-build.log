@@ -1,5 +1,685 @@
-15:32:31 **** Rebuild of configuration Debug for project progettoC++ ****
+17:21:53 **** Incremental Build of configuration Debug for project progettoC++ ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\progettoC++.o" "..\\src\\progettoC++.cpp" 
-g++ -o progettoC++.exe "src\\progettoC++.o" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" 
+17:22:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" 
 Info: Nothing to build for progettoC++
+17:24:20 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+..\src\Persona.cpp: In constructor 'Persona::Persona(Persona*)':
+..\src\Persona.cpp:12:9: error: lvalue required as left operand of assignment
+  this = p;
+         ^
+17:24:31 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+..\src\Persona.cpp: In constructor 'Persona::Persona(Persona*)':
+..\src\Persona.cpp:12:10: error: lvalue required as left operand of assignment
+  this = &p;
+          ^
+17:24:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" 
+17:27:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" 
+17:27:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" 
+17:28:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:12: error: 'stampa' was not declared in this scope
+  stampa(vp1);
+            ^
+17:28:23 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:5: error: base operand of '->' has non-pointer type 'std::vector<Persona>'
+  vp1->stampa(vp1);
+     ^~
+17:28:37 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:6: error: 'class std::vector<Persona>' has no member named 'stampa'; did you mean 'swap'?
+  vp1.stampa(vp1);
+      ^~~~~~
+17:28:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:6: error: 'class std::vector<Persona>' has no member named 'stampa'; did you mean 'swap'?
+  vp1.stampa(vp1);
+      ^~~~~~
+17:29:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:12: error: 'stampa' was not declared in this scope
+  stampa(vp1);
+            ^
+17:37:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:12: error: 'stampa' was not declared in this scope
+  stampa(vp1);
+            ^
+17:37:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" 
+17:38:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:12: error: 'stampa' was not declared in this scope
+  stampa(vp1);
+            ^
+17:41:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:15: error: 'vp1stampa' was not declared in this scope
+  vp1stampa(vp1);
+               ^
+17:42:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:12: error: 'stampa' was not declared in this scope
+  stampa(vp1);
+            ^
+17:46:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'void stampa(std::vector<Persona>)':
+..\src\main.cpp:11:22: error: 'std::__cxx11::string Persona::nome' is protected within this context
+   cout<<"Nome: "<<i->nome<<endl;
+                      ^~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Persona.h:14:9: note: declared protected here
+  string nome;
+         ^~~~
+..\src\main.cpp:12:25: error: 'std::__cxx11::string Persona::cognome' is protected within this context
+   cout<<"Cognome: "<<i->cognome<<endl;
+                         ^~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Persona.h:15:9: note: declared protected here
+  string cognome;
+         ^~~~~~~
+17:47:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+17:51:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:21:12: error: 'stampa' was not declared in this scope
+  stampa(vp1);
+            ^
+17:58:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:23:12: error: 'stampa' was not declared in this scope
+  stampa(vp1);
+            ^
+18:01:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:23:8: error: expected unqualified-id before '->' token
+  metodi->stampa(vp1);
+        ^~
+18:02:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\metodi.o" "..\\src\\metodi.cpp" 
+..\src\metodi.cpp: In function 'void stampa(std::vector<Persona>)':
+..\src\metodi.cpp:6:22: error: 'std::__cxx11::string Persona::nome' is protected within this context
+   cout<<"Nome: "<<i->nome<<endl;
+                      ^~~~
+In file included from ..\src\metodi.h:7:0,
+                 from ..\src\metodi.cpp:2:
+..\src\Persona.h:14:9: note: declared protected here
+  string nome;
+         ^~~~
+..\src\metodi.cpp:7:25: error: 'std::__cxx11::string Persona::cognome' is protected within this context
+   cout<<"Cognome: "<<i->cognome<<endl;
+                         ^~~~~~~
+In file included from ..\src\metodi.h:7:0,
+                 from ..\src\metodi.cpp:2:
+..\src\Persona.h:15:9: note: declared protected here
+  string cognome;
+         ^~~~~~~
+18:03:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\metodi.o" "..\\src\\metodi.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" "src\\metodi.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:22: undefined reference to `metodi::metodi()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:23: undefined reference to `metodi::stampa(std::vector<Persona, std::allocator<Persona> >)'
+collect2.exe: error: ld returned 1 exit status
+18:25:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\metodi.o" "..\\src\\metodi.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" "src\\metodi.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:23: undefined reference to `metodi::stampa(std::vector<Persona, std::allocator<Persona> >)'
+collect2.exe: error: ld returned 1 exit status
+18:25:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\metodi.o" "..\\src\\metodi.cpp" 
+g++ -o progettoC++.exe "src\\Persona.o" "src\\main.o" "src\\metodi.o" 
+Info: Nothing to build for progettoC++
+18:29:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Persona.o" "src\\main.o" 
+18:39:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Persona.o" "..\\src\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+18:40:17 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:25: warning: declaration of 'std::shared_ptr<Persona> p1()' has 'extern' and is initialized
+  shared_ptr<Persona> p1() = m->inserisciPersona(1999, "1234567890udtqq", "1", "A");
+                         ^
+..\src\main.cpp:24:30: error: invalid pure specifier (only '= 0' is allowed) before '->' token
+  shared_ptr<Persona> p1() = m->inserisciPersona(1999, "1234567890udtqq", "1", "A");
+                              ^~
+..\src\main.cpp:24:82: error: function 'std::shared_ptr<Persona> p1()' is initialized like a variable
+  shared_ptr<Persona> p1() = m->inserisciPersona(1999, "1234567890udtqq", "1", "A");
+                                                                                  ^
+..\src\main.cpp:26:6: error: request for member 'stampa' in 'p1', which is of non-class type 'std::shared_ptr<Persona>()'
+  p1->stampa();
+      ^~~~~~
+18:50:56 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:25: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+18:51:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:25: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+18:52:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:25:7: error: 'class Persona' has no member named 'm'
+  p1-> m->inserisciPersona(1999, "1234567890udtqq", "1", "A");
+       ^
+18:52:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+18:53:11 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:25: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+09:10:17 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:5:0:
+..\src\Metodi.h:9:21: fatal error: Persona.h: No such file or directory
+ #include "Persona.h"
+                     ^
+compilation terminated.
+09:10:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+..\src\Metodi.cpp:2:27: fatal error: Utenti\Metodi.h: No such file or directory
+ #include "Utenti\Metodi.h"
+                           ^
+compilation terminated.
+09:10:54 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+..\src\Metodi.cpp:2:27: fatal error: Utenti\Metodi.h: No such file or directory
+ #include "Utenti\Metodi.h"
+                           ^
+compilation terminated.
+09:11:08 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+In file included from ..\src\Metodi.cpp:2:0:
+..\src\Metodi.h:9:21: fatal error: Persona.h: No such file or directory
+ #include "Persona.h"
+                     ^
+compilation terminated.
+09:11:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+09:12:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+..\src\Metodi.cpp: In member function 'void Metodi::stampaElenco(std::vector<Persona>)':
+..\src\Metodi.cpp:10:22: error: 'std::__cxx11::string Persona::nome' is protected within this context
+   cout<<"Nome: "<<i->nome<<endl;
+                      ^~~~
+In file included from ..\src\Metodi.h:9:0,
+                 from ..\src\Metodi.cpp:2:
+..\src\Utenti\Persona.h:14:9: note: declared protected here
+  string nome;
+         ^~~~
+..\src\Metodi.cpp:11:25: error: 'std::__cxx11::string Persona::cognome' is protected within this context
+   cout<<"Cognome: "<<i->cognome<<endl;
+                         ^~~~~~~
+In file included from ..\src\Metodi.h:9:0,
+                 from ..\src\Metodi.cpp:2:
+..\src\Utenti\Persona.h:15:9: note: declared protected here
+  string cognome;
+         ^~~~~~~
+09:14:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Metodi.o" "..\\src\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+09:14:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+09:15:20 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+09:16:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita\Metodi.h:9:28: fatal error: Utenti\Persona.h: No such file or directory
+ #include "Utenti\Persona.h"
+                            ^
+compilation terminated.
+09:16:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:2:33: fatal error: Funzionalita\Metodi.h: No such file or directory
+ #include "Funzionalita\Metodi.h"
+                                 ^
+compilation terminated.
+09:19:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:2:33: fatal error: Funzionalita\Metodi.h: No such file or directory
+ #include "Funzionalita\Metodi.h"
+                                 ^
+compilation terminated.
+09:19:56 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:2:33: fatal error: Funzionalita/Metodi.h: No such file or directory
+ #include "Funzionalita/Metodi.h"
+                                 ^
+compilation terminated.
+09:20:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+09:20:27 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp:5:36: fatal error: ../Funzionalita/Metodi.h: No such file or directory
+ #include "../Funzionalita/Metodi.h"
+                                    ^
+compilation terminated.
+09:20:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+09:23:54 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+09:26:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:39: error: expected ',' or ';' before '=' token
+  unique_ptr<Persona> p1 (new Persona) = make_unique<Persona> (m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                       ^
+09:29:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:24: error: expected ',' or ';' before '=' token
+  auto p1 (new Persona) = make_unique<Persona> (m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                        ^
+09:29:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+09:29:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:93: error: no matching function for call to 'make_unique(std::shared_ptr<Persona>)'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:790:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)
+     make_unique(_Args&&... __args)
+     ^~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:790:5: note:   template argument deduction/substitution failed:
+..\src\main.cpp:24:93: note:   couldn't deduce template parameter '_Tp'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:796:5: note: candidate: template<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)
+     make_unique(size_t __num)
+     ^~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:796:5: note:   template argument deduction/substitution failed:
+..\src\main.cpp:24:93: note:   couldn't deduce template parameter '_Tp'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:802:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...) <deleted>
+     make_unique(_Args&&...) = delete;
+     ^~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:802:5: note:   template argument deduction/substitution failed:
+..\src\main.cpp:24:93: note:   couldn't deduce template parameter '_Tp'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+09:31:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:92: error: no matching function for call to 'Metodi::inserisciPersona(int, const char [16], const char [2], const char [2])'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                            ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:17:22: note: candidate: std::unique_ptr<Persona> Metodi::inserisciPersona(Persona*)
+  unique_ptr<Persona> inserisciPersona(Persona*);
+                      ^~~~~~~~~~~~~~~~
+..\src\Funzionalita/Metodi.h:17:22: note:   candidate expects 1 argument, 4 provided
+09:33:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In function 'Persona* inserisciPersona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)':
+..\src\Funzionalita\Metodi.cpp:19:9: error: cannot convert 'std::unique_ptr<Persona>' to 'Persona*' in return
+  return p;
+         ^
+09:34:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:92: error: no matching function for call to 'Metodi::inserisciPersona(int, const char [16], const char [2], const char [2])'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                            ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:17:22: note: candidate: std::unique_ptr<Persona> Metodi::inserisciPersona(Persona*)
+  unique_ptr<Persona> inserisciPersona(Persona*);
+                      ^~~~~~~~~~~~~~~~
+..\src\Funzionalita/Metodi.h:17:22: note:   candidate expects 1 argument, 4 provided
+09:36:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:92: error: no matching function for call to 'Metodi::inserisciPersona(int, const char [16], const char [2], const char [2])'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                            ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:17:14: note: candidate: persona_ref Metodi::inserisciPersona(Persona*)
+  persona_ref inserisciPersona(Persona*);
+              ^~~~~~~~~~~~~~~~
+..\src\Funzionalita/Metodi.h:17:14: note:   candidate expects 1 argument, 4 provided
+09:36:55 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:93: error: no matching function for call to 'make_unique(persona_ref)'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:790:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__single_object std::make_unique(_Args&& ...)
+     make_unique(_Args&&... __args)
+     ^~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:790:5: note:   template argument deduction/substitution failed:
+..\src\main.cpp:24:93: note:   couldn't deduce template parameter '_Tp'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:796:5: note: candidate: template<class _Tp> typename std::_MakeUniq<_Tp>::__array std::make_unique(std::size_t)
+     make_unique(size_t __num)
+     ^~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:796:5: note:   template argument deduction/substitution failed:
+..\src\main.cpp:24:93: note:   couldn't deduce template parameter '_Tp'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:802:5: note: candidate: template<class _Tp, class ... _Args> typename std::_MakeUniq<_Tp>::__invalid_type std::make_unique(_Args&& ...) <deleted>
+     make_unique(_Args&&...) = delete;
+     ^~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:802:5: note:   template argument deduction/substitution failed:
+..\src\main.cpp:24:93: note:   couldn't deduce template parameter '_Tp'
+  unique_ptr<Persona> p1 = make_unique(m->inserisciPersona(1999, "1234567890udtqq", "1", "A"));
+                                                                                             ^
+09:37:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+In file included from ..\src\Utenti\Persona.cpp:2:0:
+..\src\Utenti\Persona.h:32:9: error: 'unique_ptr' does not name a type
+ typedef unique_ptr<Persona> persona_ref;
+         ^~~~~~~~~~
+09:38:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+09:41:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+09:43:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+09:44:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+09:48:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+collect2.exe: error: ld returned 1 exit status
+09:53:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:11:11: warning: unused variable 'p1' [-Wunused-variable]
+  Persona* p1 = new Persona(1999, "1234567890udtqq", "1", "A");
+           ^~
+..\src\main.cpp:13:11: warning: unused variable 'p3' [-Wunused-variable]
+  Persona* p3 = new Persona(1999, "1234567890udtqq", "3", "A");
+           ^~
+..\src\main.cpp:14:11: warning: unused variable 'p4' [-Wunused-variable]
+  Persona* p4 = new Persona(1999, "1234567890udtqq", "4", "A");
+           ^~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+src\main.o: In function `main':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/main.cpp:24: undefined reference to `Metodi::inserisciPersona()'
+collect2.exe: error: ld returned 1 exit status
+09:55:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:11:11: warning: unused variable 'p1' [-Wunused-variable]
+  Persona* p1 = new Persona(1999, "1234567890udtqq", "1", "A");
+           ^~
+..\src\main.cpp:13:11: warning: unused variable 'p3' [-Wunused-variable]
+  Persona* p3 = new Persona(1999, "1234567890udtqq", "3", "A");
+           ^~
+..\src\main.cpp:14:11: warning: unused variable 'p4' [-Wunused-variable]
+  Persona* p4 = new Persona(1999, "1234567890udtqq", "4", "A");
+           ^~
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+09:55:38 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+09:56:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:25:60: error: cannot convert 'persona_ref {aka std::unique_ptr<Persona>}' to 'Persona*' in assignment
+  p1 = m->inserisciPersona(1999, "1234567890udtqq", "1", "A");
+                                                            ^
+09:57:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:25:20: error: no matching function for call to 'std::vector<Persona>::push_back(persona_ref&)'
+  vp1.push_back(puni);
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:64:0,
+                 from ..\src\main.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:914:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Persona; _Alloc = std::allocator<Persona>; std::vector<_Tp, _Alloc>::value_type = Persona]
+       push_back(const value_type& __x)
+       ^~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:914:7: note:   no known conversion for argument 1 from 'persona_ref {aka std::unique_ptr<Persona>}' to 'const value_type& {aka const Persona&}'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:932:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = Persona; _Alloc = std::allocator<Persona>; std::vector<_Tp, _Alloc>::value_type = Persona]
+       push_back(value_type&& __x)
+       ^~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:932:7: note:   no known conversion for argument 1 from 'persona_ref {aka std::unique_ptr<Persona>}' to 'std::vector<Persona>::value_type&& {aka Persona&&}'
+09:58:17 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:24:21: error: no matching function for call to 'Metodi::stampaElenco(std::vector<Persona>&)'
+  m->stampaElenco(vp1);
+                     ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:16:7: note: candidate: void Metodi::stampaElenco(std::vector<std::unique_ptr<Persona> >)
+  void stampaElenco(vector<persona_ref> p);
+       ^~~~~~~~~~~~
+..\src\Funzionalita/Metodi.h:16:7: note:   no known conversion for argument 1 from 'std::vector<Persona>' to 'std::vector<std::unique_ptr<Persona> >'
+..\src\main.cpp:25:20: error: no matching function for call to 'std::vector<Persona>::push_back(persona_ref&)'
+  vp1.push_back(puni);
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:64:0,
+                 from ..\src\main.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:914:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Persona; _Alloc = std::allocator<Persona>; std::vector<_Tp, _Alloc>::value_type = Persona]
+       push_back(const value_type& __x)
+       ^~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:914:7: note:   no known conversion for argument 1 from 'persona_ref {aka std::unique_ptr<Persona>}' to 'const value_type& {aka const Persona&}'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:932:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = Persona; _Alloc = std::allocator<Persona>; std::vector<_Tp, _Alloc>::value_type = Persona]
+       push_back(value_type&& __x)
+       ^~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:932:7: note:   no known conversion for argument 1 from 'persona_ref {aka std::unique_ptr<Persona>}' to 'std::vector<Persona>::value_type&& {aka Persona&&}'
+..\src\main.cpp:26:21: error: no matching function for call to 'Metodi::stampaElenco(std::vector<Persona>&)'
+  m->stampaElenco(vp1);
+                     ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:16:7: note: candidate: void Metodi::stampaElenco(std::vector<std::unique_ptr<Persona> >)
+  void stampaElenco(vector<persona_ref> p);
+       ^~~~~~~~~~~~
+..\src\Funzionalita/Metodi.h:16:7: note:   no known conversion for argument 1 from 'std::vector<Persona>' to 'std::vector<std::unique_ptr<Persona> >'
+09:58:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:25:20: error: no matching function for call to 'std::vector<Persona>::push_back(persona_ref&)'
+  vp1.push_back(puni);
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector:64:0,
+                 from ..\src\main.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:914:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = Persona; _Alloc = std::allocator<Persona>; std::vector<_Tp, _Alloc>::value_type = Persona]
+       push_back(const value_type& __x)
+       ^~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:914:7: note:   no known conversion for argument 1 from 'persona_ref {aka std::unique_ptr<Persona>}' to 'const value_type& {aka const Persona&}'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:932:7: note: candidate: void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = Persona; _Alloc = std::allocator<Persona>; std::vector<_Tp, _Alloc>::value_type = Persona]
+       push_back(value_type&& __x)
+       ^~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h:932:7: note:   no known conversion for argument 1 from 'persona_ref {aka std::unique_ptr<Persona>}' to 'std::vector<Persona>::value_type&& {aka Persona&&}'
+09:59:02 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:25:26: error: invalid cast from type 'persona_ref {aka std::unique_ptr<Persona>}' to type 'Persona*'
+  vp1.push_back((Persona*)puni);
+                          ^~~~
+10:00:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+10:00:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Persona.o" "src\\main.o" 

@@ -1,0 +1,68 @@
+
+#include "Persona.h"
+
+Persona::Persona(int a, string codfisc, string n, string c) {
+	this->annonascita = a;
+	this->cf = codfisc;
+	this->nome = n;
+	this->cognome = c;
+}
+
+Persona::Persona(Persona &p){
+	this->annonascita = p->annonascita;
+		this->cf = p->cf;
+		this->nome = p->nome;
+		this->cognome = p->cognome;
+}
+
+int Persona::getAnnonascita() const {
+	return this->annonascita;
+}
+
+void Persona::setAnnonascita(int a) {
+	this->annonascita = a;
+}
+
+string Persona::getCf() {
+	return this->cf;
+}
+
+void Persona::setCf(string codfisc) {
+	this->cf = cf;
+}
+
+string Persona::getCognome() {
+	return cognome;
+}
+
+void Persona::setCognome(string c) {
+	this->cognome = c;
+}
+
+string Persona::getNome() {
+	return this->nome;
+}
+
+void Persona::setNome(string n) {
+	this->nome = n;
+}
+// overloading
+void Persona::stampa(){
+	cout<<"Nome: "<<nome<<endl;
+	cout<<"Cognome: "<<cognome<<endl;
+	cout<<"Anno di nascita: "<<annonascita<<endl;
+	cout<<"Codifce fiscale: "<<cf<<endl<<endl;
+}
+
+void Persona::stampa(vector<Persona> p){
+	for(vector<Persona>::iterator i = p.begin(); i != p.end(); ++i){
+		cout<<"Nome: "<<i->nome<<endl;
+		cout<<"Cognome: "<<i->cognome<<endl;
+		cout<<"Anno di nascita: "<<i->annonascita<<endl;
+		cout<<"Codifce fiscale: "<<i->cf<<endl<<endl;
+	}
+}
+
+Persona::~Persona() {
+}
+

@@ -1,0 +1,30 @@
+#include <iostream>
+#include <vector>
+#include <memory>
+
+#include "Metodi.h"
+#include "Persona.h"
+
+using namespace std;
+
+int main() {
+	//Persona* p1 = new Persona(1999, "1234567890udtqq", "1", "A");
+	Persona* p2 = new Persona(1999, (char*)"1234567890udtqq", (char*)"2", (char*)"A");
+	Persona* p3 = new Persona(1999, (char*)"1234567890udtqq", (char*)"3", (char*)"A");
+	Persona* p4 = new Persona(1999, (char*)"1234567890udtqq", (char*)"4", (char*)"A");
+	p2->stampa();
+
+	vector<Persona> vp1;
+	//vp1.push_back(p1);
+	vp1.push_back(p2);
+	vp1.push_back(p3);
+	vp1.push_back(p4);
+
+	Metodi *m = new Metodi;
+	shared_ptr<Persona> p1 (new Persona);
+	m->inserisciPersona(1999, "1234567890udtqq", "1", "A");
+	m->stampaElenco(vp1);
+	p1->stampa();
+
+	return 0;
+}
