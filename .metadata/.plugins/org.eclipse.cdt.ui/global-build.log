@@ -3958,3 +3958,2139 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\sr
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
 Info: Nothing to build for progettoC++
 Info: Nothing to build for progettoC++
+10:33:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+..\src\Utenti\Persona.cpp:57:1: error: 'virtual' outside class declaration
+ virtual void Persona::stampa(){
+ ^~~~~~~
+10:34:02 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+..\src\Utenti\Dottore.cpp:35:1: error: 'virtual' outside class declaration
+ virtual void Dottore::stampa(){
+ ^~~~~~~
+10:34:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp:35:1: error: 'virtual' outside class declaration
+ virtual void Paziente::stampa(){
+ ^~~~~~~
+10:34:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+10:48:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:138:49: error: no 'void Metodi::ordinaElenco_Specializzazione_dott()' member function declared in class 'Metodi'
+ void Metodi::ordinaElenco_Specializzazione_dott(){
+                                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: At global scope:
+..\src\Funzionalita\Comparatori.h:24:13: warning: 'bool compareByID(dottore_ref&, dottore_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(dottore_ref &a, dottore_ref &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:20:13: warning: 'bool compareBySpecializzazione(dottore_ref&, dottore_ref&)' defined but not used [-Wunused-function]
+ static bool compareBySpecializzazione(dottore_ref &a, dottore_ref &b) {
+             ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:16:13: warning: 'bool compareByID(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~
+10:49:44 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: At global scope:
+..\src\Funzionalita\Comparatori.h:24:13: warning: 'bool compareByID(dottore_ref&, dottore_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(dottore_ref &a, dottore_ref &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:16:13: warning: 'bool compareByID(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByID(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~
+10:54:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:16:25: error: 'T' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:16:28: error: 'a' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                            ^
+..\src\Funzionalita\Comparatori.h:16:31: error: 'T' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                               ^
+..\src\Funzionalita\Comparatori.h:16:34: error: 'b' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                                  ^
+..\src\Funzionalita\Comparatori.h:16:35: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(T &a, T &b) {
+                                   ^
+..\src\Funzionalita\Comparatori.h:16:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(T &a, T &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:12:13: warning: 'bool compareByCategoria(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByCategoria(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~~~~~
+10:54:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:16:25: error: expected primary-expression before '<' token
+ static bool compareByID(<T> &a, <T> &b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:16:26: error: 'T' was not declared in this scope
+ static bool compareByID(<T> &a, <T> &b) {
+                          ^
+..\src\Funzionalita\Comparatori.h:16:30: error: 'a' was not declared in this scope
+ static bool compareByID(<T> &a, <T> &b) {
+                              ^
+..\src\Funzionalita\Comparatori.h:16:33: error: expected primary-expression before '<' token
+ static bool compareByID(<T> &a, <T> &b) {
+                                 ^
+..\src\Funzionalita\Comparatori.h:16:34: error: 'T' was not declared in this scope
+ static bool compareByID(<T> &a, <T> &b) {
+                                  ^
+..\src\Funzionalita\Comparatori.h:16:38: error: 'b' was not declared in this scope
+ static bool compareByID(<T> &a, <T> &b) {
+                                      ^
+..\src\Funzionalita\Comparatori.h:16:39: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(<T> &a, <T> &b) {
+                                       ^
+..\src\Funzionalita\Comparatori.h:16:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(<T> &a, <T> &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:12:13: warning: 'bool compareByCategoria(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByCategoria(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~~~~~
+10:55:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:16:25: error: expected primary-expression before '<' token
+ static bool compareByID(<T> T &a, <T> T &b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:16:26: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                          ^
+..\src\Funzionalita\Comparatori.h:16:29: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                             ^
+..\src\Funzionalita\Comparatori.h:16:32: error: 'a' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                ^
+..\src\Funzionalita\Comparatori.h:16:35: error: expected primary-expression before '<' token
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                   ^
+..\src\Funzionalita\Comparatori.h:16:36: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                    ^
+..\src\Funzionalita\Comparatori.h:16:39: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                       ^
+..\src\Funzionalita\Comparatori.h:16:42: error: 'b' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                          ^
+..\src\Funzionalita\Comparatori.h:16:43: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                           ^
+..\src\Funzionalita\Comparatori.h:16:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(<T> T &a, <T> T &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:12:13: warning: 'bool compareByCategoria(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByCategoria(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~~~~~
+10:56:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:11:22: error: expected unqualified-id before ';' token
+ template <typename T>;
+                      ^
+..\src\Funzionalita\Comparatori.h:17:25: error: expected primary-expression before '<' token
+ static bool compareByID(<T> T &a, <T> T &b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:17:26: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                          ^
+..\src\Funzionalita\Comparatori.h:17:29: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                             ^
+..\src\Funzionalita\Comparatori.h:17:32: error: 'a' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                ^
+..\src\Funzionalita\Comparatori.h:17:35: error: expected primary-expression before '<' token
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                   ^
+..\src\Funzionalita\Comparatori.h:17:36: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                    ^
+..\src\Funzionalita\Comparatori.h:17:39: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                       ^
+..\src\Funzionalita\Comparatori.h:17:42: error: 'b' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                          ^
+..\src\Funzionalita\Comparatori.h:17:43: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                           ^
+..\src\Funzionalita\Comparatori.h:17:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(<T> T &a, <T> T &b) {
+             ^~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:13:13: warning: 'bool compareByCategoria(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool compareByCategoria(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~~~~~
+10:59:11 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:11:25: error: expected primary-expression before '<' token
+ static bool compareByID(<T> T &a, <T> T &b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:11:26: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                          ^
+..\src\Funzionalita\Comparatori.h:11:29: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                             ^
+..\src\Funzionalita\Comparatori.h:11:32: error: 'a' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                ^
+..\src\Funzionalita\Comparatori.h:11:35: error: expected primary-expression before '<' token
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                   ^
+..\src\Funzionalita\Comparatori.h:11:36: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                    ^
+..\src\Funzionalita\Comparatori.h:11:39: error: 'T' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                       ^
+..\src\Funzionalita\Comparatori.h:11:42: error: 'b' was not declared in this scope
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                          ^
+..\src\Funzionalita\Comparatori.h:11:43: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(<T> T &a, <T> T &b) {
+                                           ^
+..\src\Funzionalita\Comparatori.h:11:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(<T> T &a, <T> T &b) {
+             ^~~~~~~~~~~
+10:59:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:11:25: error: 'T' was not declared in this scope
+ static bool compareByID(T &a,T &b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:11:28: error: 'a' was not declared in this scope
+ static bool compareByID(T &a,T &b) {
+                            ^
+..\src\Funzionalita\Comparatori.h:11:30: error: 'T' was not declared in this scope
+ static bool compareByID(T &a,T &b) {
+                              ^
+..\src\Funzionalita\Comparatori.h:11:33: error: 'b' was not declared in this scope
+ static bool compareByID(T &a,T &b) {
+                                 ^
+..\src\Funzionalita\Comparatori.h:11:34: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(T &a,T &b) {
+                                  ^
+..\src\Funzionalita\Comparatori.h:11:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(T &a,T &b) {
+             ^~~~~~~~~~~
+10:59:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:11:25: error: 'T' was not declared in this scope
+ static bool compareByID(T a,T b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:11:29: error: 'T' was not declared in this scope
+ static bool compareByID(T a,T b) {
+                             ^
+..\src\Funzionalita\Comparatori.h:11:32: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(T a,T b) {
+                                ^
+..\src\Funzionalita\Comparatori.h:11:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(T a,T b) {
+             ^~~~~~~~~~~
+11:00:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:11:25: error: 'T' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                         ^
+..\src\Funzionalita\Comparatori.h:11:28: error: 'a' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                            ^
+..\src\Funzionalita\Comparatori.h:11:31: error: 'T' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                               ^
+..\src\Funzionalita\Comparatori.h:11:34: error: 'b' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                                  ^
+..\src\Funzionalita\Comparatori.h:11:35: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(T &a, T &b) {
+                                   ^
+..\src\Funzionalita\Comparatori.h:11:13: warning: 'compareByID' defined but not used [-Wunused-variable]
+ static bool compareByID(T &a, T &b) {
+             ^~~~~~~~~~~
+11:03:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:14: error: expected primary-expression before '*' token
+  if((Paziente* a_new = dynamic_cast<Paziente*>(a)) && (Paziente* b_new = dynamic_cast<Paziente*>(b))) {
+              ^
+..\src\Funzionalita\Comparatori.h:11:16: error: 'a_new' was not declared in this scope
+  if((Paziente* a_new = dynamic_cast<Paziente*>(a)) && (Paziente* b_new = dynamic_cast<Paziente*>(b))) {
+                ^~~~~
+..\src\Funzionalita\Comparatori.h:11:64: error: expected primary-expression before '*' token
+  if((Paziente* a_new = dynamic_cast<Paziente*>(a)) && (Paziente* b_new = dynamic_cast<Paziente*>(b))) {
+                                                                ^
+..\src\Funzionalita\Comparatori.h:11:66: error: 'b_new' was not declared in this scope
+  if((Paziente* a_new = dynamic_cast<Paziente*>(a)) && (Paziente* b_new = dynamic_cast<Paziente*>(b))) {
+                                                                  ^~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:08:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:9:16: error: 'auto' parameter not permitted in this context
+ template <auto T>
+                ^
+..\src\Funzionalita\Comparatori.h:10:28: error: 'a' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                            ^
+..\src\Funzionalita\Comparatori.h:10:34: error: 'b' was not declared in this scope
+ static bool compareByID(T &a, T &b) {
+                                  ^
+..\src\Funzionalita\Comparatori.h:10:35: error: expression list treated as compound expression in initializer [-fpermissive]
+ static bool compareByID(T &a, T &b) {
+                                   ^
+..\src\Funzionalita\Comparatori.h:10:37: error: expected ';' before '{' token
+ static bool compareByID(T &a, T &b) {
+                                     ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: missing template arguments before ')' token
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: missing template arguments before ')' token
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:09:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:12:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:14: error: expected primary-expression before '*' token
+  if((Paziente* a_new = dynamic_cast<Paziente*>(a)) {
+              ^
+..\src\Funzionalita\Comparatori.h:11:16: error: 'a_new' was not declared in this scope
+  if((Paziente* a_new = dynamic_cast<Paziente*>(a)) {
+                ^~~~~
+..\src\Funzionalita\Comparatori.h:11:52: error: expected ')' before '{' token
+  if((Paziente* a_new = dynamic_cast<Paziente*>(a)) {
+                                                    ^
+..\src\Funzionalita\Comparatori.h:16:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:14:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:29: error: expected primary-expression before ')' token
+  if(a->getType() == Paziente) {
+                             ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:15:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:21: error: 'PAZIENTE' was not declared in this scope
+  if(a->getType() == PAZIENTE) {
+                     ^~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:16:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:21: error: expected primary-expression before 'int'
+  if(a->getType() == int) {
+                     ^~~
+..\src\Funzionalita\Comparatori.h:11:21: error: expected ')' before 'int'
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:18:47 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:33: error: expected primary-expression before ')' token
+  if(a->getType() == paziente_ref) {
+                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:19:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:33: error: expected primary-expression before ')' token
+  if(a->getType() == paziente_ref) {
+                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:19:55 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:14:33: error: expected primary-expression before ')' token
+  if(a->getType() == paziente_ref) {
+                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:20:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:33: error: expected primary-expression before ')' token
+  if(a->getType() == paziente_ref)
+                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:20:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:11:33: error: expected primary-expression before ')' token
+  if(a->getType() == paziente_ref)
+                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:21:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:12:33: error: expected primary-expression before ')' token
+  if(a->getType() == paziente_ref)
+                                 ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:26:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:12:24: error: expected primary-expression before ')' token
+  if(a->getType(Paziente))
+                        ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:27:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:12:25: error: expected primary-expression before ')' token
+  if(a->get_Type(Paziente))
+                         ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:28:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: In function 'bool compareByID(T&, T&)':
+..\src\Funzionalita\Comparatori.h:12:30: error: expected primary-expression before ')' token
+  if(a->get_Type() == Paziente)
+                              ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:28:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:29:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:29:54 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:33:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:33:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:36:24 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:37:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:10:54: error: 'It' was not declared in this scope
+ template <class T = std::less<decltype(*std::declval<It>())>>
+                                                      ^~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:64: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:80:64: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                                ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:62: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:143:62: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                              ^
+11:39:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareByDottID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByDottID);
+                                                   ^~~~~~~~~~~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: At global scope:
+..\src\Funzionalita\Comparatori.h:17:13: warning: 'bool compareDottByID(dottore_ref&, dottore_ref&)' defined but not used [-Wunused-function]
+ static bool compareDottByID(dottore_ref &a, dottore_ref &b) {
+             ^~~~~~~~~~~~~~~
+11:40:13 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+11:43:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+12:44:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:13:8: error: 'virtual' outside class declaration
+ static virtual bool comparePazByID(paziente_ref &a, paziente_ref &b) {
+        ^~~~~~~
+12:46:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:17:69: error: member 'comparePazByID' cannot be declared both 'virtual' and 'static'
+  static virtual bool comparePazByID(paziente_ref &a, paziente_ref &b) {
+                                                                     ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:76:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:53: error: 'comparePazByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), comparePazByID);
+                                                     ^~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:139:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareDottByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareDottByID);
+                                                   ^~~~~~~~~~~~~~~
+12:47:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:76:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:53: error: 'comparePazByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), comparePazByID);
+                                                     ^~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:139:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareDottByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareDottByID);
+                                                   ^~~~~~~~~~~~~~~
+12:47:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h:13:1: error: 'virtual' outside class declaration
+ virtual bool comparePazByID(paziente_ref &a, paziente_ref &b) {
+ ^~~~~~~
+12:52:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:76:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:139:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+12:53:44 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:75:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:79:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:138:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:142:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+12:54:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:75:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:79:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:138:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:142:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+12:56:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Comparatori.o" "..\\src\\Funzionalita\\Comparatori.cpp" 
+..\src\Funzionalita\Comparatori.cpp:6:77: error: cannot declare member function 'static bool Comparatori::compareByCategoria(paziente_ref&, paziente_ref&)' to have static linkage [-fpermissive]
+ static bool Comparatori::compareByCategoria(paziente_ref &a, paziente_ref &b) {
+                                                                             ^
+..\src\Funzionalita\Comparatori.cpp:10:82: error: cannot declare member function 'static bool Comparatori::compareBySpecializzazione(dottore_ref&, dottore_ref&)' to have static linkage [-fpermissive]
+ static bool Comparatori::compareBySpecializzazione(dottore_ref &a, dottore_ref &b) {
+                                                                                  ^
+..\src\Funzionalita\Comparatori.cpp:14:1: error: 'virtual' outside class declaration
+ virtual bool Comparatori::compareByID(paziente_ref &a, paziente_ref &b) {
+ ^~~~~~~
+..\src\Funzionalita\Comparatori.cpp:18:1: error: 'virtual' outside class declaration
+ virtual bool Comparatori::compareByID(dottore_ref &a, dottore_ref &b) {
+ ^~~~~~~
+12:58:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Comparatori.o" "..\\src\\Funzionalita\\Comparatori.cpp" 
+..\src\Funzionalita\Comparatori.cpp:6:77: error: cannot declare member function 'static bool Comparatori::compareByCategoria(paziente_ref&, paziente_ref&)' to have static linkage [-fpermissive]
+ static bool Comparatori::compareByCategoria(paziente_ref &a, paziente_ref &b) {
+                                                                             ^
+..\src\Funzionalita\Comparatori.cpp:10:82: error: cannot declare member function 'static bool Comparatori::compareBySpecializzazione(dottore_ref&, dottore_ref&)' to have static linkage [-fpermissive]
+ static bool Comparatori::compareBySpecializzazione(dottore_ref &a, dottore_ref &b) {
+                                                                                  ^
+12:59:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Comparatori.o" "..\\src\\Funzionalita\\Comparatori.cpp" 
+..\src\Funzionalita\Comparatori.cpp:6:77: error: cannot declare member function 'static bool Comparatori::compareByCategoria(paziente_ref&, paziente_ref&)' to have static linkage [-fpermissive]
+ static bool Comparatori::compareByCategoria(paziente_ref &a, paziente_ref &b) {
+                                                                             ^
+..\src\Funzionalita\Comparatori.cpp:10:82: error: cannot declare member function 'static bool Comparatori::compareBySpecializzazione(dottore_ref&, dottore_ref&)' to have static linkage [-fpermissive]
+ static bool Comparatori::compareBySpecializzazione(dottore_ref &a, dottore_ref &b) {
+                                                                                  ^
+13:00:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Comparatori.o" "..\\src\\Funzionalita\\Comparatori.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:76:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:139:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:01:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Comparatori.o" "..\\src\\Funzionalita\\Comparatori.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:76:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:139:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:02:11 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:75:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:79:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:138:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:142:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:03:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Comparatori.o" "..\\src\\Funzionalita\\Comparatori.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:139:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:04:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:22:29: error: expected identifier before 'new'
+  unique_ptr<Comparatori> c (new Comparatori);
+                             ^~~
+..\src\Funzionalita/Metodi.h:22:29: error: expected ',' or '...' before 'new'
+13:05:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:22:29: error: expected identifier before 'new'
+  unique_ptr<Comparatori> c (new Comparatori());
+                             ^~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:22:29: error: expected ',' or '...' before 'new'
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:75:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:79:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:138:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:142:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:05:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:75:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:79:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:138:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:142:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:07:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:22:33: error: expected identifier before 'new'
+  unique_ptr <Comparatori> comp (new Comparatori());
+                                 ^~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:22:33: error: expected ',' or '...' before 'new'
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:75:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:79:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:138:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:142:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:08:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:22:32: error: expected identifier before 'new'
+  unique_ptr<Comparatori> comp (new Comparatori());
+                                ^~~
+..\src\Funzionalita/Metodi.h:22:32: error: expected ',' or '...' before 'new'
+13:08:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:22:32: error: expected identifier before 'new'
+  unique_ptr<Comparatori> comp (new Comparatori);
+                                ^~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:22:32: error: expected ',' or '...' before 'new'
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:75:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:79:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:138:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:142:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:10:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:10:25: error: no match for 'operator=' (operand types are 'std::unique_ptr<Comparatori>' and 'Comparatori*')
+  comp = new Comparatori();
+                         ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Comparatori; _Dp = std::default_delete<Comparatori>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'Comparatori*' to 'std::unique_ptr<Comparatori>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Comparatori; _Dp = std::default_delete<Comparatori>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:10:25: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Comparatori*'
+  comp = new Comparatori();
+                         ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Comparatori; _Dp = std::default_delete<Comparatori>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'Comparatori*' to 'std::nullptr_t'
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:77:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:81:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:140:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:144:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:10:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:77:53: error: 'compareByCategoria' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByCategoria);
+                                                     ^~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:81:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:140:51: error: 'compareBySpecializzazione' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareBySpecializzazione);
+                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:144:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+13:11:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Categoria_paz()':
+..\src\Funzionalita\Metodi.cpp:77:53: error: 'comp' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), comp->compareByCategoria);
+                                                     ^~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:81:53: error: 'comp' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), comp->compareByID);
+                                                     ^~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_Specializzazione_dott()':
+..\src\Funzionalita\Metodi.cpp:140:51: error: 'comp' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), comp->compareBySpecializzazione);
+                                                   ^~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:144:51: error: 'comp' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), comp->compareByID);
+                                                   ^~~~
+13:11:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:81:70: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Paziente> >::iterator, std::vector<std::unique_ptr<Paziente> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), comp->compareByID);
+                                                                      ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:81:70: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_pazienti.begin(), lista_pazienti.end(), comp->compareByID);
+                                                                      ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:81:70: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_pazienti.begin(), lista_pazienti.end(), comp->compareByID);
+                                                                      ^
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:144:68: error: no matching function for call to 'sort(std::vector<std::unique_ptr<Dottore> >::iterator, std::vector<std::unique_ptr<Dottore> >::iterator, <unresolved overloaded function type>)'
+  sort(lista_dottori.begin(), lista_dottori.end(), comp->compareByID);
+                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note: candidate: template<class _RAIter> void std::sort(_RAIter, _RAIter)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last)
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4697:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:144:68: note:   candidate expects 2 arguments, 3 provided
+  sort(lista_dottori.begin(), lista_dottori.end(), comp->compareByID);
+                                                                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm:62:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:9,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note: candidate: template<class _RAIter, class _Compare> void std::sort(_RAIter, _RAIter, _Compare)
+     sort(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     ^~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h:4727:5: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:144:68: note:   couldn't deduce template parameter '_Compare'
+  sort(lista_dottori.begin(), lista_dottori.end(), comp->compareByID);
+                                                                    ^
+13:15:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_paz()':
+..\src\Funzionalita\Metodi.cpp:80:53: error: 'compareByID' was not declared in this scope
+  sort(lista_pazienti.begin(), lista_pazienti.end(), compareByID);
+                                                     ^~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::ordinaElenco_ID_dott()':
+..\src\Funzionalita\Metodi.cpp:143:51: error: 'compareByID' was not declared in this scope
+  sort(lista_dottori.begin(), lista_dottori.end(), compareByID);
+                                                   ^~~~~~~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:3:0:
+..\src\Funzionalita\Comparatori.h: At global scope:
+..\src\Funzionalita\Comparatori.h:17:13: warning: 'bool compareDottByID(dottore_ref&, dottore_ref&)' defined but not used [-Wunused-function]
+ static bool compareDottByID(dottore_ref &a, dottore_ref &b) {
+             ^~~~~~~~~~~~~~~
+..\src\Funzionalita\Comparatori.h:13:13: warning: 'bool comparePazByID(paziente_ref&, paziente_ref&)' defined but not used [-Wunused-function]
+ static bool comparePazByID(paziente_ref &a, paziente_ref &b) {
+             ^~~~~~~~~~~~~~
+13:15:46 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+13:18:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+Info: Nothing to build for progettoC++

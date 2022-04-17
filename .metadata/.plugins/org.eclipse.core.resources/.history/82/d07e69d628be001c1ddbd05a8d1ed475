@@ -1,0 +1,18 @@
+/*
+ * Dottore.cpp
+ *
+ *  Created on: 17 apr 2022
+ *      Author: giuly
+ */
+
+#include "Dottore.h"
+
+Dottore::Dottore() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Dottore::~Dottore() {
+	// TODO Auto-generated destructor stub
+}
+

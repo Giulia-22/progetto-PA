@@ -6,3 +6,4 @@ CHIEDERE:
 DA FARE PIU' TARDI: 
 	categoria enum
 	metodo ctrl cod fisc con generici
+	stesso ma comparator con id

@@ -29,7 +29,7 @@ public:
 	string getCf();
 	string getCognome();
 	string getNome();
-	void stampa();
+	virtual void stampa();
 	virtual ~Persona();
 };
 

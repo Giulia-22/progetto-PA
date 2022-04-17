@@ -1,0 +1,23 @@
+
+#include "Comparatori.h"
+
+Comparatori::Comparatori(){}
+
+bool Comparatori::compareByCategoria(paziente_ref &a, paziente_ref &b) {
+	return a->getCategoria() < b->getCategoria();
+}
+
+bool Comparatori::compareBySpecializzazione(dottore_ref &a, dottore_ref &b) {
+	return a->getSpecializzazione() < b->getSpecializzazione();
+}
+
+bool Comparatori::compareByID(paziente_ref &a, paziente_ref &b) {
+	return a->getIdPaz() < b->getIdPaz();
+}
+
+bool Comparatori::compareByID(dottore_ref &a, dottore_ref &b) {
+	return a->getIdDott() < b->getIdDott();
+}
+
+Comparatori::~Comparatori(){}
+

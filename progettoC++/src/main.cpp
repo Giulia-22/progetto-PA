@@ -20,6 +20,10 @@ int main() {
 		cout<<"b) Visualizzazione di tutti i pazienti del sistema "<<endl;
 		cout<<"c) Ordinamento dei pazienti per categoria "<<endl;
 		cout<<"d) Ordinamento dei pazienti per ID "<<endl;
+		cout<<"e) Inserimento di un nuovo dottore nel sistema "<<endl;
+		cout<<"f) Visualizzazione di tutti i dottori del sistema "<<endl;
+		cout<<"g) Ordinamento dei dottori per specializzazione "<<endl;
+		cout<<"h) Ordinamento dei dottori per ID "<<endl;
 		cout<<"0) TERMINA "<<endl<<endl;
 		cout<<"La tua scelta: ";
 		cin>>scelta;
@@ -31,11 +35,22 @@ int main() {
 			m->stampaElenco_paz();
 			break;
 		case 'c':
-			//TODO
 			m->ordinaElenco_Categoria_paz();
 			break;
 		case 'd':
 			m->ordinaElenco_ID_paz();
+			break;
+		case 'e':
+			m->inserisciDottore();
+			break;
+		case 'f':
+			m->stampaElenco_dott();
+			break;
+		case 'g':
+			m->ordinaElenco_Specializzazione_dott();
+			break;
+		case 'h':
+			m->ordinaElenco_ID_dott();
 			break;
 		case '0':
 			cout<<"Arrivederci!"<<endl;

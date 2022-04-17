@@ -1,0 +1,40 @@
+/*
+ * Comparatori.h
+ *
+ *  Created on: 16 apr 2022
+ *      Author: giuly
+ */
+
+#ifndef FUNZIONALITA_COMPARATORI_H_
+#define FUNZIONALITA_COMPARATORI_H_
+
+template <typename T>;
+
+static bool compareByCategoria(paziente_ref &a, paziente_ref &b) {
+	return a->getCategoria() < b->getCategoria();
+}
+
+static bool compareByID(<T> T &a, <T> T &b) {
+	if(Paziente* a_new = dynamic_cast<Paziente*>(a) && Paziente* b_new = dynamic_cast<Paziente*>(b)) {
+		return a_new->getIdPaz() < b_new->getIdPaz();
+	}
+	else
+		return false;
+}
+
+static bool compareBySpecializzazione(dottore_ref &a, dottore_ref &b) {
+	return a->getSpecializzazione() < b->getSpecializzazione();
+}
+/*
+
+static bool compareByID(paziente_ref &a, paziente_ref &b) {
+	return a->getIdPaz() < b->getIdPaz();
+}
+
+static bool compareByID(dottore_ref &a, dottore_ref &b) {
+	return a->getIdDott() < b->getIdDott();
+}
+*/
+
+
+#endif /* FUNZIONALITA_COMPARATORI_H_ */

@@ -1,0 +1,33 @@
+
+#ifndef FUNZIONALITA_COMPARATORI_H_
+#define FUNZIONALITA_COMPARATORI_H_
+
+static bool compareByCategoria(paziente_ref &a, paziente_ref &b) {
+	return a->getCategoria() < b->getCategoria();
+}
+
+template <auto T>
+static bool compareByID(T &a, T &b) {
+	//if((Paziente* a_new = dynamic_cast<Paziente*>(a)) && (Paziente* b_new = dynamic_cast<Paziente*>(b))) {
+		//return a_new->getIdPaz() < b_new->getIdPaz();
+	//}
+	//else
+		return false;
+}
+
+static bool compareBySpecializzazione(dottore_ref &a, dottore_ref &b) {
+	return a->getSpecializzazione() < b->getSpecializzazione();
+}
+/*
+
+static bool compareByID(paziente_ref &a, paziente_ref &b) {
+	return a->getIdPaz() < b->getIdPaz();
+}
+
+static bool compareByID(dottore_ref &a, dottore_ref &b) {
+	return a->getIdDott() < b->getIdDott();
+}
+*/
+
+
+#endif /* FUNZIONALITA_COMPARATORI_H_ */

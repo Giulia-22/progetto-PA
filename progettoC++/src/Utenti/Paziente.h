@@ -25,7 +25,7 @@ protected:
 public:
 	string getCategoria();
 	int getIdPaz();
-	void stampa();
+	virtual void stampa();
 	virtual ~Paziente();
 };
 
