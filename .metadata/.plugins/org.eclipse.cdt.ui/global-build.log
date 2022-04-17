@@ -7221,3 +7221,1190 @@ g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "s
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+20:49:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame(int, dottore_ref, paziente_ref)':
+..\src\Visite\Esame.cpp:11:12: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  this->d = dr;
+            ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:360:19: note: declared here
+       unique_ptr& operator=(const unique_ptr&) = delete;
+                   ^~~~~~~~
+..\src\Visite\Esame.cpp:12:12: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  this->p = pr;
+            ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:360:19: note: declared here
+       unique_ptr& operator=(const unique_ptr&) = delete;
+                   ^~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'dottore_ref Esame::getDott()':
+..\src\Visite\Esame.cpp:18:15: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  return this->d;
+               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:22:21: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::unique_ptr<Dottore>}' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}')
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::unique_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}'
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp: In member function 'paziente_ref Esame::getPaz()':
+..\src\Visite\Esame.cpp:40:15: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  return this->p;
+               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:44:20: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::unique_ptr<Paziente>}' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}')
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::unique_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::nullptr_t'
+20:49:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame(int, dottore_ref, paziente_ref)':
+..\src\Visite\Esame.cpp:11:12: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  this->d = dr;
+            ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:360:19: note: declared here
+       unique_ptr& operator=(const unique_ptr&) = delete;
+                   ^~~~~~~~
+..\src\Visite\Esame.cpp:12:12: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  this->p = pr;
+            ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:360:19: note: declared here
+       unique_ptr& operator=(const unique_ptr&) = delete;
+                   ^~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'dottore_ref Esame::getDott()':
+..\src\Visite\Esame.cpp:16:38: error: no matching function for call to 'Dottore::Dottore(dottore_ref&)'
+  dottore_ref res (new Dottore(this->d));
+                                      ^
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:2:
+..\src\Visite\../Utenti/Dottore.h:23:2: note: candidate: Dottore::Dottore(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  Dottore(int, string, string, string, string);
+  ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:23:2: note:   candidate expects 5 arguments, 1 provided
+..\src\Visite\../Utenti/Dottore.h:22:2: note: candidate: Dottore::Dottore(Dottore*)
+  Dottore(Dottore*);
+  ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:22:2: note:   no known conversion for argument 1 from 'dottore_ref {aka std::unique_ptr<Dottore>}' to 'Dottore*'
+..\src\Visite\../Utenti/Dottore.h:21:2: note: candidate: Dottore::Dottore()
+  Dottore();
+  ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:21:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Visite\../Utenti/Dottore.h:15:7: note: candidate: Dottore::Dottore(const Dottore&)
+ class Dottore : public Persona {
+       ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:15:7: note:   no known conversion for argument 1 from 'dottore_ref {aka std::unique_ptr<Dottore>}' to 'const Dottore&'
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:22:21: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::unique_ptr<Dottore>}' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}')
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::unique_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}'
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp: In member function 'paziente_ref Esame::getPaz()':
+..\src\Visite\Esame.cpp:40:15: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  return this->p;
+               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:44:20: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::unique_ptr<Paziente>}' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}')
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::unique_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::nullptr_t'
+20:50:47 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:75: error: no matching function for call to 'Esame::Esame(int, std::unique_ptr<Dottore>::pointer, std::unique_ptr<Paziente>::pointer)'
+  esame_ref res(new Esame(80,lista_dottori[0].get(),lista_pazienti[0].get()));
+                                                                           ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(int, dottore_ref, paziente_ref)
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'dottore_ref {aka std::unique_ptr<Dottore>}'
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 0 arguments, 3 provided
+20:51:20 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame(int, dottore_ref, paziente_ref)':
+..\src\Visite\Esame.cpp:11:32: error: 'Dottore::Dottore(Dottore*)' is protected within this context
+  this->d = new Dottore(dr.get());
+                                ^
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:2:
+..\src\Visite\../Utenti/Dottore.h:22:2: note: declared protected here
+  Dottore(Dottore*);
+  ^~~~~~~
+..\src\Visite\Esame.cpp:11:32: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::unique_ptr<Dottore>}' and 'Dottore*')
+  this->d = new Dottore(dr.get());
+                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'Dottore*' to 'std::unique_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:11:32: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Dottore*'
+  this->d = new Dottore(dr.get());
+                                ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'Dottore*' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp:12:33: error: 'Paziente::Paziente(Paziente*)' is protected within this context
+  this->p = new Paziente(pr.get());
+                                 ^
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:2:
+..\src\Visite\../Utenti/Paziente.h:22:2: note: declared protected here
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\Visite\Esame.cpp:12:33: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::unique_ptr<Paziente>}' and 'Paziente*')
+  this->p = new Paziente(pr.get());
+                                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'Paziente*' to 'std::unique_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:12:33: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Paziente*'
+  this->p = new Paziente(pr.get());
+                                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'Paziente*' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp: In member function 'dottore_ref Esame::getDott()':
+..\src\Visite\Esame.cpp:18:15: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  return this->d;
+               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:22:21: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::unique_ptr<Dottore>}' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}')
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::unique_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}'
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp: In member function 'paziente_ref Esame::getPaz()':
+..\src\Visite\Esame.cpp:40:15: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  return this->p;
+               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:44:20: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::unique_ptr<Paziente>}' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}')
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::unique_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::nullptr_t'
+20:53:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:21:17: error: expected identifier before 'new'
+  dottore_ref d (new Dottore());
+                 ^~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:21:17: error: expected ',' or '...' before 'new'
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:75: error: no matching function for call to 'Esame::Esame(int, std::unique_ptr<Dottore>::pointer, std::unique_ptr<Paziente>::pointer)'
+  esame_ref res(new Esame(80,lista_dottori[0].get(),lista_pazienti[0].get()));
+                                                                           ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(int, dottore_ref, paziente_ref)
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'dottore_ref {aka std::unique_ptr<Dottore>}'
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 0 arguments, 3 provided
+20:53:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:75: error: no matching function for call to 'Esame::Esame(int, std::unique_ptr<Dottore>::pointer, std::unique_ptr<Paziente>::pointer)'
+  esame_ref res(new Esame(80,lista_dottori[0].get(),lista_pazienti[0].get()));
+                                                                           ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(int, dottore_ref, paziente_ref)
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'dottore_ref {aka std::unique_ptr<Dottore>}'
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 0 arguments, 3 provided
+20:58:38 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame(int, dottore_ref, paziente_ref)':
+..\src\Visite\Esame.cpp:11:19: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::unique_ptr<Dottore>}' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}')
+  this->d = dr.get();
+                   ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::unique_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:11:19: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}'
+  this->d = dr.get();
+                   ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp:12:19: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::unique_ptr<Paziente>}' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}')
+  this->p = pr.get();
+                   ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::unique_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:12:19: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}'
+  this->p = pr.get();
+                   ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp: In member function 'dottore_ref Esame::getDott()':
+..\src\Visite\Esame.cpp:18:15: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  return this->d;
+               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:22:21: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::unique_ptr<Dottore>}' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}')
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::unique_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Dottore; _Dp = std::default_delete<Dottore>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Dottore>::pointer {aka Dottore*}'
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'std::nullptr_t'
+..\src\Visite\Esame.cpp: In member function 'paziente_ref Esame::getPaz()':
+..\src\Visite\Esame.cpp:40:15: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  return this->p;
+               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:44:20: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::unique_ptr<Paziente>}' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}')
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+       operator=(unique_ptr&& __u) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:252:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::unique_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note: candidate: template<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::unique_ptr<_Tp, _Dp>::_Pointer::type>, std::__not_<std::is_array<_Up> >, std::__or_<std::__and_<std::is_reference<_Dp>, std::is_same<_T2, _U2> >, std::__and_<std::__not_<std::is_reference<_Dp> >, std::is_convertible<_Ep, _Dp> > > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = Paziente; _Dp = std::default_delete<Paziente>]
+  operator=(unique_ptr<_Up, _Ep>&& __u) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:272:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'std::unique_ptr<Paziente>::pointer {aka Paziente*}'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note: candidate: std::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>; std::nullptr_t = std::nullptr_t]
+       operator=(nullptr_t) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:281:7: note:   no known conversion for argument 1 from 'std::unique_ptr<Paziente>::pointer {aka Paziente*}' to 'std::nullptr_t'
+20:59:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 2 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 3 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+21:00:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:75: error: no matching function for call to 'Esame::Esame(int, std::unique_ptr<Dottore>::pointer, std::unique_ptr<Paziente>::pointer)'
+  esame_ref res(new Esame(80,lista_dottori[0].get(),lista_pazienti[0].get()));
+                                                                           ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(int, dottore_ref, paziente_ref)
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'dottore_ref {aka std::unique_ptr<Dottore>}'
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 0 arguments, 3 provided
+21:01:44 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 2 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+21:02:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:22:21: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::shared_ptr<Dottore>}' and 'Dottore*')
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Dottore]
+     class shared_ptr : public __shared_ptr<_Tp>
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note:   no known conversion for argument 1 from 'Dottore*' to 'const std::shared_ptr<Dottore>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp1>&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'const std::shared_ptr<_Tp1>' and 'Dottore*'
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(std::auto_ptr<_Tp1>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'std::auto_ptr<_Up>' and 'Dottore*'
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Dottore]
+       operator=(shared_ptr&& __r) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note:   no known conversion for argument 1 from 'Dottore*' to 'std::shared_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp1>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'std::shared_ptr<_Tp1>' and 'Dottore*'
+  this->d = dott.get();
+                     ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note: candidate: template<class _Tp1, class _Del> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Tp1 = _Tp1; _Del = _Del; _Tp = Dottore]
+  operator=(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:22:21: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Dottore*'
+  this->d = dott.get();
+                     ^
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:44:20: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::shared_ptr<Paziente>}' and 'Paziente*')
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Paziente]
+     class shared_ptr : public __shared_ptr<_Tp>
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note:   no known conversion for argument 1 from 'Paziente*' to 'const std::shared_ptr<Paziente>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp1>&) [with _Tp1 = _Tp1; _Tp = Paziente]
+  operator=(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'const std::shared_ptr<_Tp1>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp1 = _Tp1; _Tp = Paziente]
+  operator=(std::auto_ptr<_Tp1>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::auto_ptr<_Up>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Paziente]
+       operator=(shared_ptr&& __r) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note:   no known conversion for argument 1 from 'Paziente*' to 'std::shared_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp1>&&) [with _Tp1 = _Tp1; _Tp = Paziente]
+  operator=(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::shared_ptr<_Tp1>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note: candidate: template<class _Tp1, class _Del> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Tp1 = _Tp1; _Del = _Del; _Tp = Paziente]
+  operator=(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+21:03:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:44:20: error: no match for 'operator=' (operand types are 'paziente_ref {aka std::shared_ptr<Paziente>}' and 'Paziente*')
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Paziente]
+     class shared_ptr : public __shared_ptr<_Tp>
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note:   no known conversion for argument 1 from 'Paziente*' to 'const std::shared_ptr<Paziente>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp1>&) [with _Tp1 = _Tp1; _Tp = Paziente]
+  operator=(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'const std::shared_ptr<_Tp1>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp1 = _Tp1; _Tp = Paziente]
+  operator=(std::auto_ptr<_Tp1>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::auto_ptr<_Up>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Paziente]
+       operator=(shared_ptr&& __r) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note:   no known conversion for argument 1 from 'Paziente*' to 'std::shared_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp1>&&) [with _Tp1 = _Tp1; _Tp = Paziente]
+  operator=(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::shared_ptr<_Tp1>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note: candidate: template<class _Tp1, class _Del> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Tp1 = _Tp1; _Del = _Del; _Tp = Paziente]
+  operator=(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:44:20: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Paziente*'
+  this->p = paz.get();
+                    ^
+21:03:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+21:06:36 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: 'Esame::Esame(int, dottore_ref, paziente_ref)' is protected within this context
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note: declared protected here
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+21:07:03 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+21:20:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+c:/users/giuly/desktop/eclipsepa/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file progettoC++.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:21:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+21:22:31 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:63:5: error: 'class Metodi' has no member named 'provaCreazione'
+  m->provaCreazione();
+     ^~~~~~~~~~~~~~
+21:22:44 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+21:36:55 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'esame_ref Metodi::creaEsame()':
+..\src\Funzionalita\Metodi.cpp:181:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+..\src\Funzionalita\Metodi.cpp: In member function 'dottore_ref Metodi::ctrl_dott(int)':
+..\src\Funzionalita\Metodi.cpp:187:10: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::shared_ptr<Dottore>}' and 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}')
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Dottore]
+     class shared_ptr : public __shared_ptr<_Tp>
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'const std::shared_ptr<Dottore>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp1>&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:187:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'const std::shared_ptr<_Tp1>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(std::auto_ptr<_Tp1>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:187:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::auto_ptr<_Up>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Dottore]
+       operator=(shared_ptr&& __r) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'std::shared_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp1>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:187:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::shared_ptr<_Tp1>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note: candidate: template<class _Tp1, class _Del> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Tp1 = _Tp1; _Del = _Del; _Tp = Dottore]
+  operator=(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:187:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::unique_ptr<_Tp, _Dp>'
+    res = i;
+          ^
+21:38:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'dottore_ref Metodi::ctrl_dott(int)':
+..\src\Funzionalita\Metodi.cpp:188:10: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::shared_ptr<Dottore>}' and 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}')
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Dottore]
+     class shared_ptr : public __shared_ptr<_Tp>
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'const std::shared_ptr<Dottore>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp1>&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'const std::shared_ptr<_Tp1>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(std::auto_ptr<_Tp1>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::auto_ptr<_Up>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Dottore]
+       operator=(shared_ptr&& __r) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'std::shared_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp1>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::shared_ptr<_Tp1>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note: candidate: template<class _Tp1, class _Del> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Tp1 = _Tp1; _Del = _Del; _Tp = Dottore]
+  operator=(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::unique_ptr<_Tp, _Dp>'
+    res = i;
+          ^
+21:39:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'dottore_ref Metodi::ctrl_dott(int)':
+..\src\Funzionalita\Metodi.cpp:188:17: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::shared_ptr<Dottore>}' and 'Dottore*')
+    res = i->get();
+                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Dottore]
+     class shared_ptr : public __shared_ptr<_Tp>
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note:   no known conversion for argument 1 from 'Dottore*' to 'const std::shared_ptr<Dottore>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp1>&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:17: note:   mismatched types 'const std::shared_ptr<_Tp1>' and 'Dottore*'
+    res = i->get();
+                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(std::auto_ptr<_Tp1>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:17: note:   mismatched types 'std::auto_ptr<_Up>' and 'Dottore*'
+    res = i->get();
+                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Dottore]
+       operator=(shared_ptr&& __r) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note:   no known conversion for argument 1 from 'Dottore*' to 'std::shared_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp1>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:17: note:   mismatched types 'std::shared_ptr<_Tp1>' and 'Dottore*'
+    res = i->get();
+                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note: candidate: template<class _Tp1, class _Del> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Tp1 = _Tp1; _Del = _Del; _Tp = Dottore]
+  operator=(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:17: note:   mismatched types 'std::unique_ptr<_Tp, _Dp>' and 'Dottore*'
+    res = i->get();
+                 ^
+21:40:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'dottore_ref Metodi::ctrl_dott(int)':
+..\src\Funzionalita\Metodi.cpp:188:10: error: no match for 'operator=' (operand types are 'dottore_ref {aka std::shared_ptr<Dottore>}' and 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}')
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = Dottore]
+     class shared_ptr : public __shared_ptr<_Tp>
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:93:11: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'const std::shared_ptr<Dottore>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp1>&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:275:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'const std::shared_ptr<_Tp1>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(std::auto_ptr<_Tp1>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:284:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::auto_ptr<_Up>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note: candidate: std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = Dottore]
+       operator=(shared_ptr&& __r) noexcept
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:292:7: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'std::shared_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp1>&&) [with _Tp1 = _Tp1; _Tp = Dottore]
+  operator=(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:300:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::shared_ptr<_Tp1>'
+    res = i;
+          ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note: candidate: template<class _Tp1, class _Del> std::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Tp1 = _Tp1; _Del = _Del; _Tp = Dottore]
+  operator=(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:308:2: note:   template argument deduction/substitution failed:
+..\src\Funzionalita\Metodi.cpp:188:10: note:   'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' is not derived from 'std::unique_ptr<_Tp, _Dp>'
+    res = i;
+          ^
+21:41:38 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'dottore_ref Metodi::ctrl_dott(int)':
+..\src\Funzionalita\Metodi.cpp:188:34: error: no matching function for call to 'Metodi::creaDottore(std::vector<std::shared_ptr<Dottore> >::iterator&)'
+    dottore_ref res (creaDottore(i));
+                                  ^
+..\src\Funzionalita\Metodi.cpp:92:13: note: candidate: dottore_ref Metodi::creaDottore()
+ dottore_ref Metodi::creaDottore(){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:92:13: note:   candidate expects 0 arguments, 1 provided
+..\src\Funzionalita\Metodi.cpp:87:13: note: candidate: dottore_ref Metodi::creaDottore(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ dottore_ref Metodi::creaDottore(int an, string cod, string name, string surname, string spe){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:87:13: note:   candidate expects 5 arguments, 1 provided
+21:44:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'dottore_ref Metodi::ctrl_dott(int)':
+..\src\Funzionalita\Metodi.cpp:192:34: error: no matching function for call to 'Metodi::creaDottore(std::vector<std::shared_ptr<Dottore> >::iterator&)'
+    dottore_ref res (creaDottore(i));
+                                  ^
+..\src\Funzionalita\Metodi.cpp:96:13: note: candidate: dottore_ref Metodi::creaDottore()
+ dottore_ref Metodi::creaDottore(){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:96:13: note:   candidate expects 0 arguments, 1 provided
+..\src\Funzionalita\Metodi.cpp:92:13: note: candidate: dottore_ref Metodi::creaDottore(dottore_ref)
+ dottore_ref Metodi::creaDottore(dottore_ref dottref){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:92:13: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'dottore_ref {aka std::shared_ptr<Dottore>}'
+..\src\Funzionalita\Metodi.cpp:87:13: note: candidate: dottore_ref Metodi::creaDottore(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ dottore_ref Metodi::creaDottore(int an, string cod, string name, string surname, string spe){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:87:13: note:   candidate expects 5 arguments, 1 provided
+21:46:23 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'dottore_ref Metodi::ctrl_dott(int)':
+..\src\Funzionalita\Metodi.cpp:193:34: error: no matching function for call to 'Metodi::creaDottore(std::vector<std::shared_ptr<Dottore> >::iterator&)'
+    dottore_ref res (creaDottore(i));
+                                  ^
+..\src\Funzionalita\Metodi.cpp:97:13: note: candidate: dottore_ref Metodi::creaDottore()
+ dottore_ref Metodi::creaDottore(){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:97:13: note:   candidate expects 0 arguments, 1 provided
+..\src\Funzionalita\Metodi.cpp:92:13: note: candidate: dottore_ref Metodi::creaDottore(Dottore*)
+ dottore_ref Metodi::creaDottore(Dottore* dottref){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:92:13: note:   no known conversion for argument 1 from 'std::vector<std::shared_ptr<Dottore> >::iterator {aka __gnu_cxx::__normal_iterator<std::shared_ptr<Dottore>*, std::vector<std::shared_ptr<Dottore> > >}' to 'Dottore*'
+..\src\Funzionalita\Metodi.cpp:87:13: note: candidate: dottore_ref Metodi::creaDottore(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ dottore_ref Metodi::creaDottore(int an, string cod, string name, string surname, string spe){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:87:13: note:   candidate expects 5 arguments, 1 provided
+21:46:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+21:48:36 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+21:52:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+src\Funzionalita\Metodi.o: In function `ZN6Metodi8ctrl_pazEi':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:203: undefined reference to `Metodi::creaPaziente(Paziente*)'
+collect2.exe: error: ld returned 1 exit status
+21:54:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:04:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+22:07:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+c:/users/giuly/desktop/eclipsepa/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file progettoC++.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:07:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:09:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+c:/users/giuly/desktop/eclipsepa/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file progettoC++.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:10:17 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:11:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+c:/users/giuly/desktop/eclipsepa/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file progettoC++.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:13:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:16:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:18:55 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+c:/users/giuly/desktop/eclipsepa/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file progettoC++.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:19:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:21:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:24:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:26:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:26:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+c:/users/giuly/desktop/eclipsepa/eclipse-info3-2021-06/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file progettoC++.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:27:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:29:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:30:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+22:33:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 

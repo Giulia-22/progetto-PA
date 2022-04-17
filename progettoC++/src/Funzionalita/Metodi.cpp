@@ -15,12 +15,20 @@ void Metodi::caricadati(){
 	lista_dottori.push_back(creaDottore(1986,"codFiscdottA","Giuseppe","Verdi","cardiologia"));
 	lista_dottori.push_back(creaDottore(1989,"codFiscdottB","Antonio","Vivaldi","chirurgia"));
 	lista_dottori.push_back(creaDottore(1963,"codFiscdottC","Mario","Blu","fisioterapia"));
+	// Esame
+	lista_esami.push_back(creaEsame(50,lista_dottori[0],lista_pazienti[1]));
+
 }
 
 //PAZIENTE
 // Costruttore con passaggio parametri
 paziente_ref Metodi::creaPaziente(int an, string cod, string name, string surname, string cat){
 	paziente_ref p (new Paziente(an,cod,name,surname,cat));
+	return p;
+}
+// Costruttore con passaggio puntatore
+paziente_ref Metodi::creaPaziente(Paziente* pazref){
+	paziente_ref p (new Paziente(pazref));
 	return p;
 }
 // Costruttore con parametri chiesti utente
@@ -63,12 +71,15 @@ void Metodi::inserisciPaziente(){
 
 void Metodi::stampaElenco_paz(){
 	for(vector<paziente_ref>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+		/*
 		cout<<"Nome: "<<i->get()->getNome()<<endl;
 		cout<<"Cognome: "<<i->get()->getCognome()<<endl;
 		cout<<"Anno di nascita: "<<i->get()->getAnnonascita()<<endl;
 		cout<<"Codice fiscale: "<<i->get()->getCf()<<endl;
 		cout<<"ID: "<<i->get()->getIdPaz()<<endl;
 		cout<<"Categoria: "<<i->get()->getCategoria()<<endl<<endl;
+		*/
+		i->get()->stampa();
 	}
 }
 
@@ -84,6 +95,11 @@ void Metodi::ordinaElenco_ID_paz(){
 // Costruttore con passaggio parametri
 dottore_ref Metodi::creaDottore(int an, string cod, string name, string surname, string spe){
 	dottore_ref d (new Dottore(an,cod,name,surname,spe));
+	return d;
+}
+// Costruttore con passaggio puntatore
+dottore_ref Metodi::creaDottore(Dottore* dottref){
+	dottore_ref d (new Dottore(dottref));
 	return d;
 }
 // Costruttore con parametri chiesti utente
@@ -126,12 +142,15 @@ void Metodi::inserisciDottore(){
 
 void Metodi::stampaElenco_dott(){
 	for(vector<dottore_ref>::iterator i = lista_dottori.begin(); i != lista_dottori.end(); ++i){
+		/*
 		cout<<"Nome: "<<i->get()->getNome()<<endl;
 		cout<<"Cognome: "<<i->get()->getCognome()<<endl;
 		cout<<"Anno di nascita: "<<i->get()->getAnnonascita()<<endl;
 		cout<<"Codice fiscale: "<<i->get()->getCf()<<endl;
 		cout<<"ID: "<<i->get()->getIdDott()<<endl;
 		cout<<"Specializzazione: "<<i->get()->getSpecializzazione()<<endl<<endl;
+		*/
+		i->get()->stampa();
 	}
 }
 
@@ -144,14 +163,69 @@ void Metodi::ordinaElenco_ID_dott(){
 }
 
 // ESAMI
+// Costruttore con passaggio parametri
+esame_ref Metodi::creaEsame(int du, dottore_ref dr, paziente_ref pr){
+	esame_ref es (new Esame(du,dr,pr));
+	return es;
+}
+// Costruttore con parametri chiesti utente
+esame_ref Metodi::creaEsame(){
+	int du;
+	int temp = 0;
+	dottore_ref d_cercato;
+	paziente_ref p_cercato;
+	dottore_ref dr;
+	paziente_ref pr;
+	do{
+		cout<<"Inserisci durata esame: ";
+		cin>>du;
+	} while(du<0);
+	do{
+		cout<<"Inserire ID dottore: ";
+		cin>>temp;
+		d_cercato = ctrl_dott(temp);
+	} while(d_cercato == NULL);
+	dr = d_cercato;
+	do{
+		cout<<"Inserire ID paziente: ";
+		cin>>temp;
+		p_cercato = ctrl_paz(temp);
+	} while(p_cercato == NULL);
+	pr = p_cercato;
+	esame_ref e (creaEsame(du,dr,pr));
+	return e;
 
-void Metodi::provaCreazione(){
-	// TODO
-	esame_ref res(new Esame(80,lista_dottori[0].get(),lista_pazienti[0].get()));
-	res->stampa();
 }
 
+dottore_ref Metodi::ctrl_dott(int id_dott){
+	for(vector<dottore_ref>::iterator i = lista_dottori.begin(); i != lista_dottori.end(); ++i){
+		if(i->get()->getIdDott() == id_dott){
+			return creaDottore(i->get());
+		}
+	}
+	cout<<"Dottore non presente nel sistema! "<<endl;
+	return NULL;
+}
 
+paziente_ref Metodi::ctrl_paz(int id_paz){
+	for(vector<paziente_ref>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
+		if(i->get()->getIdPaz() == id_paz){
+			return creaPaziente(i->get());
+		}
+	}
+	cout<<"Paziente non presente nel sistema! "<<endl;
+	return NULL;
+}
+
+void Metodi::inserisciEsame(){
+	lista_esami.push_back(creaEsame());
+}
+
+void Metodi::stampaElenco_esami(){
+	for(vector<esame_ref>::iterator i = lista_esami.begin(); i != lista_esami.end(); ++i){
+		i->get()->stampa();
+	}
+}
 
 
 int Metodi::getYear(){

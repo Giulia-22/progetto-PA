@@ -1,0 +1,12 @@
+CHIEDERE: 
+	Come fare distruttore
+	Togliere warning su persona
+	
+	
+DA FARE PIU' TARDI: 
+	categoria enum
+	metodo ctrl cod fisc con generici
+	stesso ma comparator con id
+	
+	controllo su pazienteid e dottoreid nell'inserimento esame
+	categorie mancanti stampa

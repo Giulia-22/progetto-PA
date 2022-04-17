@@ -24,6 +24,8 @@ int main() {
 		cout<<"f) Visualizzazione di tutti i dottori del sistema "<<endl;
 		cout<<"g) Ordinamento dei dottori per specializzazione "<<endl;
 		cout<<"h) Ordinamento dei dottori per ID "<<endl;
+		cout<<"i) Inserimento di un nuovo esame nel sistema "<<endl;
+		cout<<"j) Visualizzazione di tutti gli esami del sistema "<<endl;
 		cout<<"0) TERMINA "<<endl<<endl;
 		cout<<"La tua scelta: ";
 		cin>>scelta;
@@ -52,6 +54,12 @@ int main() {
 		case 'h':
 			m->ordinaElenco_ID_dott();
 			break;
+		case 'i':
+			m->inserisciEsame();
+			break;
+		case 'j':
+			m->stampaElenco_esami();
+			break;
 		case '0':
 			cout<<endl<<"Arrivederci!"<<endl;
 			break;
@@ -60,5 +68,6 @@ int main() {
 			break;
 		}
 	} while(scelta != '0');
+
 	return 0;
 }
