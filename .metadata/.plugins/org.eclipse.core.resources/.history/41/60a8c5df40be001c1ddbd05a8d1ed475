@@ -53,9 +53,10 @@ int main() {
 			m->ordinaElenco_ID_dott();
 			break;
 		case '0':
-			cout<<endl<<"Arrivederci!"<<endl;
+			cout<<"Arrivederci!"<<endl;
 			break;
 		default:
+			//TODO
 			cout<<"scelta non valida"<<endl;
 			break;
 		}

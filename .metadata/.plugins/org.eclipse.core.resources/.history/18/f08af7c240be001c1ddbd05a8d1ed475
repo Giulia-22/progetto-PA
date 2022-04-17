@@ -10,7 +10,7 @@ using namespace std;
 
 int main() {
 	char scelta;
-	unique_ptr<Metodi> m (new Metodi());
+	Metodi *m = new Metodi;
 	do{
 		cout<<endl;
 		cout<<"***** Benvenuto nel menu *****"<<endl;
@@ -53,9 +53,10 @@ int main() {
 			m->ordinaElenco_ID_dott();
 			break;
 		case '0':
-			cout<<endl<<"Arrivederci!"<<endl;
+			cout<<"Arrivederci!"<<endl;
 			break;
 		default:
+			//TODO
 			cout<<"scelta non valida"<<endl;
 			break;
 		}
