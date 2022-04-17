@@ -1,0 +1,54 @@
+
+#include "Esame.h"
+
+Esame::Esame() {
+	this->ID_esame = ID_esame_count++;
+}
+
+Esame::Esame(int du,dottore_ref dr,paziente_ref pr){
+	this->ID_esame = ID_esame_count++;
+	this->durata = du;
+	this->d = dr.get();
+	this->p = pr.get();
+}
+
+dottore_ref Esame::getDott() {
+	dottore_ref res (new Dottore(this->d));
+	return res;
+}
+
+void Esame::setDott(dottore_ref dott) {
+	this->d = dott.get();
+}
+
+int Esame::getDurata() {
+	return durata;
+}
+
+void Esame::setDurata(int durata) {
+	this->durata = durata;
+}
+
+int Esame::getIdEsame() {
+	return ID_esame;
+}
+
+paziente_ref Esame::getPaz() {
+	paziente_ref res (new Paziente(this->p));
+	return res;
+}
+
+void Esame::setPaz(paziente_ref paz) {
+	this->p = paz.get();
+}
+
+void Esame::stampa(){
+	cout<<"ID esame: "<<this->getIdEsame()<<endl;
+	cout<<"Durata: "<<this->getDurata()<<endl;
+	cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+	cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+}
+
+Esame::~Esame() {
+}
+

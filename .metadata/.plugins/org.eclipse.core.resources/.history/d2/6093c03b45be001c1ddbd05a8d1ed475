@@ -1,0 +1,48 @@
+/*
+ * Esame.cpp
+ *
+ *  Created on: 17 apr 2022
+ *      Author: giuly
+ */
+
+#include "Esame.h"
+
+Esame::Esame() {
+	// TODO Auto-generated constructor stub
+
+}
+
+dottore_ref Esame::getDott() {
+	dottore_ref res (new Dottore(this->d));
+	return res;
+}
+
+void Esame::setDott(dottore_ref dott) {
+	this->d = dott;
+}
+
+int Esame::getDurata() {
+	return durata;
+}
+
+void Esame::setDurata(int durata) {
+	this->durata = durata;
+}
+
+int Esame::getIdEsame() {
+	return ID_esame;
+}
+
+paziente_ref Esame::getPaz() {
+	paziente_ref res (new Paziente(this->p));
+	return res;
+}
+
+void Esame::setP(const Paziente &p) {
+	this->p = p;
+}
+
+Esame::~Esame() {
+	// TODO Auto-generated destructor stub
+}
+

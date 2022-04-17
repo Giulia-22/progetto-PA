@@ -1,0 +1,18 @@
+/*
+ * Esame.cpp
+ *
+ *  Created on: 17 apr 2022
+ *      Author: giuly
+ */
+
+#include "Esame.h"
+
+Esame::Esame() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Esame::~Esame() {
+	// TODO Auto-generated destructor stub
+}
+

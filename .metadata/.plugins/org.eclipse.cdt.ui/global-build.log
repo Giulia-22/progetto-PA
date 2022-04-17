@@ -6103,3 +6103,1121 @@ Info: Nothing to build for progettoC++
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\main.o" 
+13:55:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame()':
+..\src\Visite\Esame.cpp:10:14: error: 'Dottore::Dottore()' is protected within this context
+ Esame::Esame() {
+              ^
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Dottore.h:21:2: note: declared protected here
+  Dottore();
+  ^~~~~~~
+..\src\Visite\Esame.cpp:10:14: error: 'Paziente::Paziente()' is protected within this context
+ Esame::Esame() {
+              ^
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:21:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:21:12: error: no match for 'operator=' (operand types are 'Dottore' and 'dottore_ref {aka std::unique_ptr<Dottore>}')
+  this->d = dott;
+            ^~~~
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Dottore.h:15:7: note: candidate: Dottore& Dottore::operator=(const Dottore&)
+ class Dottore : public Persona {
+       ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:15:7: note:   no known conversion for argument 1 from 'dottore_ref {aka std::unique_ptr<Dottore>}' to 'const Dottore&'
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:42:12: error: no match for 'operator=' (operand types are 'Paziente' and 'paziente_ref {aka std::unique_ptr<Paziente>}')
+  this->p = paz;
+            ^~~
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:15:7: note: candidate: Paziente& Paziente::operator=(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Visite\../Utenti/Paziente.h:15:7: note:   no known conversion for argument 1 from 'paziente_ref {aka std::unique_ptr<Paziente>}' to 'const Paziente&'
+13:56:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame()':
+..\src\Visite\Esame.cpp:10:14: error: 'Dottore::Dottore()' is protected within this context
+ Esame::Esame() {
+              ^
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Dottore.h:21:2: note: declared protected here
+  Dottore();
+  ^~~~~~~
+..\src\Visite\Esame.cpp:10:14: error: 'Paziente::Paziente()' is protected within this context
+ Esame::Esame() {
+              ^
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:21:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:20:12: error: no match for 'operator=' (operand types are 'Dottore' and 'dottore_ref {aka std::unique_ptr<Dottore>}')
+  this->d = dott;
+            ^~~~
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Dottore.h:15:7: note: candidate: Dottore& Dottore::operator=(const Dottore&)
+ class Dottore : public Persona {
+       ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:15:7: note:   no known conversion for argument 1 from 'dottore_ref {aka std::unique_ptr<Dottore>}' to 'const Dottore&'
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:41:12: error: no match for 'operator=' (operand types are 'Paziente' and 'paziente_ref {aka std::unique_ptr<Paziente>}')
+  this->p = paz;
+            ^~~
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:15:7: note: candidate: Paziente& Paziente::operator=(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Visite\../Utenti/Paziente.h:15:7: note:   no known conversion for argument 1 from 'paziente_ref {aka std::unique_ptr<Paziente>}' to 'const Paziente&'
+13:56:44 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame()':
+..\src\Visite\Esame.cpp:10:14: error: 'Paziente::Paziente()' is protected within this context
+ Esame::Esame() {
+              ^
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:21:2: note: declared protected here
+  Paziente();
+  ^~~~~~~~
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:20:12: error: no match for 'operator=' (operand types are 'Dottore' and 'dottore_ref {aka std::unique_ptr<Dottore>}')
+  this->d = dott;
+            ^~~~
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Dottore.h:15:7: note: candidate: Dottore& Dottore::operator=(const Dottore&)
+ class Dottore : public Persona {
+       ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:15:7: note:   no known conversion for argument 1 from 'dottore_ref {aka std::unique_ptr<Dottore>}' to 'const Dottore&'
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:41:12: error: no match for 'operator=' (operand types are 'Paziente' and 'paziente_ref {aka std::unique_ptr<Paziente>}')
+  this->p = paz;
+            ^~~
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:15:7: note: candidate: Paziente& Paziente::operator=(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Visite\../Utenti/Paziente.h:15:7: note:   no known conversion for argument 1 from 'paziente_ref {aka std::unique_ptr<Paziente>}' to 'const Paziente&'
+13:57:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'void Esame::setDott(dottore_ref)':
+..\src\Visite\Esame.cpp:20:12: error: no match for 'operator=' (operand types are 'Dottore' and 'dottore_ref {aka std::unique_ptr<Dottore>}')
+  this->d = dott;
+            ^~~~
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Dottore.h:15:7: note: candidate: Dottore& Dottore::operator=(const Dottore&)
+ class Dottore : public Persona {
+       ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:15:7: note:   no known conversion for argument 1 from 'dottore_ref {aka std::unique_ptr<Dottore>}' to 'const Dottore&'
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:41:12: error: no match for 'operator=' (operand types are 'Paziente' and 'paziente_ref {aka std::unique_ptr<Paziente>}')
+  this->p = paz;
+            ^~~
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:15:7: note: candidate: Paziente& Paziente::operator=(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Visite\../Utenti/Paziente.h:15:7: note:   no known conversion for argument 1 from 'paziente_ref {aka std::unique_ptr<Paziente>}' to 'const Paziente&'
+13:58:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:41:12: error: no match for 'operator=' (operand types are 'Paziente' and 'paziente_ref {aka std::unique_ptr<Paziente>}')
+  this->p = paz;
+            ^~~
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:15:7: note: candidate: Paziente& Paziente::operator=(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Visite\../Utenti/Paziente.h:15:7: note:   no known conversion for argument 1 from 'paziente_ref {aka std::unique_ptr<Paziente>}' to 'const Paziente&'
+13:58:27 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'void Esame::setPaz(paziente_ref)':
+..\src\Visite\Esame.cpp:41:16: error: no match for 'operator=' (operand types are 'Paziente' and '<unresolved overloaded function type>')
+  this->p = paz.get;
+                ^~~
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:8:
+..\src\Visite\../Utenti/Paziente.h:15:7: note: candidate: Paziente& Paziente::operator=(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Visite\../Utenti/Paziente.h:15:7: note:   no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const Paziente&'
+13:58:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+13:58:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'paziente_ref Esame::getPaz()':
+..\src\Visite\Esame.cpp:36:33: error: expected type-specifier before ')' token
+  paziente_ref res (new (this->p));
+                                 ^
+13:59:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+14:01:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+14:01:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+14:02:38 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+14:07:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In constructor 'Esame::Esame(int, dottore_ref, paziente_ref)':
+..\src\Visite\Esame.cpp:11:12: error: no match for 'operator=' (operand types are 'Dottore' and 'dottore_ref {aka std::unique_ptr<Dottore>}')
+  this->d = dr;
+            ^~
+In file included from ..\src\Visite\Esame.h:11:0,
+                 from ..\src\Visite\Esame.cpp:2:
+..\src\Visite\../Utenti/Dottore.h:15:7: note: candidate: Dottore& Dottore::operator=(const Dottore&)
+ class Dottore : public Persona {
+       ^~~~~~~
+..\src\Visite\../Utenti/Dottore.h:15:7: note:   no known conversion for argument 1 from 'dottore_ref {aka std::unique_ptr<Dottore>}' to 'const Dottore&'
+..\src\Visite\Esame.cpp:12:12: error: no match for 'operator=' (operand types are 'Paziente' and 'paziente_ref {aka std::unique_ptr<Paziente>}')
+  this->p = pr;
+            ^~
+In file included from ..\src\Visite\Esame.h:10:0,
+                 from ..\src\Visite\Esame.cpp:2:
+..\src\Visite\../Utenti/Paziente.h:15:7: note: candidate: Paziente& Paziente::operator=(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Visite\../Utenti/Paziente.h:15:7: note:   no known conversion for argument 1 from 'paziente_ref {aka std::unique_ptr<Paziente>}' to 'const Paziente&'
+14:08:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+14:11:31 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'virtual void Esame::stampa()':
+..\src\Visite\Esame.cpp:48:23: error: no match for 'operator<<' (operand types are 'std::basic_ostream<char>' and 'void')
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+  ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:108:7: note:   no known conversion for argument 1 from 'void' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:117:7: note:   no known conversion for argument 1 from 'void' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:127:7: note:   no known conversion for argument 1 from 'void' to 'std::ios_base& (*)(std::ios_base&)'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:166:7: note:   no known conversion for argument 1 from 'void' to 'long int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:170:7: note:   no known conversion for argument 1 from 'void' to 'long unsigned int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:174:7: note:   no known conversion for argument 1 from 'void' to 'bool'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:91:5: note:   no known conversion for argument 1 from 'void' to 'short int'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:181:7: note:   no known conversion for argument 1 from 'void' to 'short unsigned int'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:105:5: note:   no known conversion for argument 1 from 'void' to 'int'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:192:7: note:   no known conversion for argument 1 from 'void' to 'unsigned int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:201:7: note:   no known conversion for argument 1 from 'void' to 'long long int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:205:7: note:   no known conversion for argument 1 from 'void' to 'long long unsigned int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:220:7: note:   no known conversion for argument 1 from 'void' to 'double'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:224:7: note:   no known conversion for argument 1 from 'void' to 'float'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:232:7: note:   no known conversion for argument 1 from 'void' to 'long double'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:245:7: note:   no known conversion for argument 1 from 'void' to 'const void*'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:119:5: note:   no known conversion for argument 1 from 'void' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5325:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5325:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:49: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'void'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                                                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:46:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:209:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:209:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'const std::error_code&'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:497:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:49: note:   deduced conflicting types for parameter '_CharT' ('char' and 'void')
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                                                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:502:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'char'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:508:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'char'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:514:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'signed char'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:519:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'unsigned char'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:539:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:49: note:   mismatched types 'const _CharT*' and 'void'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                                                 ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'const char*'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:556:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'const char*'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:569:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'const signed char*'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:574:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:48: note:   cannot convert 'Esame::getDott()().std::unique_ptr<_Tp, _Dp>::operator-><Dottore, std::default_delete<Dottore> >()->Dottore::stampa()' (type 'void') to type 'const unsigned char*'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                         ~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:628:5: note: candidate: template<class _CharT, class _Traits, class _Tp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&)
+     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:628:5: note:   template argument deduction/substitution failed:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream: In substitution of 'template<class _CharT, class _Traits, class _Tp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&) [with _CharT = char; _Traits = std::char_traits<char>; _Tp = void]':
+..\src\Visite\Esame.cpp:48:49:   required from here
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:628:5: error: forming reference to void
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:66:5: note: candidate: template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)
+     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:66:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:48:49: note:   mismatched types 'const std::__shared_ptr<_Tp, _Lp>' and 'void'
+  cout<<"Eseguito da: "<<this->getDott()->stampa()<<endl;
+                                                 ^
+..\src\Visite\Esame.cpp:49:20: error: no match for 'operator<<' (operand types are 'std::basic_ostream<char>' and 'void')
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:108:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:108:7: note:   no known conversion for argument 1 from 'void' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:117:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:117:7: note:   no known conversion for argument 1 from 'void' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:127:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:127:7: note:   no known conversion for argument 1 from 'void' to 'std::ios_base& (*)(std::ios_base&)'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:166:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:166:7: note:   no known conversion for argument 1 from 'void' to 'long int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:170:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:170:7: note:   no known conversion for argument 1 from 'void' to 'long unsigned int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:174:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:174:7: note:   no known conversion for argument 1 from 'void' to 'bool'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:91:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:91:5: note:   no known conversion for argument 1 from 'void' to 'short int'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:181:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:181:7: note:   no known conversion for argument 1 from 'void' to 'short unsigned int'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:105:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:105:5: note:   no known conversion for argument 1 from 'void' to 'int'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:192:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:192:7: note:   no known conversion for argument 1 from 'void' to 'unsigned int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:201:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:201:7: note:   no known conversion for argument 1 from 'void' to 'long long int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:205:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:205:7: note:   no known conversion for argument 1 from 'void' to 'long long unsigned int'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:220:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:220:7: note:   no known conversion for argument 1 from 'void' to 'double'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:224:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:224:7: note:   no known conversion for argument 1 from 'void' to 'float'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:232:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:232:7: note:   no known conversion for argument 1 from 'void' to 'long double'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:245:7: note: candidate: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:245:7: note:   no known conversion for argument 1 from 'void' to 'const void*'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:119:5: note: candidate: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:119:5: note:   no known conversion for argument 1 from 'void' to 'std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}'
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\string:52:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\locale_classes.h:40,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:41,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5325:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h:5325:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:45: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'void'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ios_base.h:46:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios:42,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:38,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:209:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\system_error:209:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'const std::error_code&'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:497:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:497:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:45: note:   deduced conflicting types for parameter '_CharT' ('char' and 'void')
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:502:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:502:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'char'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:508:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:508:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'char'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:514:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:514:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'signed char'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:519:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:519:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'unsigned char'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:539:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:539:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:45: note:   mismatched types 'const _CharT*' and 'void'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                                             ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:638:0,
+                 from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:321:5: note: candidate: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'const char*'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:556:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:556:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'const char*'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:569:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:569:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'const signed char*'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:574:5: note: candidate: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:574:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:44: note:   cannot convert 'Esame::getPaz()().std::unique_ptr<_Tp, _Dp>::operator-><Paziente, std::default_delete<Paziente> >()->Paziente::stampa()' (type 'void') to type 'const unsigned char*'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                      ~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream:39:0,
+                 from ..\src\Visite\Esame.h:5,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:628:5: note: candidate: template<class _CharT, class _Traits, class _Tp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&&, const _Tp&)
+     operator<<(basic_ostream<_CharT, _Traits>&& __os, const _Tp& __x)
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream:628:5: note:   template argument deduction/substitution failed:
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\Visite\Esame.h:8,
+                 from ..\src\Visite\Esame.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:66:5: note: candidate: template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__shared_ptr<_Tp, _Lp>&)
+     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+     ^~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:66:5: note:   template argument deduction/substitution failed:
+..\src\Visite\Esame.cpp:49:45: note:   mismatched types 'const std::__shared_ptr<_Tp, _Lp>' and 'void'
+  cout<<"Paziente: "<<this->getPaz()->stampa()<<endl<<endl;
+                                             ^
+14:12:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+14:14:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+14:18:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In function 'void provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:149:45: error: 'lista_dottori' was not declared in this scope
+  esame_ref res (new Esame(80,lista_dottori(0),lista_pazienti(0)));
+                                             ^
+..\src\Funzionalita\Metodi.cpp:149:63: error: 'lista_pazienti' was not declared in this scope
+  esame_ref res (new Esame(80,lista_dottori(0),lista_pazienti(0)));
+                                                               ^
+14:20:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:18:18: error: no match for call to '(std::vector<std::unique_ptr<Paziente> >) (int)'
+  lista_pazienti(0);
+                  ^
+..\src\Funzionalita\Metodi.cpp: In function 'void provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:45: error: 'lista_dottori' was not declared in this scope
+  esame_ref res (new Esame(80,lista_dottori(0),lista_pazienti(0)));
+                                             ^
+..\src\Funzionalita\Metodi.cpp:150:63: error: 'lista_pazienti' was not declared in this scope
+  esame_ref res (new Esame(80,lista_dottori(0),lista_pazienti(0)));
+                                                               ^
+14:20:27 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In function 'void provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:45: error: 'lista_dottori' was not declared in this scope
+  esame_ref res (new Esame(80,lista_dottori(0),lista_pazienti(0)));
+                                             ^
+..\src\Funzionalita\Metodi.cpp:150:63: error: 'lista_pazienti' was not declared in this scope
+  esame_ref res (new Esame(80,lista_dottori(0),lista_pazienti(0)));
+                                                               ^
+14:21:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In function 'void provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:149:28: error: 'lista_dottori' was not declared in this scope
+  Esame* res = new Esame(80,lista_dottori[0],lista_pazienti[0]);
+                            ^~~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:149:45: error: 'lista_pazienti' was not declared in this scope
+  Esame* res = new Esame(80,lista_dottori[0],lista_pazienti[0]);
+                                             ^~~~~~~~~~~~~~
+14:22:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 2 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 3 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+14:23:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:75: error: no matching function for call to 'Esame::Esame(int, std::unique_ptr<Dottore>::pointer, std::unique_ptr<Paziente>::pointer)'
+  esame_ref res(new Esame(80,lista_dottori[0].get(),lista_pazienti[0].get()));
+                                                                           ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(int, dottore_ref, paziente_ref)
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from 'std::unique_ptr<Dottore>::pointer {aka Dottore*}' to 'dottore_ref {aka std::unique_ptr<Dottore>}'
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:17:7: note: candidate: Esame::Esame(const Esame&)
+ class Esame {
+       ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:17:7: note:   candidate expects 1 argument, 3 provided
+14:23:16 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 2 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 3 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+14:24:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 2 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 3 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+19:33:56 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Dottore; _Dp = std::default_delete<Dottore>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 2 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita\Metodi.cpp:150:63: error: use of deleted function 'std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = Paziente; _Dp = std::default_delete<Paziente>]'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:81:0,
+                 from ..\src\Funzionalita\../Funzionalita/Metodi.h:8,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h:359:7: note: declared here
+       unique_ptr(const unique_ptr&) = delete;
+       ^~~~~~~~~~
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   initializing argument 3 of 'Esame::Esame(int, dottore_ref, paziente_ref)'
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+19:35:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::provaCreazione()':
+..\src\Funzionalita\Metodi.cpp:150:63: error: no matching function for call to 'Esame::Esame(int, __gnu_cxx::__alloc_traits<std::allocator<std::unique_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::unique_ptr<Paziente> > >::value_type&)'
+  esame_ref res(new Esame(80,lista_dottori[0],lista_pazienti[0]));
+                                                               ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:13:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(int, Dottore, Paziente)
+  Esame(int,Dottore,Paziente);
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from '__gnu_cxx::__alloc_traits<std::allocator<std::unique_ptr<Dottore> > >::value_type {aka std::unique_ptr<Dottore>}' to 'Dottore'
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:17:7: note: candidate: Esame::Esame(const Esame&)
+ class Esame {
+       ^~~~~
+..\src\Funzionalita\../Funzionalita/../Visite/Esame.h:17:7: note:   candidate expects 1 argument, 3 provided
+19:35:55 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+19:36:24 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+19:37:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+19:41:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'virtual void Esame::stampa()':
+..\src\Visite\Esame.cpp:51:17: error: base operand of '->' has non-pointer type 'Dottore'
+  this->getDott()->stampa();
+                 ^~
+..\src\Visite\Esame.cpp:53:16: error: base operand of '->' has non-pointer type 'Paziente'
+  this->getPaz()->stampa();
+                ^~
+19:41:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp:15:9: error: prototype for 'Dottore Esame::getDott()' does not match any in class 'Esame'
+ Dottore Esame::getDott() {
+         ^~~~~
+In file included from ..\src\Visite\Esame.cpp:2:0:
+..\src\Visite\Esame.h:26:11: error: candidate is: Dottore* Esame::getDott()
+  Dottore* getDott();
+           ^~~~~~~
+..\src\Visite\Esame.cpp:37:10: error: prototype for 'Paziente Esame::getPaz()' does not match any in class 'Esame'
+ Paziente Esame::getPaz() {
+          ^~~~~
+In file included from ..\src\Visite\Esame.cpp:2:0:
+..\src\Visite\Esame.h:27:12: error: candidate is: Paziente* Esame::getPaz()
+  Paziente* getPaz();
+            ^~~~~~
+19:42:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'Dottore* Esame::getDott()':
+..\src\Visite\Esame.cpp:18:15: error: cannot convert 'Dottore' to 'Dottore*' in return
+  return this->d;
+               ^
+..\src\Visite\Esame.cpp: In member function 'Paziente* Esame::getPaz()':
+..\src\Visite\Esame.cpp:40:15: error: cannot convert 'Paziente' to 'Paziente*' in return
+  return this->p;
+               ^
+19:43:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp:8:1: error: prototype for 'Esame::Esame(int, Dottore*, Paziente*)' does not match any in class 'Esame'
+ Esame::Esame(int du,Dottore* dr,Paziente* pr){
+ ^~~~~
+In file included from ..\src\Visite\Esame.cpp:2:0:
+..\src\Visite\Esame.h:17:7: error: candidates are: Esame::Esame(const Esame&)
+ class Esame {
+       ^~~~~
+..\src\Visite\Esame.h:33:2: error:                 Esame::Esame(int, Dottore, Paziente)
+  Esame(int,Dottore,Paziente);
+  ^~~~~
+..\src\Visite\Esame.cpp:4:1: error:                 Esame::Esame()
+ Esame::Esame() {
+ ^~~~~
+..\src\Visite\Esame.cpp: In member function 'virtual void Esame::stampa()':
+..\src\Visite\Esame.cpp:51:17: error: base operand of '->' has non-pointer type 'Dottore'
+  this->getDott()->stampa();
+                 ^~
+..\src\Visite\Esame.cpp:53:16: error: base operand of '->' has non-pointer type 'Paziente'
+  this->getPaz()->stampa();
+                ^~
+19:43:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp:8:1: error: prototype for 'Esame::Esame(int, Dottore*, Paziente*)' does not match any in class 'Esame'
+ Esame::Esame(int du,Dottore* dr,Paziente* pr){
+ ^~~~~
+In file included from ..\src\Visite\Esame.cpp:2:0:
+..\src\Visite\Esame.h:17:7: error: candidates are: Esame::Esame(const Esame&)
+ class Esame {
+       ^~~~~
+..\src\Visite\Esame.h:33:2: error:                 Esame::Esame(int, Dottore, Paziente)
+  Esame(int,Dottore,Paziente);
+  ^~~~~
+..\src\Visite\Esame.cpp:4:1: error:                 Esame::Esame()
+ Esame::Esame() {
+ ^~~~~
+19:44:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+19:44:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+19:45:37 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+20:33:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp: In member function 'Dottore* Esame::getDott()':
+..\src\Visite\Esame.cpp:18:15: error: cannot convert 'Dottore' to 'Dottore*' in return
+  return this->d;
+               ^
+..\src\Visite\Esame.cpp: In member function 'Paziente* Esame::getPaz()':
+..\src\Visite\Esame.cpp:40:15: error: cannot convert 'Paziente' to 'Paziente*' in return
+  return this->p;
+               ^
+20:33:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp:8:1: error: prototype for 'Esame::Esame(int, Dottore, Paziente)' does not match any in class 'Esame'
+ Esame::Esame(int du,Dottore dr,Paziente pr){
+ ^~~~~
+In file included from ..\src\Visite\Esame.cpp:2:0:
+..\src\Visite\Esame.h:17:7: error: candidates are: constexpr Esame::Esame(const Esame&)
+ class Esame {
+       ^~~~~
+..\src\Visite\Esame.h:33:2: error:                 Esame::Esame(int, Dottore*, Paziente*)
+  Esame(int,Dottore*,Paziente*);
+  ^~~~~
+..\src\Visite\Esame.cpp:4:1: error:                 Esame::Esame()
+ Esame::Esame() {
+ ^~~~~
+20:34:18 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+20:42:00 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+20:43:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+20:43:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
