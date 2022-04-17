@@ -38,7 +38,7 @@ int main() {
 			m->ordinaElenco_ID_paz();
 			break;
 		case '0':
-			cout<<"Arrivederci!"<<endl;
+			cout<<"Arrivederci"<<endl;
 			break;
 		default:
 			//TODO

@@ -20,7 +20,6 @@ private:
 	vector<paziente_ref> lista_pazienti;
 private:
 	void caricadati();
-	bool ctrl_paz(string);
 public:
 	Metodi();
 	// TODO stesso con dottore
@@ -31,6 +30,8 @@ public:
 	int getYear();
 	virtual ~Metodi();
 private:
+	persona_ref creaPersona();
+	persona_ref creaPersona(int, string, string, string);
 	paziente_ref creaPaziente();
 	paziente_ref creaPaziente(int, string, string, string, string);
 

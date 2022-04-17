@@ -20,7 +20,7 @@ private:
 	vector<paziente_ref> lista_pazienti;
 private:
 	void caricadati();
-	bool ctrl_paz(string);
+	bool ctrl_paz();
 public:
 	Metodi();
 	// TODO stesso con dottore

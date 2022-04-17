@@ -32,7 +32,6 @@ paziente_ref Metodi::creaPaziente(){
 	do{
 		cout<<"Inserire codice fiscale: ";
 		cin>>cod;
-		giaIns = ctrl_paz(cod);
 	} while(giaIns);
 	cout<<"Inserire nome: ";
 	cin>>name;
@@ -42,16 +41,6 @@ paziente_ref Metodi::creaPaziente(){
 	cin>>cat;
 	paziente_ref p (creaPaziente(an,cod,name,surname,cat));
 	return p;
-}
-
-bool Metodi::ctrl_paz(string codice){
-	for(vector<paziente_ref>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
-		if(codice.compare(i->get()->getCf()) == 0){
-			cout<<"Utente gia' presente nel sistema! ";
-			return true;
-		}
-	}
-	return false;
 }
 
 void Metodi::inserisciPaziente(){
