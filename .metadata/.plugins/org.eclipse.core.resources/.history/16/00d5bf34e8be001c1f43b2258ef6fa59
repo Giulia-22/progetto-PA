@@ -177,7 +177,8 @@ esame_ref Metodi::creaEsame(){
 	int du;
 	int temp = 0;
 	int pos_dott = -1;
-	int pos_paz = -1;
+	dottore_ref d_cercato;
+	paziente_ref p_cercato;
 	dottore_ref dr;
 	paziente_ref pr;
 	do{
@@ -188,14 +189,14 @@ esame_ref Metodi::creaEsame(){
 		cout<<"Inserire ID dottore: ";
 		cin>>temp;
 		pos_dott = ctrl_dott(temp);
-	} while(pos_dott == -1);
-	dr = lista_dottori[pos_dott];
+	} while(d_cercato == -1);
+	dr = lista_pazienti[pos_dott];
 	do{
 		cout<<"Inserire ID paziente: ";
 		cin>>temp;
-		pos_paz = ctrl_paz(temp);
-	} while(pos_paz == -1);
-	pr = lista_pazienti[pos_paz];
+		p_cercato = ctrl_paz(temp);
+	} while(p_cercato == NULL);
+	pr = p_cercato;
 	esame_ref e (creaEsame(du,dr,pr));
 	return e;
 
@@ -205,24 +206,22 @@ int Metodi::ctrl_dott(int id_dott){
 	int index = 0;
 	for(vector<dottore_ref>::iterator i = lista_dottori.begin(); i != lista_dottori.end(); ++i){
 		if(i->get()->getIdDott() == id_dott){
-			return index;
+			return i;
 		}
-		index++;
+		i++;
 	}
 	cout<<"Dottore non presente nel sistema! "<<endl;
 	return -1;
 }
 
-int Metodi::ctrl_paz(int id_paz){
-	int index = 0;
+paziente_ref Metodi::ctrl_paz(int id_paz){
 	for(vector<paziente_ref>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
 		if(i->get()->getIdPaz() == id_paz){
-			return index;
+			return creaPaziente(i->get());
 		}
-		index++;
 	}
 	cout<<"Paziente non presente nel sistema! "<<endl;
-	return -1;
+	return NULL;
 }
 
 void Metodi::inserisciEsame(){

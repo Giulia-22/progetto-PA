@@ -26,7 +26,7 @@ private:
 	void caricadati();
 	bool ctrl_paz(string);
 	bool ctrl_dott(string);
-	int ctrl_paz(int);
+	paziente_ref ctrl_paz(int);
 	int ctrl_dott(int);
 public:
 	Metodi();
@@ -42,7 +42,7 @@ public:
 	void ordinaElenco_Specializzazione_dott();
 	// esame
 	void inserisciEsame();
-	virtual void stampaElenco_esami();
+	virtual void stampaElenco_esami();// TODO
 	void stampaEsami_ID_dott();// TODO
 	void stampaEsami_ID_paz();// TODO
 

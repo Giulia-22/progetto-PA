@@ -42,7 +42,7 @@ public:
 	void ordinaElenco_Specializzazione_dott();
 	// esame
 	void inserisciEsame();
-	virtual void stampaElenco_esami();
+	virtual void stampaElenco_esami();// TODO
 	void stampaEsami_ID_dott();// TODO
 	void stampaEsami_ID_paz();// TODO
 

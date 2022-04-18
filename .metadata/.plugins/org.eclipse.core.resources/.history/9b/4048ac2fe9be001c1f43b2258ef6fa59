@@ -43,7 +43,7 @@ void Esame::setPaz(paziente_ref paz) {
 void Esame::stampa(){
 	cout<<"ID esame: "<<this->getIdEsame()<<endl;
 	cout<<"Durata: "<<this->getDurata()<<endl;
-	cout<<"Eseguito dal dottore: "<<endl;
+	cout<<"Eseguito da: "<<endl;
 	this->getDott()->stampa();
 	cout<<"Paziente: "<<endl;
 	this->getPaz()->stampa();
