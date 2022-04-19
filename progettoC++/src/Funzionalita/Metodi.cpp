@@ -16,11 +16,17 @@ void Metodi::caricadati(){
 	lista_dottori.push_back(creaDottore(1989,"codFiscdottB","Antonio","Vivaldi","chirurgia"));
 	lista_dottori.push_back(creaDottore(1963,"codFiscdottC","Mario","Blu","fisioterapia"));
 	// Esame
-	lista_esami.push_back(creaEsame(50,lista_dottori[0],lista_pazienti[1]));
-	lista_esami.push_back(creaEsame(60,lista_dottori[0],lista_pazienti[2]));
-	lista_esami.push_back(creaEsame(90,lista_dottori[2],lista_pazienti[0]));
-	lista_esami.push_back(creaEsame(20,lista_dottori[2],lista_pazienti[0]));
-	lista_esami.push_back(creaEsame(15,lista_dottori[0],lista_pazienti[0]));
+	lista_esami.push_back(creaEsame(lista_dottori[0],lista_pazienti[1]));
+	lista_esami.push_back(creaEsame(lista_dottori[0],lista_pazienti[2]));
+	lista_esami.push_back(creaEsame(lista_dottori[2],lista_pazienti[0]));
+	lista_esami.push_back(creaEsame(lista_dottori[2],lista_pazienti[0]));
+	lista_esami.push_back(creaEsame(lista_dottori[0],lista_pazienti[0]));
+	// Pet
+	lista_esami_pet.push_back(creaEsamePet(35,lista_dottori[0],lista_pazienti[2]));
+	lista_esami_pet.push_back(creaEsamePet(40,lista_dottori[1],lista_pazienti[1]));
+	lista_esami_pet.push_back(creaEsamePet(20,lista_dottori[2],lista_pazienti[1]));
+	lista_esami_pet.push_back(creaEsamePet(60,lista_dottori[2],lista_pazienti[0]));
+
 
 }
 
@@ -75,14 +81,6 @@ void Metodi::inserisciPaziente(){
 
 void Metodi::stampaElenco_paz(){
 	for(vector<paziente_ref>::iterator i = lista_pazienti.begin(); i != lista_pazienti.end(); ++i){
-		/*
-		cout<<"Nome: "<<i->get()->getNome()<<endl;
-		cout<<"Cognome: "<<i->get()->getCognome()<<endl;
-		cout<<"Anno di nascita: "<<i->get()->getAnnonascita()<<endl;
-		cout<<"Codice fiscale: "<<i->get()->getCf()<<endl;
-		cout<<"ID: "<<i->get()->getIdPaz()<<endl;
-		cout<<"Categoria: "<<i->get()->getCategoria()<<endl<<endl;
-		*/
 		i->get()->stampa();
 	}
 }
@@ -148,14 +146,6 @@ void Metodi::inserisciDottore(){
 
 void Metodi::stampaElenco_dott(){
 	for(vector<dottore_ref>::iterator i = lista_dottori.begin(); i != lista_dottori.end(); ++i){
-		/*
-		cout<<"Nome: "<<i->get()->getNome()<<endl;
-		cout<<"Cognome: "<<i->get()->getCognome()<<endl;
-		cout<<"Anno di nascita: "<<i->get()->getAnnonascita()<<endl;
-		cout<<"Codice fiscale: "<<i->get()->getCf()<<endl;
-		cout<<"ID: "<<i->get()->getIdDott()<<endl;
-		cout<<"Specializzazione: "<<i->get()->getSpecializzazione()<<endl<<endl;
-		*/
 		i->get()->stampa();
 	}
 }
@@ -172,22 +162,17 @@ void Metodi::ordinaElenco_ID_dott(){
 
 // ESAMI
 // Costruttore con passaggio parametri
-esame_ref Metodi::creaEsame(int du, dottore_ref dr, paziente_ref pr){
-	esame_ref es (new Esame(du,dr,pr));
+esame_ref Metodi::creaEsame(dottore_ref dr, paziente_ref pr){
+	esame_ref es (new Esame(dr,pr));
 	return es;
 }
 // Costruttore con parametri chiesti utente
 esame_ref Metodi::creaEsame(){
-	int du;
 	int temp = 0;
 	int pos_dott = -1;
 	int pos_paz = -1;
 	dottore_ref dr;
 	paziente_ref pr;
-	do{
-		cout<<"Inserisci durata esame: ";
-		cin>>du;
-	} while(du<0);
 	do{
 		cout<<"Inserire ID dottore: ";
 		cin>>temp;
@@ -200,7 +185,7 @@ esame_ref Metodi::creaEsame(){
 		pos_paz = ctrl_paz(temp);
 	} while(pos_paz == -1);
 	pr = lista_pazienti[pos_paz];
-	esame_ref e (creaEsame(du,dr,pr));
+	esame_ref e (creaEsame(dr,pr));
 	return e;
 
 }
@@ -276,6 +261,66 @@ void Metodi::cerca_paz(int id_paz){
 	if(!(trovato))
 		cout<<"Paziente non presente nel sistema! "<<endl;
 }
+
+
+// ESAMI ** PET **
+// Costruttore con passaggio parametri
+pet_ref Metodi::creaEsamePet(int dur, dottore_ref dr, paziente_ref pr){
+	pet_ref es_p (new Pet(dur,dr,pr));
+	return es_p;
+}
+// Costruttore con parametri chiesti utente
+pet_ref Metodi::creaEsamePet(){
+	int temp = 0;
+	int dur = 30;
+	int pos_dott = -1;
+	int pos_paz = -1;
+	dottore_ref dr;
+	paziente_ref pr;
+	do{
+		cout<<"Inserisci durata esame: ";
+		cin>>dur;
+	} while(dur<0);
+	do{
+		cout<<"Inserire ID dottore: ";
+		cin>>temp;
+		pos_dott = ctrl_dott(temp);
+	} while(pos_dott == -1);
+	dr = lista_dottori[pos_dott];
+	do{
+		cout<<"Inserire ID paziente: ";
+		cin>>temp;
+		pos_paz = ctrl_paz(temp);
+	} while(pos_paz == -1);
+	pr = lista_pazienti[pos_paz];
+	pet_ref es_pet (creaEsamePet(dur,dr,pr));
+	return es_pet;
+
+}
+
+void Metodi::inserisciEsamePet(){
+	lista_esami_pet.push_back(creaEsamePet());
+}
+
+void Metodi::stampaElenco_esami_pet(){
+	for(vector<pet_ref>::iterator i = lista_esami_pet.begin(); i != lista_esami_pet.end(); ++i){
+		i->get()->stampa();
+	}
+}
+
+void Metodi::stampaEsami_PET_corti(){
+	int dur = 20;
+	do{
+		cout<<"Inserisci durata (0-40): ";
+		cin>>dur;
+	} while(dur<0 || dur>40);
+
+	for(vector<pet_ref>::iterator i = lista_esami_pet.begin(); i != lista_esami_pet.end(); ++i){
+		if(i->get()->durata <= dur)
+			i->get()->stampa();
+	}
+}
+
 
 int Metodi::getYear(){
 	return this->annocorrente;

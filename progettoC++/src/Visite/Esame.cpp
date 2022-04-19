@@ -5,9 +5,8 @@ Esame::Esame() {
 	this->ID_esame = ID_esame_count++;
 }
 
-Esame::Esame(int du,dottore_ref dr,paziente_ref pr){
+Esame::Esame(dottore_ref dr,paziente_ref pr){
 	this->ID_esame = ID_esame_count++;
-	this->durata = du;
 	this->d = dr;
 	this->p = pr;
 }
@@ -18,14 +17,6 @@ dottore_ref Esame::getDott() {
 
 void Esame::setDott(dottore_ref dott) {
 	this->d = dott;
-}
-
-int Esame::getDurata() {
-	return durata;
-}
-
-void Esame::setDurata(int durata) {
-	this->durata = durata;
 }
 
 int Esame::getIdEsame() {
@@ -42,7 +33,6 @@ void Esame::setPaz(paziente_ref paz) {
 
 void Esame::stampa(){
 	cout<<"ID esame: "<<this->getIdEsame()<<endl;
-	cout<<"Durata: "<<this->getDurata()<<endl;
 	cout<<"Eseguito dal dottore: "<<endl;
 	this->getDott()->stampa();
 	cout<<"Paziente: "<<endl;

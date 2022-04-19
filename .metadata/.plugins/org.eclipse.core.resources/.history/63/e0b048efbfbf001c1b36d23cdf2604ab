@@ -1,0 +1,36 @@
+
+#include "Pet.h"
+
+Pet::Pet() {
+	this->durata = 30;
+}
+
+Pet::Pet(Pet* pe) {
+	this->ID_esame = pe->ID_esame;
+	this->d = pe->d;
+	this->p = pe->p;
+	this->durata = pe->durata;
+}
+
+Pet::Pet(int du,dottore_ref dr,paziente_ref pr){
+
+}
+
+void Pet::setDurata(int d) {
+	this->durata = d;
+}
+
+int Pet::getDurata() {
+	return durata;
+}
+
+
+void Pet::stampa(){
+
+}
+
+
+Pet::~Pet() {
+
+}
+

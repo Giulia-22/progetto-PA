@@ -5,10 +5,12 @@
 #include "Funzionalita/Metodi.h"
 //#include "Utenti/Persona.h"
 //#include "Utenti/Paziente.h"
+#include "Visite/Pet.h"
 
 using namespace std;
 
 int main() {
+
 	char scelta;
 	unique_ptr<Metodi> m (new Metodi());
 	do{
@@ -28,6 +30,9 @@ int main() {
 		cout<<"j) Visualizzazione di tutti gli esami del sistema "<<endl;
 		cout<<"k) Visualizzazione di tutti gli esami eseguiti da un dottore "<<endl;
 		cout<<"l) Visualizzazione di tutti gli esami effettuati da un paziente "<<endl;
+		cout<<"m) Inserimento di un nuovo esame PET nel sistema "<<endl;
+		cout<<"n) Visualizzazione di tutti gli esami PET del sistema "<<endl;
+		cout<<"o) Visualizzazione di tutti gli esami PET brevi "<<endl;
 		cout<<"0) TERMINA "<<endl<<endl;
 		cout<<"La tua scelta: ";
 		cin>>scelta;
@@ -67,6 +72,15 @@ int main() {
 			break;
 		case 'l':
 			m->stampaEsami_ID_paz();
+			break;
+		case 'm':
+			m->inserisciEsamePet();
+			break;
+		case 'n':
+			m->stampaElenco_esami_pet();
+			break;
+		case 'o':
+			m->stampaEsami_PET_corti();
 			break;
 		case '0':
 			cout<<endl<<"Arrivederci!"<<endl;

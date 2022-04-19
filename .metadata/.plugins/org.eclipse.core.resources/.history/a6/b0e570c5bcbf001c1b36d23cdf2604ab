@@ -1,0 +1,11 @@
+
+#ifndef VISITE_PET_H_
+#define VISITE_PET_H_
+
+class Pet {
+public:
+	Pet();
+	virtual ~Pet();
+};
+
+#endif /* VISITE_PET_H_ */

@@ -1,0 +1,12 @@
+
+#include "Pet.h"
+
+Pet::Pet() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Pet::~Pet() {
+	// TODO Auto-generated destructor stub
+}
+

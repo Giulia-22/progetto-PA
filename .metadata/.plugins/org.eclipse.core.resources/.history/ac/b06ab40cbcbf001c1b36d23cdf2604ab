@@ -1,0 +1,23 @@
+/*
+ * Pet.cpp
+ *
+ *  Created on: 19 apr 2022
+ *      Author: giuly
+ */
+
+#include "Pet.h"
+
+Pet::Pet() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Pet::~Pet() {
+	// TODO Auto-generated destructor stub
+}
+
+Pet::Pet(const Pet &other) {
+	// TODO Auto-generated constructor stub
+
+}
+

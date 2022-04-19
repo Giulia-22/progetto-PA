@@ -8926,3 +8926,188 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp"
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
 Info: Nothing to build for progettoC++
+10:38:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+10:40:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp:8:1: error: prototype for 'Esame::Esame(dottore_ref, paziente_ref)' does not match any in class 'Esame'
+ Esame::Esame(dottore_ref dr,paziente_ref pr){
+ ^~~~~
+In file included from ..\src\Visite\Esame.cpp:2:0:
+..\src\Visite\Esame.h:17:7: error: candidates are: Esame::Esame(const Esame&)
+ class Esame {
+       ^~~~~
+..\src\Visite\Esame.h:32:2: error:                 Esame::Esame(int, dottore_ref, paziente_ref)
+  Esame(int,dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Visite\Esame.cpp:4:1: error:                 Esame::Esame()
+ Esame::Esame() {
+ ^~~~~
+10:41:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+10:47:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+10:52:03 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Visite\Pet.o: In function `ZN3PetC1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetC1EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetD1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:15: undefined reference to `vtable for Pet'
+src\Visite\Pet.o:C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:15: more undefined references to `vtable for Pet' follow
+collect2.exe: error: ld returned 1 exit status
+10:52:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Visite\Pet.o: In function `ZN3PetC1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetC1EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetD1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:15: undefined reference to `vtable for Pet'
+src\Visite\Pet.o:C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:15: more undefined references to `vtable for Pet' follow
+collect2.exe: error: ld returned 1 exit status
+10:57:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Visite\Pet.o: In function `ZN3PetC1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetC1EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetD1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:15: undefined reference to `vtable for Pet'
+src\Visite\Pet.o:C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:15: more undefined references to `vtable for Pet' follow
+collect2.exe: error: ld returned 1 exit status
+10:58:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+..\src\Visite\Pet.cpp:27:1: error: 'virtual' outside class declaration
+ virtual void stampa(){
+ ^~~~~~~
+10:58:47 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Visite\Pet.o: In function `ZN3PetC2Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetC2EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetC2ESt10shared_ptrI7DottoreES0_I8PazienteE':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:14: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetD2Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:32: undefined reference to `vtable for Pet'
+collect2.exe: error: ld returned 1 exit status
+10:59:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Visite\Pet.o: In function `ZN3PetC1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:4: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetC1EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:8: undefined reference to `vtable for Pet'
+src\Visite\Pet.o: In function `ZN3PetC1ESt10shared_ptrI7DottoreES0_I8PazienteE':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:14: undefined reference to `vtable for Pet'
+src\Visite\Pet.o:C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Pet.cpp:14: more undefined references to `vtable for Pet' follow
+collect2.exe: error: ld returned 1 exit status
+11:02:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+11:10:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:10:36 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+11:12:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+11:12:37 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:13:11 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+11:14:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+11:19:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Funzionalita\Metodi.o:Metodi.cpp:(.rdata$_ZTV6Metodi[__ZTV6Metodi]+0xc): undefined reference to `Metodi::stampaElenco_esami_pet()'
+collect2.exe: error: ld returned 1 exit status
+11:25:06 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Funzionalita\Metodi.o:Metodi.cpp:(.rdata$_ZTV6Metodi[__ZTV6Metodi]+0xc): undefined reference to `Metodi::stampaElenco_esami_pet()'
+collect2.exe: error: ld returned 1 exit status
+11:27:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:315:6: error: redefinition of 'void Metodi::stampaElenco_esami()'
+ void Metodi::stampaElenco_esami(){
+      ^~~~~~
+..\src\Funzionalita\Metodi.cpp:231:6: note: 'virtual void Metodi::stampaElenco_esami()' previously defined here
+ void Metodi::stampaElenco_esami(){
+      ^~~~~~
+11:27:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+11:31:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:41:47 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:45:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 

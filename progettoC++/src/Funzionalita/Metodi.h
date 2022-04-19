@@ -11,6 +11,7 @@
 #include "../Utenti/Paziente.h"
 #include "../Utenti/Dottore.h"
 #include "../Visite/Esame.h"
+#include "../Visite/Pet.h"
 
 using namespace std;
 
@@ -22,6 +23,7 @@ private:
 	vector<paziente_ref> lista_pazienti;
 	vector<dottore_ref> lista_dottori;
 	vector<esame_ref> lista_esami;
+	vector<pet_ref> lista_esami_pet;
 private:
 	void caricadati();
 	bool ctrl_paz(string); // Overloading
@@ -47,6 +49,10 @@ public:
 	virtual void stampaElenco_esami();
 	void stampaEsami_ID_dott();
 	void stampaEsami_ID_paz();
+	// PET
+	void inserisciEsamePet();
+	virtual void stampaElenco_esami_pet();
+	void stampaEsami_PET_corti();
 
 
 	int getYear();
@@ -59,7 +65,9 @@ private:
 	dottore_ref creaDottore(Dottore*);
 	dottore_ref creaDottore(int, string, string, string, string);
 	esame_ref creaEsame();
-	esame_ref creaEsame(int, dottore_ref, paziente_ref);
+	esame_ref creaEsame(dottore_ref, paziente_ref);
+	pet_ref creaEsamePet();
+	pet_ref creaEsamePet(int,dottore_ref, paziente_ref);
 
 };
 

@@ -1,0 +1,14 @@
+
+#ifndef VISITE_PET_H_
+#define VISITE_PET_H_
+
+class Pet {
+public:
+	int durata = 30;
+	Pet();
+	virtual ~Pet();
+};
+
+typedef shared_ptr<Pet> pet_ref;
+
+#endif /* VISITE_PET_H_ */
