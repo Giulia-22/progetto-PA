@@ -1,0 +1,18 @@
+/*
+ * Mr.cpp
+ *
+ *  Created on: 19 apr 2022
+ *      Author: giuly
+ */
+
+#include "Mr.h"
+
+Mr::Mr() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Mr::~Mr() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -10,9 +10,9 @@
 
 using namespace std;
 
-class Pet : virtual public Esame  {
+class Pet : virtual public Esame {
 public:
-	int durata;
+	int durata = 30;
 	friend class Metodi;
 protected:
 	Pet();

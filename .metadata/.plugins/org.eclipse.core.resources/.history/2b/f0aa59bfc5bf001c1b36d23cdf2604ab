@@ -1,0 +1,17 @@
+/*
+ * Mr.h
+ *
+ *  Created on: 19 apr 2022
+ *      Author: giuly
+ */
+
+#ifndef VISITE_MR_H_
+#define VISITE_MR_H_
+
+class Mr {
+public:
+	Mr();
+	virtual ~Mr();
+};
+
+#endif /* VISITE_MR_H_ */

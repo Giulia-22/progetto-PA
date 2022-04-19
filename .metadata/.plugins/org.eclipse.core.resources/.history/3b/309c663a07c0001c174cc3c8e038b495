@@ -1,0 +1,74 @@
+
+#ifndef METODI_H_
+#define METODI_H_
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <memory>
+#include <algorithm>
+#include "../Utenti/Persona.h"
+#include "../Utenti/Paziente.h"
+#include "../Utenti/Dottore.h"
+#include "../Visite/Esame.h"
+#include "../Visite/Pet.h"
+
+using namespace std;
+
+class Metodi {
+private:
+	time_t data = time(0);
+	tm* now = localtime(&data);
+	int annocorrente = now->tm_year+1900;
+	vector<paziente_ref> lista_pazienti;
+	vector<dottore_ref> lista_dottori;
+	vector<esame_ref> lista_esami;
+	vector<pet_ref> lista_esami_pet;
+private:
+	void caricadati();
+	bool ctrl_paz(string); // Overloading
+	bool ctrl_dott(string);
+	int ctrl_paz(int); // Overloading
+	int ctrl_dott(int);
+	void cerca_paz(int); // Ridefinizione --> cambio nome metodo
+	void cerca_dott(int);
+public:
+	Metodi();
+	// paziente
+	void inserisciPaziente();
+	void stampaElenco_paz();
+	void ordinaElenco_ID_paz();
+	void ordinaElenco_Categoria_paz();
+	// dottore
+	void inserisciDottore();
+	void stampaElenco_dott();
+	void ordinaElenco_ID_dott();
+	void ordinaElenco_Specializzazione_dott();
+	// esame
+	void inserisciEsame();
+	virtual void stampaElenco_esami();
+	void stampaEsami_ID_dott();
+	void stampaEsami_ID_paz();
+	// PET
+	void inserisciEsamePet();
+	virtual void stampaElenco_esami_pet();
+	void stampaEsami_PET_corti();
+
+
+	int getYear();
+	virtual ~Metodi();
+private:
+	paziente_ref creaPaziente();
+	paziente_ref creaPaziente(Paziente*);
+	paziente_ref creaPaziente(int, string, string, string, string);
+	dottore_ref creaDottore();
+	dottore_ref creaDottore(Dottore*);
+	dottore_ref creaDottore(int, string, string, string, string);
+	esame_ref creaEsame();
+	esame_ref creaEsame(dottore_ref, paziente_ref);
+	pet_ref creaEsamePet();
+	pet_ref creaEsamePet(int,dottore_ref, paziente_ref);
+
+};
+
+#endif /* METODI_H_ */

@@ -1,0 +1,23 @@
+
+#ifndef VISITE_MR_H_
+#define VISITE_MR_H_
+
+#include <iostream>
+#include <vector>
+#include <string>
+#include <memory>
+#include "../Visite/Esame.h"
+
+using namespace std;
+
+class Mr : virtual public Esame {
+public:
+	int intensita = 2;
+	int durata;
+	friend class Metodi;
+
+	Mr();
+	virtual ~Mr();
+};
+
+#endif /* VISITE_MR_H_ */

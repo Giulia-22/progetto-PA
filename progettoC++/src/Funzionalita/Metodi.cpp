@@ -26,6 +26,11 @@ void Metodi::caricadati(){
 	lista_esami_pet.push_back(creaEsamePet(40,lista_dottori[1],lista_pazienti[1]));
 	lista_esami_pet.push_back(creaEsamePet(20,lista_dottori[2],lista_pazienti[1]));
 	lista_esami_pet.push_back(creaEsamePet(60,lista_dottori[2],lista_pazienti[0]));
+	// MR
+	lista_esami_mr.push_back(creaEsameMr(15,3,lista_dottori[2],lista_pazienti[0]));
+	lista_esami_mr.push_back(creaEsameMr(20,4,lista_dottori[1],lista_pazienti[1]));
+	lista_esami_mr.push_back(creaEsameMr(60,2,lista_dottori[1],lista_pazienti[2]));
+	lista_esami_mr.push_back(creaEsameMr(10,6,lista_dottori[0],lista_pazienti[2]));
 
 
 }
@@ -317,6 +322,70 @@ void Metodi::stampaEsami_PET_corti(){
 
 	for(vector<pet_ref>::iterator i = lista_esami_pet.begin(); i != lista_esami_pet.end(); ++i){
 		if(i->get()->durata <= dur)
+			i->get()->stampa();
+	}
+}
+
+
+// ESAMI ** MR **
+// Costruttore con passaggio parametri
+mr_ref Metodi::creaEsameMr(int dur, int inten, dottore_ref dr, paziente_ref pr){
+	mr_ref es_m (new Mr(dur,inten,dr,pr));
+	return es_m;
+}
+// Costruttore con parametri chiesti utente
+mr_ref Metodi::creaEsameMr(){
+	int temp = 0;
+	int dur = 30;
+	int inte = 2;
+	int pos_dott = -1;
+	int pos_paz = -1;
+	dottore_ref dr;
+	paziente_ref pr;
+	do{
+		cout<<"Inserisci durata esame: ";
+		cin>>dur;
+	} while(dur<0);
+	do{
+		cout<<"Inserisci intensita' esame: ";
+		cin>>inte;
+	} while(inte<0);
+	do{
+		cout<<"Inserire ID dottore: ";
+		cin>>temp;
+		pos_dott = ctrl_dott(temp);
+	} while(pos_dott == -1);
+	dr = lista_dottori[pos_dott];
+	do{
+		cout<<"Inserire ID paziente: ";
+		cin>>temp;
+		pos_paz = ctrl_paz(temp);
+	} while(pos_paz == -1);
+	pr = lista_pazienti[pos_paz];
+	mr_ref es_mr (creaEsameMr(dur,inte,dr,pr));
+	return es_mr;
+
+}
+
+void Metodi::inserisciEsameMr(){
+	lista_esami_mr.push_back(creaEsameMr());
+}
+
+void Metodi::stampaElenco_esami_mr(){
+	for(vector<mr_ref>::iterator i = lista_esami_mr.begin(); i != lista_esami_mr.end(); ++i){
+		i->get()->stampa();
+	}
+}
+
+void Metodi::stampaEsami_MR_forti(){
+	int intensity = 2;
+	do{
+		cout<<"Inserisci intensita' (5-10): ";
+		cin>>intensity;
+	} while(intensity<5 || intensity>10);
+
+	for(vector<mr_ref>::iterator i = lista_esami_mr.begin(); i != lista_esami_mr.end(); ++i){
+		if(i->get()->intensita <= intensity)
 			i->get()->stampa();
 	}
 }

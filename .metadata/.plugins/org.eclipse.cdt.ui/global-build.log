@@ -9111,3 +9111,345 @@ Info: Nothing to build for progettoC++
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Pet.o" "src\\main.o" 
+11:47:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+18:51:02 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+18:53:06 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Visite\Mr.o: In function `ZN2MrC1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:4: undefined reference to `vtable for Mr'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:4: undefined reference to `vtable for Mr'
+src\Visite\Mr.o: In function `ZN2MrD1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:9: undefined reference to `vtable for Mr'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:9: undefined reference to `vtable for Mr'
+collect2.exe: error: ld returned 1 exit status
+18:53:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'pet_ref Metodi::creaEsamePet(int, dottore_ref, paziente_ref)':
+..\src\Funzionalita\Metodi.cpp:269:33: error: no matching function for call to 'Pet::Pet(int&, dottore_ref&, paziente_ref&)'
+  pet_ref es_p (new Pet(dur,dr,pr));
+                                 ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:14:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:18:2: note: candidate: Pet::Pet()
+  Pet();
+  ^~~
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:18:2: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:13:7: note: candidate: Pet::Pet(const Pet&)
+ class Pet : virtual public Esame {
+       ^~~
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:13:7: note:   candidate expects 1 argument, 3 provided
+18:53:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'pet_ref Metodi::creaEsamePet(int, dottore_ref, paziente_ref)':
+..\src\Funzionalita\Metodi.cpp:269:33: error: no matching function for call to 'Pet::Pet(int&, dottore_ref&, paziente_ref&)'
+  pet_ref es_p (new Pet(dur,dr,pr));
+                                 ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:14:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:18:2: note: candidate: Pet::Pet()
+  Pet();
+  ^~~
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:18:2: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:13:7: note: candidate: Pet::Pet(const Pet&)
+ class Pet : virtual public Esame {
+       ^~~
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:13:7: note:   candidate expects 1 argument, 3 provided
+18:53:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'pet_ref Metodi::creaEsamePet(int, dottore_ref, paziente_ref)':
+..\src\Funzionalita\Metodi.cpp:269:33: error: no matching function for call to 'Pet::Pet(int&, dottore_ref&, paziente_ref&)'
+  pet_ref es_p (new Pet(dur,dr,pr));
+                                 ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:14:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:18:2: note: candidate: Pet::Pet()
+  Pet();
+  ^~~
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:18:2: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:13:7: note: candidate: Pet::Pet(const Pet&)
+ class Pet : virtual public Esame {
+       ^~~
+..\src\Funzionalita\../Funzionalita/../Visite/Pet.h:13:7: note:   candidate expects 1 argument, 3 provided
+18:54:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Visite\Mr.o: In function `ZN2MrC1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:4: undefined reference to `vtable for Mr'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:4: undefined reference to `vtable for Mr'
+src\Visite\Mr.o: In function `ZN2MrD1Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:9: undefined reference to `vtable for Mr'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Visite/Mr.cpp:9: undefined reference to `vtable for Mr'
+collect2.exe: error: ld returned 1 exit status
+18:54:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+19:06:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+19:37:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:25:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(35,lista_dottori[0],lista_pazienti[2]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:26:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(40,lista_dottori[1],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:27:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(20,lista_dottori[2],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:28:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(60,lista_dottori[2],lista_pazienti[0]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:268:9: error: prototype for 'pet_ref Metodi::creaEsamePet(int, dottore_ref, paziente_ref)' does not match any in class 'Metodi'
+ pet_ref Metodi::creaEsamePet(int dur, dottore_ref dr, paziente_ref pr){
+         ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: error: candidate is: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'pet_ref Metodi::creaEsamePet()':
+..\src\Funzionalita\Metodi.cpp:296:40: error: no matching function for call to 'Metodi::creaEsamePet(int&, dottore_ref&, paziente_ref&)'
+  pet_ref es_pet (creaEsamePet(dur,dr,pr));
+                                        ^
+..\src\Funzionalita\Metodi.cpp:273:9: note: candidate: pet_ref Metodi::creaEsamePet()
+ pet_ref Metodi::creaEsamePet(){
+         ^~~~~~
+..\src\Funzionalita\Metodi.cpp:273:9: note:   candidate expects 0 arguments, 3 provided
+19:39:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:25:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(35,lista_dottori[0],lista_pazienti[2]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:26:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(40,lista_dottori[1],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:27:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(20,lista_dottori[2],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:28:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(60,lista_dottori[2],lista_pazienti[0]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:268:9: error: prototype for 'pet_ref Metodi::creaEsamePet(int, dottore_ref, paziente_ref)' does not match any in class 'Metodi'
+ pet_ref Metodi::creaEsamePet(int dur, dottore_ref dr, paziente_ref pr){
+         ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: error: candidate is: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'pet_ref Metodi::creaEsamePet()':
+..\src\Funzionalita\Metodi.cpp:296:40: error: no matching function for call to 'Metodi::creaEsamePet(int&, dottore_ref&, paziente_ref&)'
+  pet_ref es_pet (creaEsamePet(dur,dr,pr));
+                                        ^
+..\src\Funzionalita\Metodi.cpp:273:9: note: candidate: pet_ref Metodi::creaEsamePet()
+ pet_ref Metodi::creaEsamePet(){
+         ^~~~~~
+..\src\Funzionalita\Metodi.cpp:273:9: note:   candidate expects 0 arguments, 3 provided
+19:39:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:25:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(35,lista_dottori[0],lista_pazienti[2]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:26:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(40,lista_dottori[1],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:27:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(20,lista_dottori[2],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:28:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(60,lista_dottori[2],lista_pazienti[0]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:268:9: error: prototype for 'pet_ref Metodi::creaEsamePet(int, dottore_ref, paziente_ref)' does not match any in class 'Metodi'
+ pet_ref Metodi::creaEsamePet(int dur, dottore_ref dr, paziente_ref pr){
+         ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: error: candidate is: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'pet_ref Metodi::creaEsamePet()':
+..\src\Funzionalita\Metodi.cpp:296:40: error: no matching function for call to 'Metodi::creaEsamePet(int&, dottore_ref&, paziente_ref&)'
+  pet_ref es_pet (creaEsamePet(dur,dr,pr));
+                                        ^
+..\src\Funzionalita\Metodi.cpp:273:9: note: candidate: pet_ref Metodi::creaEsamePet()
+ pet_ref Metodi::creaEsamePet(){
+         ^~~~~~
+..\src\Funzionalita\Metodi.cpp:273:9: note:   candidate expects 0 arguments, 3 provided
+19:41:11 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'void Metodi::caricadati()':
+..\src\Funzionalita\Metodi.cpp:25:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(35,lista_dottori[0],lista_pazienti[2]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:26:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(40,lista_dottori[1],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:27:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(20,lista_dottori[2],lista_pazienti[1]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp:28:78: error: no matching function for call to 'Metodi::creaEsamePet(int, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Dottore> > >::value_type&, __gnu_cxx::__alloc_traits<std::allocator<std::shared_ptr<Paziente> > >::value_type&)'
+  lista_esami_pet.push_back(creaEsamePet(60,lista_dottori[2],lista_pazienti[0]));
+                                                                              ^
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note: candidate: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: note:   candidate expects 0 arguments, 3 provided
+..\src\Funzionalita\Metodi.cpp: At global scope:
+..\src\Funzionalita\Metodi.cpp:268:9: error: prototype for 'pet_ref Metodi::creaEsamePet(int, dottore_ref, paziente_ref)' does not match any in class 'Metodi'
+ pet_ref Metodi::creaEsamePet(int dur, dottore_ref dr, paziente_ref pr){
+         ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:10: error: candidate is: pet_ref Metodi::creaEsamePet()
+  pet_ref creaEsamePet();
+          ^~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp: In member function 'pet_ref Metodi::creaEsamePet()':
+..\src\Funzionalita\Metodi.cpp:296:40: error: no matching function for call to 'Metodi::creaEsamePet(int&, dottore_ref&, paziente_ref&)'
+  pet_ref es_pet (creaEsamePet(dur,dr,pr));
+                                        ^
+..\src\Funzionalita\Metodi.cpp:273:9: note: candidate: pet_ref Metodi::creaEsamePet()
+ pet_ref Metodi::creaEsamePet(){
+         ^~~~~~
+..\src\Funzionalita\Metodi.cpp:273:9: note:   candidate expects 0 arguments, 3 provided
+19:42:08 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+19:42:31 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+19:42:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Funzionalita\Metodi.o:Metodi.cpp:(.rdata$_ZTV6Metodi[__ZTV6Metodi]+0x10): undefined reference to `Metodi::stampaElenco_esami_mr()'
+collect2.exe: error: ld returned 1 exit status
+19:43:32 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+src\Funzionalita\Metodi.o:Metodi.cpp:(.rdata$_ZTV6Metodi[__ZTV6Metodi]+0x10): undefined reference to `Metodi::stampaElenco_esami_mr()'
+collect2.exe: error: ld returned 1 exit status
+19:43:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+19:51:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
