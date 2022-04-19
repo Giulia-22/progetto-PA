@@ -24,10 +24,12 @@ private:
 	vector<esame_ref> lista_esami;
 private:
 	void caricadati();
-	bool ctrl_paz(string);
+	bool ctrl_paz(string); // Overloading
 	bool ctrl_dott(string);
-	int ctrl_paz(int);
+	int ctrl_paz(int); // Overloading
 	int ctrl_dott(int);
+	void cerca_paz(int); // Ridefinizione --> cambio nome metodo
+	void cerca_dott(int);
 public:
 	Metodi();
 	// paziente
@@ -43,8 +45,8 @@ public:
 	// esame
 	void inserisciEsame();
 	virtual void stampaElenco_esami();
-	void stampaEsami_ID_dott();// TODO
-	void stampaEsami_ID_paz();// TODO
+	void stampaEsami_ID_dott();
+	void stampaEsami_ID_paz();
 
 
 	int getYear();

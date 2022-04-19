@@ -8879,3 +8879,50 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+09:31:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+09:37:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+10:15:23 **** Rebuild of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:31:7: error: 'void Metodi::ctrl_dott(int)' cannot be overloaded
+  void ctrl_dott(int); // Overloading
+       ^~~~~~~~~
+..\src\Funzionalita\../Funzionalita/Metodi.h:30:6: error: with 'int Metodi::ctrl_dott(int)'
+  int ctrl_dott(int); // Overloading
+      ^~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:249:6: error: prototype for 'void Metodi::ctrl_dott(int)' does not match any in class 'Metodi'
+ void Metodi::ctrl_dott(int id_dott){
+      ^~~~~~
+..\src\Funzionalita\Metodi.cpp:208:5: error: candidates are: int Metodi::ctrl_dott(int)
+ int Metodi::ctrl_dott(int id_dott){
+     ^~~~~~
+..\src\Funzionalita\Metodi.cpp:135:6: error:                 bool Metodi::ctrl_dott(std::__cxx11::string)
+ bool Metodi::ctrl_dott(string codice){
+      ^~~~~~
+10:18:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+10:20:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+10:31:08 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\main.o" 
+Info: Nothing to build for progettoC++

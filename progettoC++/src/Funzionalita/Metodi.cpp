@@ -17,6 +17,10 @@ void Metodi::caricadati(){
 	lista_dottori.push_back(creaDottore(1963,"codFiscdottC","Mario","Blu","fisioterapia"));
 	// Esame
 	lista_esami.push_back(creaEsame(50,lista_dottori[0],lista_pazienti[1]));
+	lista_esami.push_back(creaEsame(60,lista_dottori[0],lista_pazienti[2]));
+	lista_esami.push_back(creaEsame(90,lista_dottori[2],lista_pazienti[0]));
+	lista_esami.push_back(creaEsame(20,lista_dottori[2],lista_pazienti[0]));
+	lista_esami.push_back(creaEsame(15,lista_dottori[0],lista_pazienti[0]));
 
 }
 
@@ -235,6 +239,43 @@ void Metodi::stampaElenco_esami(){
 	}
 }
 
+void Metodi::stampaEsami_ID_dott(){
+	int id_c = -1;
+	cout<<"Inserisci l'ID del dottore da cercare: ";
+	cin>>id_c;
+	cerca_dott(id_c);
+}
+
+void Metodi::cerca_dott(int id_dott){
+	bool trovato = false;
+	for(vector<esame_ref>::iterator i = lista_esami.begin(); i != lista_esami.end(); ++i){
+		if(i->get()->d->getIdDott() == id_dott){
+			i->get()->stampa();
+			trovato = true;
+		}
+	}
+	if(!(trovato))
+		cout<<"Dottore non presente nel sistema! "<<endl;
+}
+
+void Metodi::stampaEsami_ID_paz(){
+	int id_c = -1;
+	cout<<"Inserisci l'ID del paziente da cercare: ";
+	cin>>id_c;
+	cerca_paz(id_c);
+}
+
+void Metodi::cerca_paz(int id_paz){
+	bool trovato = false;
+	for(vector<esame_ref>::iterator i = lista_esami.begin(); i != lista_esami.end(); ++i){
+		if(i->get()->p->getIdPaz() == id_paz){
+			i->get()->stampa();
+			trovato = true;
+		}
+	}
+	if(!(trovato))
+		cout<<"Paziente non presente nel sistema! "<<endl;
+}
 
 int Metodi::getYear(){
 	return this->annocorrente;

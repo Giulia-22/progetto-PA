@@ -26,6 +26,8 @@ int main() {
 		cout<<"h) Ordinamento dei dottori per ID "<<endl;
 		cout<<"i) Inserimento di un nuovo esame nel sistema "<<endl;
 		cout<<"j) Visualizzazione di tutti gli esami del sistema "<<endl;
+		cout<<"k) Visualizzazione di tutti gli esami eseguiti da un dottore "<<endl;
+		cout<<"l) Visualizzazione di tutti gli esami effettuati da un paziente "<<endl;
 		cout<<"0) TERMINA "<<endl<<endl;
 		cout<<"La tua scelta: ";
 		cin>>scelta;
@@ -59,6 +61,12 @@ int main() {
 			break;
 		case 'j':
 			m->stampaElenco_esami();
+			break;
+		case 'k':
+			m->stampaEsami_ID_dott();
+			break;
+		case 'l':
+			m->stampaEsami_ID_paz();
 			break;
 		case '0':
 			cout<<endl<<"Arrivederci!"<<endl;
