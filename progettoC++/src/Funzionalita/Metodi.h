@@ -83,7 +83,7 @@ private:
 	mr_ref creaEsameMr();
 	mr_ref creaEsameMr(int,int,dottore_ref, paziente_ref);
 	petmr_ref creaEsamePetMr();
-	petmr_ref creaEsamePetMr(int,int,int,dottore_ref,dottore_ref,paziente_ref);
+	petmr_ref creaEsamePetMr(int,int,int,dottore_ref,paziente_ref);
 
 };
 

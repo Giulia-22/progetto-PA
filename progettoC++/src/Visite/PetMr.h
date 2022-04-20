@@ -15,7 +15,7 @@ class PetMr : public Pet, public Mr {
 	friend class Metodi;
 protected:
 	PetMr();
-	PetMr(int,int,int,dottore_ref,dottore_ref,paziente_ref);
+	PetMr(int,int,int,dottore_ref,paziente_ref);
 public:
 	virtual int getDurata();
 	int getDurataPet();

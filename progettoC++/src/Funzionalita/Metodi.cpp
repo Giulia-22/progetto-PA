@@ -32,10 +32,10 @@ void Metodi::caricadati(){
 	lista_esami_mr.push_back(creaEsameMr(60,2,lista_dottori[1],lista_pazienti[2]));
 	lista_esami_mr.push_back(creaEsameMr(10,6,lista_dottori[0],lista_pazienti[2]));
 	// PET/MR
-	lista_esami_petmr.push_back(creaEsamePetMr(15,60,5,lista_dottori[2],lista_dottori[2],lista_pazienti[0]));
-	lista_esami_petmr.push_back(creaEsamePetMr(20,35,10,lista_dottori[1],lista_dottori[2],lista_pazienti[2]));
-	lista_esami_petmr.push_back(creaEsamePetMr(60,20,2,lista_dottori[1],lista_dottori[0],lista_pazienti[1]));
-	lista_esami_petmr.push_back(creaEsamePetMr(10,75,1,lista_dottori[0],lista_dottori[0],lista_pazienti[2]));
+	lista_esami_petmr.push_back(creaEsamePetMr(15,60,5,lista_dottori[2],lista_pazienti[0]));
+	lista_esami_petmr.push_back(creaEsamePetMr(20,35,10,lista_dottori[2],lista_pazienti[2]));
+	lista_esami_petmr.push_back(creaEsamePetMr(60,20,2,lista_dottori[0],lista_pazienti[1]));
+	lista_esami_petmr.push_back(creaEsamePetMr(10,75,1,lista_dottori[0],lista_pazienti[2]));
 
 
 }
@@ -408,8 +408,8 @@ void Metodi::stampaEsami_MR_forti(){
 
 // ESAMI ** PET/MR **
 // Costruttore con passaggio parametri
-petmr_ref Metodi::creaEsamePetMr(int dur_p, int dur_m, int inten, dottore_ref drp, dottore_ref drm, paziente_ref pr){
-	petmr_ref es_pm (new PetMr(dur_p,dur_m,inten,drp,drm,pr));
+petmr_ref Metodi::creaEsamePetMr(int dur_p, int dur_m, int inten, dottore_ref dr, paziente_ref pr){
+	petmr_ref es_pm (new PetMr(dur_p,dur_m,inten,dr,pr));
 	return es_pm;
 }
 // Costruttore con parametri chiesti utente
@@ -418,11 +418,9 @@ petmr_ref Metodi::creaEsamePetMr(){
 	int dur_pet = 30;
 	int dur_mr = 15;
 	int inte = 2;
-	int pos_dott_pet = -1;
-	int pos_dott_mr = -1;
+	int pos_dott = -1;
 	int pos_paz = -1;
-	dottore_ref drpet;
-	dottore_ref drmr;
+	dottore_ref dref;
 	paziente_ref pr;
 	do{
 		cout<<"Inserisci durata esame PET: ";
@@ -431,9 +429,9 @@ petmr_ref Metodi::creaEsamePetMr(){
 	do{
 		cout<<"Inserire ID dottore: ";
 		cin>>temp;
-		pos_dott_pet = ctrl_dott(temp);
-	} while(pos_dott_pet == -1);
-	drpet = lista_dottori[pos_dott_pet];
+		pos_dott = ctrl_dott(temp);
+	} while(pos_dott == -1);
+	dref = lista_dottori[pos_dott];
 	do{
 		cout<<"Inserisci durata esame MR: ";
 		cin>>dur_mr;
@@ -443,18 +441,12 @@ petmr_ref Metodi::creaEsamePetMr(){
 		cin>>inte;
 	} while(inte<0);
 	do{
-		cout<<"Inserire ID dottore: ";
-		cin>>temp;
-		pos_dott_mr = ctrl_dott(temp);
-	} while(pos_dott_mr == -1);
-	drmr = lista_dottori[pos_dott_mr];
-	do{
 		cout<<"Inserire ID paziente: ";
 		cin>>temp;
 		pos_paz = ctrl_paz(temp);
 	} while(pos_paz == -1);
 	pr = lista_pazienti[pos_paz];
-	petmr_ref es_petmr (creaEsamePetMr(dur_pet,dur_mr,inte,drpet,drmr,pr));
+	petmr_ref es_petmr (creaEsamePetMr(dur_pet,dur_mr,inte,dref,pr));
 	return es_petmr;
 
 }

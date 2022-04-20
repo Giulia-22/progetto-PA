@@ -11115,3 +11115,10 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visi
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
 Info: Nothing to build for progettoC++
+20:29:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++

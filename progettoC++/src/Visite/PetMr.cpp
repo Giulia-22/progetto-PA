@@ -5,7 +5,7 @@ PetMr::PetMr() {
 
 }
 
-PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dottp,dottore_ref dottm,paziente_ref paz):Esame(dottp,paz),Pet(du_pet,dottp,paz),Mr(du_mr,intensit,dottm,paz) {
+PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dott,paziente_ref paz):Esame(dott,paz),Pet(du_pet,dott,paz),Mr(du_mr,intensit,dott,paz) {
 
 }
 

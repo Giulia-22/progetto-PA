@@ -1,7 +1,6 @@
 CHIEDERE: 
 	Come fare distruttore
 	Togliere warning su persona
-	sistemare duplicazione campi
 	
 	
 DA FARE PIU' TARDI: (forse)
