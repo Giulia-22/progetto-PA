@@ -8,9 +8,9 @@ Metodi::Metodi(){
 
 void Metodi::caricadati(){
 	// Paziente
-	lista_pazienti.push_back(creaPaziente(1956,"codFiscmr","Mario","Rossi","1"));
-	lista_pazienti.push_back(creaPaziente(1965,"codFiscmv","Mario","Verdi","2"));
-	lista_pazienti.push_back(creaPaziente(1932,"codFiscmb","Mario","Bianchi","1"));
+	lista_pazienti.push_back(creaPaziente(1956,"codFiscmr","Mario","Rossi",adulto));
+	lista_pazienti.push_back(creaPaziente(1965,"codFiscmv","Mario","Verdi",bambino));
+	lista_pazienti.push_back(creaPaziente(1932,"codFiscmb","Mario","Bianchi",anziano));
 	// Dottore
 	lista_dottori.push_back(creaDottore(1986,"codFiscdottA","Giuseppe","Verdi","cardiologia"));
 	lista_dottori.push_back(creaDottore(1989,"codFiscdottB","Antonio","Vivaldi","chirurgia"));
@@ -42,7 +42,7 @@ void Metodi::caricadati(){
 
 //PAZIENTE
 // Costruttore con passaggio parametri
-paziente_ref Metodi::creaPaziente(int an, string cod, string name, string surname, string cat){
+paziente_ref Metodi::creaPaziente(int an, string cod, string name, string surname, category cat){
 	paziente_ref p (new Paziente(an,cod,name,surname,cat));
 	return p;
 }
@@ -55,7 +55,8 @@ paziente_ref Metodi::creaPaziente(Paziente* pazref){
 paziente_ref Metodi::creaPaziente(){
 	int an;
 	bool giaIns = false;
-	string cod, name, surname, cat;
+	string cod, name, surname;
+	string cat; category ca;
 	do{
 		cout<<"Inserisci anno di nascita: ";
 		cin>>an;
@@ -69,9 +70,19 @@ paziente_ref Metodi::creaPaziente(){
 	cin>>name;
 	cout<<"Inserire cognome: ";
 	cin>>surname;
-	cout<<"Inserire categoria: ";
+	cout<<"Inserire categoria: "<<endl;
 	cin>>cat;
-	paziente_ref p (creaPaziente(an,cod,name,surname,cat));
+	// switch non possible con string --> if-else
+	if(cat.compare("bambino") == 0)
+		ca = bambino;
+	else if(cat.compare("adulto") == 0)
+		ca = adulto;
+	else if(cat.compare("anziano") == 0)
+		ca = anziano;
+	else
+		ca = sconosciuto;
+
+	paziente_ref p (creaPaziente(an,cod,name,surname,ca));
 	return p;
 }
 

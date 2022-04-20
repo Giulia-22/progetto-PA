@@ -7,6 +7,7 @@
 #include <string>
 #include <memory>
 #include "../Utenti/Persona.h"
+#include "../Utenti/Categoria.h"
 
 using namespace std;
 
@@ -15,15 +16,15 @@ static int ID_paz_count = 0;
 class Paziente : public Persona {
 public:
 	int ID_paz = ID_paz_count;
-	string categoria = "";
+	category categoria;
 	friend class Metodi;
 protected:
 	Paziente();
 	Paziente(Paziente*);
-	Paziente(int, string, string, string, string);
-	void setCategoria(string);
+	Paziente(int, string, string, string, category);
+	void setCategoria(category);
 public:
-	string getCategoria();
+	category getCategoria();
 	int getIdPaz();
 	virtual void stampa();
 	virtual ~Paziente();

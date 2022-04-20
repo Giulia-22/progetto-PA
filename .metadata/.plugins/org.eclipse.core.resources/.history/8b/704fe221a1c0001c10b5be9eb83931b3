@@ -1,0 +1,9 @@
+
+#ifndef UTENTI_CATEGORIA_H_
+#define UTENTI_CATEGORIA_H_
+
+
+enum category { bambino, adulto, anziano };
+
+
+#endif /* UTENTI_CATEGORIA_H_ */

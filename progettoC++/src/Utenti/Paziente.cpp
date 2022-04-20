@@ -3,7 +3,7 @@
 
 Paziente::Paziente() {
 	this->ID_paz = ID_paz_count++;
-	this->categoria = "";
+	this->categoria = adulto;
 }
 
 Paziente::Paziente(Paziente* pers){
@@ -12,19 +12,19 @@ Paziente::Paziente(Paziente* pers){
 	this->nome = pers->getNome();
 	this->cognome = pers->getCognome();
 	this->ID_paz = ID_paz_count++;
-	this->categoria = "";
+	this->categoria = pers->categoria;
 }
 
-Paziente::Paziente(int an, string codfisc, string n, string c, string cat):Persona(an,codfisc,n,c){
+Paziente::Paziente(int an, string codfisc, string n, string c, category cat):Persona(an,codfisc,n,c){
 	this->ID_paz = ID_paz_count++;
 	this->categoria = cat;
 }
 
-string Paziente::getCategoria() {
+category Paziente::getCategoria() {
 	return this->categoria;
 }
 
-void Paziente::setCategoria(string c) {
+void Paziente::setCategoria(category c) {
 	this->categoria = c;
 }
 

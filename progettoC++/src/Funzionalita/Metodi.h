@@ -72,7 +72,7 @@ public:
 private:
 	paziente_ref creaPaziente();
 	paziente_ref creaPaziente(Paziente*);
-	paziente_ref creaPaziente(int, string, string, string, string);
+	paziente_ref creaPaziente(int, string, string, string, category);
 	dottore_ref creaDottore();
 	dottore_ref creaDottore(Dottore*);
 	dottore_ref creaDottore(int, string, string, string, string);
