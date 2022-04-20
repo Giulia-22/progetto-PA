@@ -1,0 +1,21 @@
+
+#include "PetMr.h"
+
+PetMr::PetMr() {
+
+}
+
+
+int PetMr::getDurata(){
+	int dTot = 0;
+
+	return dTot;
+}
+//int PetMr::getDurataPet();
+//int PetMr::getDurataMr();
+//void PetMr::stampa();
+
+PetMr::~PetMr() {
+
+}
+

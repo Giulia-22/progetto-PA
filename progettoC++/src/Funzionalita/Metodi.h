@@ -13,6 +13,7 @@
 #include "../Visite/Esame.h"
 #include "../Visite/Pet.h"
 #include "../Visite/Mr.h"
+#include "../Visite/PetMr.h"
 
 using namespace std;
 
@@ -26,6 +27,7 @@ private:
 	vector<esame_ref> lista_esami;
 	vector<pet_ref> lista_esami_pet;
 	vector<mr_ref> lista_esami_mr;
+	vector<petmr_ref> lista_esami_petmr;
 private:
 	void caricadati();
 	bool ctrl_paz(string); // Overloading
@@ -59,6 +61,10 @@ public:
 	void inserisciEsameMr();
 	virtual void stampaElenco_esami_mr();
 	void stampaEsami_MR_forti();
+	// PET/MR
+	void inserisciEsamePetMr();
+	virtual void stampaElenco_esami_pet_mr();
+	void stampaEsami_PETMR_corti_forti();
 
 
 	int getYear();
@@ -76,6 +82,8 @@ private:
 	pet_ref creaEsamePet(int,dottore_ref, paziente_ref);
 	mr_ref creaEsameMr();
 	mr_ref creaEsameMr(int,int,dottore_ref, paziente_ref);
+	petmr_ref creaEsamePetMr();
+	petmr_ref creaEsamePetMr(int,int,int,dottore_ref,dottore_ref,paziente_ref);
 
 };
 

@@ -1,0 +1,18 @@
+/*
+ * PetMr.cpp
+ *
+ *  Created on: 20 apr 2022
+ *      Author: giuly
+ */
+
+#include "PetMr.h"
+
+PetMr::PetMr() {
+	// TODO Auto-generated constructor stub
+
+}
+
+PetMr::~PetMr() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -9453,3 +9453,321 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\main.o" 
+10:08:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+10:10:09 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+In file included from ..\src\Visite\Mr.h:9:0,
+                 from ..\src\Visite\Mr.cpp:2:
+..\src\Visite\../Visite/Esame.h:20:22: error: 'd' declared as a 'virtual' field
+  virtual dottore_ref d ;
+                      ^
+10:16:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+10:17:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+10:40:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'petmr_ref Metodi::creaEsamePetMr()':
+..\src\Funzionalita\Metodi.cpp:406:6: warning: variable 'pos_1' set but not used [-Wunused-but-set-variable]
+  int pos_1 = -1;
+      ^~~~~
+..\src\Funzionalita\Metodi.cpp:407:6: warning: variable 'pos_2' set but not used [-Wunused-but-set-variable]
+  int pos_2 = -1;
+      ^~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In constructor 'PetMr::PetMr(pet_ref, mr_ref)':
+..\src\Visite\PetMr.cpp:9:14: error: no matching function for call to 'Pet::Pet(Pet*)'
+  Pet(e1.get());
+              ^
+In file included from ..\src\Visite\PetMr.h:9:0,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/Pet.h:19:2: note: candidate: Pet::Pet(int, dottore_ref, paziente_ref)
+  Pet(int,dottore_ref,paziente_ref);
+  ^~~
+..\src\Visite\../Visite/Pet.h:19:2: note:   candidate expects 3 arguments, 1 provided
+..\src\Visite\../Visite/Pet.h:18:2: note: candidate: Pet::Pet()
+  Pet();
+  ^~~
+..\src\Visite\../Visite/Pet.h:18:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Visite\../Visite/Pet.h:13:7: note: candidate: Pet::Pet(const Pet&)
+ class Pet : virtual public Esame {
+       ^~~
+..\src\Visite\../Visite/Pet.h:13:7: note:   no known conversion for argument 1 from 'Pet*' to 'const Pet&'
+..\src\Visite\PetMr.cpp:10:13: error: no matching function for call to 'Mr::Mr(Mr*)'
+  Mr(e2.get());
+             ^
+In file included from ..\src\Visite\PetMr.h:10:0,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/Mr.h:20:2: note: candidate: Mr::Mr(int, int, dottore_ref, paziente_ref)
+  Mr(int,int,dottore_ref,paziente_ref);
+  ^~
+..\src\Visite\../Visite/Mr.h:20:2: note:   candidate expects 4 arguments, 1 provided
+..\src\Visite\../Visite/Mr.h:19:2: note: candidate: Mr::Mr()
+  Mr();
+  ^~
+..\src\Visite\../Visite/Mr.h:19:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Visite\../Visite/Mr.h:13:7: note: candidate: Mr::Mr(const Mr&)
+ class Mr : virtual public Esame {
+       ^~
+..\src\Visite\../Visite/Mr.h:13:7: note:   no known conversion for argument 1 from 'Mr*' to 'const Mr&'
+10:45:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In constructor 'PetMr::PetMr(pet_ref, mr_ref)':
+..\src\Visite\PetMr.cpp:9:14: error: 'Pet::Pet(Pet*)' is protected within this context
+  Pet(e1.get());
+              ^
+In file included from ..\src\Visite\PetMr.h:9:0,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/Pet.h:19:2: note: declared protected here
+  Pet(Pet*);
+  ^~~
+..\src\Visite\PetMr.cpp:10:13: error: no matching function for call to 'Mr::Mr(Mr*)'
+  Mr(e2.get());
+             ^
+In file included from ..\src\Visite\PetMr.h:10:0,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/Mr.h:20:2: note: candidate: Mr::Mr(int, int, dottore_ref, paziente_ref)
+  Mr(int,int,dottore_ref,paziente_ref);
+  ^~
+..\src\Visite\../Visite/Mr.h:20:2: note:   candidate expects 4 arguments, 1 provided
+..\src\Visite\../Visite/Mr.h:19:2: note: candidate: Mr::Mr()
+  Mr();
+  ^~
+..\src\Visite\../Visite/Mr.h:19:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Visite\../Visite/Mr.h:13:7: note: candidate: Mr::Mr(const Mr&)
+ class Mr : virtual public Esame {
+       ^~
+..\src\Visite\../Visite/Mr.h:13:7: note:   no known conversion for argument 1 from 'Mr*' to 'const Mr&'
+10:46:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+..\src\Visite\Pet.cpp: In constructor 'Pet::Pet(Pet*)':
+..\src\Visite\Pet.cpp:12:11: error: 'std::__cxx11::string Persona::nome' is protected within this context
+  this->d->nome = pet_p->d->getNome();
+           ^~~~
+In file included from ..\src\Visite\../Visite/Esame.h:9:0,
+                 from ..\src\Visite\Pet.h:9,
+                 from ..\src\Visite\Pet.cpp:2:
+..\src\Visite\../Visite/../Utenti/Persona.h:17:16: note: declared protected here
+  string nome = "";
+                ^~
+..\src\Visite\Pet.cpp:13:11: error: 'std::__cxx11::string Persona::cognome' is protected within this context
+  this->d->cognome = pet_p->d->getCognome();
+           ^~~~~~~
+In file included from ..\src\Visite\../Visite/Esame.h:9:0,
+                 from ..\src\Visite\Pet.h:9,
+                 from ..\src\Visite\Pet.cpp:2:
+..\src\Visite\../Visite/../Utenti/Persona.h:18:19: note: declared protected here
+  string cognome = "";
+                   ^~
+..\src\Visite\Pet.cpp:18:11: error: 'std::__cxx11::string Persona::nome' is protected within this context
+  this->p->nome = pet_p->p->getNome();
+           ^~~~
+In file included from ..\src\Visite\../Visite/Esame.h:9:0,
+                 from ..\src\Visite\Pet.h:9,
+                 from ..\src\Visite\Pet.cpp:2:
+..\src\Visite\../Visite/../Utenti/Persona.h:17:16: note: declared protected here
+  string nome = "";
+                ^~
+..\src\Visite\Pet.cpp:19:11: error: 'std::__cxx11::string Persona::cognome' is protected within this context
+  this->p->cognome = pet_p->p->getCognome();
+           ^~~~~~~
+In file included from ..\src\Visite\../Visite/Esame.h:9:0,
+                 from ..\src\Visite\Pet.h:9,
+                 from ..\src\Visite\Pet.cpp:2:
+..\src\Visite\../Visite/../Utenti/Persona.h:18:19: note: declared protected here
+  string cognome = "";
+                   ^~
+10:48:06 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'petmr_ref Metodi::creaEsamePetMr()':
+..\src\Funzionalita\Metodi.cpp:406:6: warning: variable 'pos_1' set but not used [-Wunused-but-set-variable]
+  int pos_1 = -1;
+      ^~~~~
+..\src\Funzionalita\Metodi.cpp:407:6: warning: variable 'pos_2' set but not used [-Wunused-but-set-variable]
+  int pos_2 = -1;
+      ^~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In constructor 'PetMr::PetMr(pet_ref, mr_ref)':
+..\src\Visite\PetMr.cpp:9:14: error: no matching function for call to 'Pet::Pet(Pet*)'
+  Pet(e1.get());
+              ^
+In file included from ..\src\Visite\PetMr.h:9:0,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/Pet.h:19:2: note: candidate: Pet::Pet(int, dottore_ref, paziente_ref)
+  Pet(int,dottore_ref,paziente_ref);
+  ^~~
+..\src\Visite\../Visite/Pet.h:19:2: note:   candidate expects 3 arguments, 1 provided
+..\src\Visite\../Visite/Pet.h:18:2: note: candidate: Pet::Pet()
+  Pet();
+  ^~~
+..\src\Visite\../Visite/Pet.h:18:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Visite\../Visite/Pet.h:13:7: note: candidate: Pet::Pet(const Pet&)
+ class Pet : virtual public Esame {
+       ^~~
+..\src\Visite\../Visite/Pet.h:13:7: note:   no known conversion for argument 1 from 'Pet*' to 'const Pet&'
+..\src\Visite\PetMr.cpp:10:13: error: no matching function for call to 'Mr::Mr(Mr*)'
+  Mr(e2.get());
+             ^
+In file included from ..\src\Visite\PetMr.h:10:0,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/Mr.h:20:2: note: candidate: Mr::Mr(int, int, dottore_ref, paziente_ref)
+  Mr(int,int,dottore_ref,paziente_ref);
+  ^~
+..\src\Visite\../Visite/Mr.h:20:2: note:   candidate expects 4 arguments, 1 provided
+..\src\Visite\../Visite/Mr.h:19:2: note: candidate: Mr::Mr()
+  Mr();
+  ^~
+..\src\Visite\../Visite/Mr.h:19:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Visite\../Visite/Mr.h:13:7: note: candidate: Mr::Mr(const Mr&)
+ class Mr : virtual public Esame {
+       ^~
+..\src\Visite\../Visite/Mr.h:13:7: note:   no known conversion for argument 1 from 'Mr*' to 'const Mr&'
+10:55:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'petmr_ref Metodi::creaEsamePetMr()':
+..\src\Funzionalita\Metodi.cpp:406:6: warning: variable 'pos_1' set but not used [-Wunused-but-set-variable]
+  int pos_1 = -1;
+      ^~~~~
+..\src\Funzionalita\Metodi.cpp:407:6: warning: variable 'pos_2' set but not used [-Wunused-but-set-variable]
+  int pos_2 = -1;
+      ^~~~~
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+src\Funzionalita\Metodi.o:Metodi.cpp:(.rdata$_ZTV6Metodi[__ZTV6Metodi]+0x14): undefined reference to `Metodi::stampaElenco_esami_pet_mr()'
+collect2.exe: error: ld returned 1 exit status
+10:57:14 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+src\Funzionalita\Metodi.o:Metodi.cpp:(.rdata$_ZTV6Metodi[__ZTV6Metodi]+0x14): undefined reference to `Metodi::stampaElenco_esami_pet_mr()'
+collect2.exe: error: ld returned 1 exit status
+11:07:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:446:6: error: redefinition of 'void Metodi::inserisciEsameMr()'
+ void Metodi::inserisciEsameMr(){
+      ^~~~~~
+..\src\Funzionalita\Metodi.cpp:370:6: note: 'void Metodi::inserisciEsameMr()' previously defined here
+ void Metodi::inserisciEsameMr(){
+      ^~~~~~
+11:07:46 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:16:02 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:17:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:18:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:20:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:20:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+11:27:37 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:30:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:31:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:32:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:36:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In constructor 'PetMr::PetMr(int, int, int, dottore_ref, dottore_ref, paziente_ref)':
+..\src\Visite\PetMr.cpp:8:1: error: multiple initializations given for base 'Esame'
+ PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dottp,dottore_ref dottm,paziente_ref paz):Esame(dottp,paz),Esame(dottm,paz),Pet(du_pet,dottp,paz),Mr(du_mr,intensit,dottm,paz) {
+ ^~~~~
+11:36:51 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In constructor 'PetMr::PetMr(int, int, int, dottore_ref, dottore_ref, paziente_ref)':
+..\src\Visite\PetMr.cpp:8:102: error: type 'Esame' is not a direct base of 'PetMr'
+ PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dottp,dottore_ref dottm,paziente_ref paz):Esame(dottp,paz),Esame(dottm,paz),Pet(du_pet,dottp,paz),Mr(du_mr,intensit,dottm,paz) {
+                                                                                                      ^~~~~
+..\src\Visite\PetMr.cpp:8:119: error: type 'Esame' is not a direct base of 'PetMr'
+ PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dottp,dottore_ref dottm,paziente_ref paz):Esame(dottp,paz),Esame(dottm,paz),Pet(du_pet,dottp,paz),Mr(du_mr,intensit,dottm,paz) {
+                                                                                                                       ^~~~~
+..\src\Visite\PetMr.cpp: In member function 'virtual void PetMr::stampa()':
+..\src\Visite\PetMr.cpp:26:35: error: request for member 'getIdEsame' is ambiguous
+  cout<<"ID esame PET/MR: "<<this->getIdEsame()<<endl;
+                                   ^~~~~~~~~~
+In file included from ..\src\Visite\../Visite/Pet.h:9:0,
+                 from ..\src\Visite\PetMr.h:9,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note: candidates are: int Esame::getIdEsame()
+  int getIdEsame();
+      ^~~~~~~~~~
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note:                 int Esame::getIdEsame()
+11:38:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:38:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:44:58 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:46:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 

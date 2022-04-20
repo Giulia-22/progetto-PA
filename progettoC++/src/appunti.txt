@@ -8,7 +8,6 @@ DA FARE PIU' TARDI:
 	metodo ctrl cod fisc con generici
 	stesso ma comparator con id
 	
-	categorie mancanti stampa
 	
 	
 	

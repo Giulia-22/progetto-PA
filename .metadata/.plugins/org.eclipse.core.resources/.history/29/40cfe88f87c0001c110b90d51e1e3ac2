@@ -1,0 +1,38 @@
+
+#include "PetMr.h"
+
+PetMr::PetMr() {
+
+}
+
+PetMr::PetMr(pet_ref e1, mr_ref e2) {
+	Pet(e1.get());
+	Mr(e2.get());
+}
+
+
+int PetMr::getDurata(){
+	return Pet::durata+Mr::durata;
+}
+
+int PetMr::getDurataPet(){
+	return Pet::durata;
+}
+
+int PetMr::getDurataMr(){
+	return Mr::durata;
+}
+
+void PetMr::stampa(){
+	cout<<"ID esame PET/MR: "<<this->getIdEsame()<<endl;
+	cout<<"Durata totale prevista: "<<this->getDurata()<<endl;
+	cout<<"INFORMAZIONI PET: "<<endl;
+	this->Pet::stampa();
+	cout<<"INFORMAZIONI MR: "<<endl;
+	this->Mr::stampa();
+}
+
+PetMr::~PetMr() {
+
+}
+

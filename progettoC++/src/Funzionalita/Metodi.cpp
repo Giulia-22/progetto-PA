@@ -31,6 +31,11 @@ void Metodi::caricadati(){
 	lista_esami_mr.push_back(creaEsameMr(20,4,lista_dottori[1],lista_pazienti[1]));
 	lista_esami_mr.push_back(creaEsameMr(60,2,lista_dottori[1],lista_pazienti[2]));
 	lista_esami_mr.push_back(creaEsameMr(10,6,lista_dottori[0],lista_pazienti[2]));
+	// PET/MR
+	lista_esami_petmr.push_back(creaEsamePetMr(15,60,5,lista_dottori[2],lista_dottori[2],lista_pazienti[0]));
+	lista_esami_petmr.push_back(creaEsamePetMr(20,35,10,lista_dottori[1],lista_dottori[2],lista_pazienti[2]));
+	lista_esami_petmr.push_back(creaEsamePetMr(60,20,2,lista_dottori[1],lista_dottori[0],lista_pazienti[1]));
+	lista_esami_petmr.push_back(creaEsamePetMr(10,75,1,lista_dottori[0],lista_dottori[0],lista_pazienti[2]));
 
 
 }
@@ -390,6 +395,87 @@ void Metodi::stampaEsami_MR_forti(){
 	}
 }
 
+// ESAMI ** PET/MR **
+// Costruttore con passaggio parametri
+petmr_ref Metodi::creaEsamePetMr(int dur_p, int dur_m, int inten, dottore_ref drp, dottore_ref drm, paziente_ref pr){
+	petmr_ref es_pm (new PetMr(dur_p,dur_m,inten,drp,drm,pr));
+	return es_pm;
+}
+// Costruttore con parametri chiesti utente
+petmr_ref Metodi::creaEsamePetMr(){
+	int temp = 0;
+	int dur_pet = 30;
+	int dur_mr = 15;
+	int inte = 2;
+	int pos_dott_pet = -1;
+	int pos_dott_mr = -1;
+	int pos_paz = -1;
+	dottore_ref drpet;
+	dottore_ref drmr;
+	paziente_ref pr;
+	do{
+		cout<<"Inserisci durata esame PET: ";
+		cin>>dur_pet;
+	} while(dur_pet<0);
+	do{
+		cout<<"Inserire ID dottore: ";
+		cin>>temp;
+		pos_dott_pet = ctrl_dott(temp);
+	} while(pos_dott_pet == -1);
+	drpet = lista_dottori[pos_dott_pet];
+	do{
+		cout<<"Inserisci durata esame MR: ";
+		cin>>dur_mr;
+	} while(dur_mr<0);
+	do{
+		cout<<"Inserisci intensita' esame: ";
+		cin>>inte;
+	} while(inte<0);
+	do{
+		cout<<"Inserire ID dottore: ";
+		cin>>temp;
+		pos_dott_mr = ctrl_dott(temp);
+	} while(pos_dott_mr == -1);
+	drmr = lista_dottori[pos_dott_mr];
+	do{
+		cout<<"Inserire ID paziente: ";
+		cin>>temp;
+		pos_paz = ctrl_paz(temp);
+	} while(pos_paz == -1);
+	pr = lista_pazienti[pos_paz];
+	petmr_ref es_petmr (creaEsamePetMr(dur_pet,dur_mr,inte,drpet,drmr,pr));
+	return es_petmr;
+
+}
+
+void Metodi::inserisciEsamePetMr(){
+	lista_esami_petmr.push_back(creaEsamePetMr());
+}
+
+void Metodi::stampaElenco_esami_pet_mr(){
+	for(vector<petmr_ref>::iterator i = lista_esami_petmr.begin(); i != lista_esami_petmr.end(); ++i){
+		i->get()->stampa();
+	}
+}
+
+void Metodi::stampaEsami_PETMR_corti_forti(){
+	int intensity = 2;
+	int dur = 20;
+	do{
+		cout<<"Inserisci intensita' MR (5-10): ";
+		cin>>intensity;
+	} while(intensity<5 || intensity>10);
+	do{
+		cout<<"Inserisci durata PET (0-40): ";
+		cin>>dur;
+	} while(dur<0 || dur>40);
+	for(vector<petmr_ref>::iterator i = lista_esami_petmr.begin(); i != lista_esami_petmr.end(); ++i){
+		if(i->get()->Pet::durata <= dur && i->get()->Mr::intensita <= intensity)
+			i->get()->stampa();
+	}
+
+
+}
 
 int Metodi::getYear(){
 	return this->annocorrente;

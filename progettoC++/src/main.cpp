@@ -35,7 +35,10 @@ int main() {
 		cout<<"o) Visualizzazione di tutti gli esami PET brevi "<<endl;
 		cout<<"p) Inserimento di un nuovo esame MR nel sistema "<<endl;
 		cout<<"q) Visualizzazione di tutti gli esami MR del sistema "<<endl;
-		cout<<"r) Visualizzazione di tutti gli esami MR brevi "<<endl;
+		cout<<"r) Visualizzazione di tutti gli esami MR forti "<<endl;
+		cout<<"s) Inserimento di un nuovo esame PET/MR nel sistema "<<endl;
+		cout<<"t) Visualizzazione di tutti gli esami PET/MR del sistema "<<endl;
+		cout<<"u) Visualizzazione di tutti gli esami PET/MR forti e brevi del sistema "<<endl;
 		cout<<"0) TERMINA "<<endl<<endl;
 		cout<<"La tua scelta: ";
 		cin>>scelta;
@@ -93,6 +96,15 @@ int main() {
 			break;
 		case 'r':
 			m->stampaEsami_MR_forti();
+			break;
+		case 's':
+			m->inserisciEsamePetMr();
+			break;
+		case 't':
+			m->stampaElenco_esami_pet_mr();
+			break;
+		case 'u':
+			m->stampaEsami_PETMR_corti_forti();
 			break;
 		case '0':
 			cout<<endl<<"Arrivederci!"<<endl;
