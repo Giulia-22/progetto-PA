@@ -3,6 +3,8 @@
 #include <memory>
 
 #include "Funzionalita/Metodi.h"
+//#include "Utenti/Persona.h"
+//#include "Utenti/Paziente.h"
 #include "Visite/Pet.h"
 
 using namespace std;
@@ -54,7 +56,6 @@ int main() {
 				break;
 			}
 			break;
-		// Dottore
 		case 'b':
 			cout<<"Digita la lettera corrispondente all'azione che desideri eseguire. "<<endl;
 			cout<<"Digita 0 se desideri tornare al menu principale."<<endl;
@@ -85,7 +86,6 @@ int main() {
 				break;
 			}
 			break;
-			// Esame
 			case 'c':
 				cout<<"Digita la lettera corrispondente all'azione che desideri eseguire. "<<endl;
 				cout<<"Digita 0 se desideri tornare al menu principale."<<endl;

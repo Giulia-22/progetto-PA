@@ -9771,3 +9771,95 @@ g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "s
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+12:03:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+12:03:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+13:29:03 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+13:31:40 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
+13:37:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In constructor 'PetMr::PetMr(int, int, int, dottore_ref, dottore_ref, paziente_ref)':
+..\src\Visite\PetMr.cpp:8:102: error: type 'Esame' is not a direct base of 'PetMr'
+ PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dottp,dottore_ref dottm,paziente_ref paz):Esame(dottp,paz),Pet(du_pet,dottp,paz),Mr(du_mr,intensit,dottm,paz) {
+                                                                                                      ^~~~~
+..\src\Visite\PetMr.cpp: In member function 'virtual void PetMr::stampa()':
+..\src\Visite\PetMr.cpp:26:35: error: request for member 'getIdEsame' is ambiguous
+  cout<<"ID esame PET/MR: "<<this->getIdEsame()<<endl;
+                                   ^~~~~~~~~~
+In file included from ..\src\Visite\../Visite/Pet.h:9:0,
+                 from ..\src\Visite\PetMr.h:9,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note: candidates are: int Esame::getIdEsame()
+  int getIdEsame();
+      ^~~~~~~~~~
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note:                 int Esame::getIdEsame()
+13:37:42 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In constructor 'PetMr::PetMr(int, int, int, dottore_ref, dottore_ref, paziente_ref)':
+..\src\Visite\PetMr.cpp:8:102: error: type 'Esame' is not a direct base of 'PetMr'
+ PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dottp,dottore_ref dottm,paziente_ref paz):Esame(dottp,paz),Esame(dottm,paz),Pet(du_pet,dottp,paz),Mr(du_mr,intensit,dottm,paz) {
+                                                                                                      ^~~~~
+..\src\Visite\PetMr.cpp:8:119: error: type 'Esame' is not a direct base of 'PetMr'
+ PetMr::PetMr(int du_pet,int du_mr,int intensit,dottore_ref dottp,dottore_ref dottm,paziente_ref paz):Esame(dottp,paz),Esame(dottm,paz),Pet(du_pet,dottp,paz),Mr(du_mr,intensit,dottm,paz) {
+                                                                                                                       ^~~~~
+..\src\Visite\PetMr.cpp: In member function 'virtual void PetMr::stampa()':
+..\src\Visite\PetMr.cpp:26:35: error: request for member 'getIdEsame' is ambiguous
+  cout<<"ID esame PET/MR: "<<this->getIdEsame()<<endl;
+                                   ^~~~~~~~~~
+In file included from ..\src\Visite\../Visite/Pet.h:9:0,
+                 from ..\src\Visite\PetMr.h:9,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note: candidates are: int Esame::getIdEsame()
+  int getIdEsame();
+      ^~~~~~~~~~
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note:                 int Esame::getIdEsame()
+13:37:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+..\src\Visite\PetMr.cpp: In member function 'virtual void PetMr::stampa()':
+..\src\Visite\PetMr.cpp:26:35: error: request for member 'getIdEsame' is ambiguous
+  cout<<"ID esame PET/MR: "<<this->getIdEsame()<<endl;
+                                   ^~~~~~~~~~
+In file included from ..\src\Visite\../Visite/Pet.h:9:0,
+                 from ..\src\Visite\PetMr.h:9,
+                 from ..\src\Visite\PetMr.cpp:2:
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note: candidates are: int Esame::getIdEsame()
+  int getIdEsame();
+      ^~~~~~~~~~
+..\src\Visite\../Visite/../Visite/Esame.h:24:6: note:                 int Esame::getIdEsame()
+13:38:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+13:41:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++

@@ -54,7 +54,6 @@ int main() {
 				break;
 			}
 			break;
-		// Dottore
 		case 'b':
 			cout<<"Digita la lettera corrispondente all'azione che desideri eseguire. "<<endl;
 			cout<<"Digita 0 se desideri tornare al menu principale."<<endl;
@@ -85,7 +84,6 @@ int main() {
 				break;
 			}
 			break;
-			// Esame
 			case 'c':
 				cout<<"Digita la lettera corrispondente all'azione che desideri eseguire. "<<endl;
 				cout<<"Digita 0 se desideri tornare al menu principale."<<endl;
