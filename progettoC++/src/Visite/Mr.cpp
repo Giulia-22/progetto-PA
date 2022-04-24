@@ -38,5 +38,6 @@ void Mr::stampa(){
 }
 
 Mr::~Mr() {
+	cout<<"distruggo MR"<<endl;
 }
 

@@ -41,5 +41,6 @@ void Esame::stampa(){
 }
 
 Esame::~Esame() {
+	cout<<"distruggo esame"<<endl;
 }
 

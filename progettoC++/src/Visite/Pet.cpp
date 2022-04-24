@@ -30,6 +30,7 @@ void Pet::stampa(){
 
 
 Pet::~Pet() {
+	cout<<"distruggo PET"<<endl;
 
 }
 

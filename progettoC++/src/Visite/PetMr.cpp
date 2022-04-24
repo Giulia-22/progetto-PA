@@ -32,6 +32,7 @@ void PetMr::stampa(){
 }
 
 PetMr::~PetMr() {
+	cout<<"distruggo esame PET/MR"<<endl;
 
 }
 

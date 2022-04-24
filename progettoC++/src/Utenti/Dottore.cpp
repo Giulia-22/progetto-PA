@@ -42,5 +42,6 @@ void Dottore::stampa(){
 }
 
 Dottore::~Dottore() {
+	cout<<"distruggo dottore"<<endl;
 }
 

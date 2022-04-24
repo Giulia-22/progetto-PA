@@ -62,5 +62,6 @@ void Persona::stampa(){
 }
 
 Persona::~Persona() {
+	cout<<"distruggo persona"<<endl;
 }
 

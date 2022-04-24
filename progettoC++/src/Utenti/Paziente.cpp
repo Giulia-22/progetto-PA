@@ -42,5 +42,6 @@ void Paziente::stampa(){
 }
 
 Paziente::~Paziente() {
+	cout<<"distruggo paziente"<<endl;
 }
 
