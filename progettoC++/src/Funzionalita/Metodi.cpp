@@ -485,4 +485,5 @@ int Metodi::getYear(){
 }
 
 Metodi::~Metodi() {
+	delete(now);
 }

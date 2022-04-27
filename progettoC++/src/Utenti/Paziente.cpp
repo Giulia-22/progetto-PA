@@ -3,7 +3,7 @@
 
 Paziente::Paziente() {
 	this->ID_paz = ID_paz_count++;
-	this->categoria = adulto;
+	this->categoria = sconosciuto;
 }
 
 Paziente::Paziente(Paziente* pers){

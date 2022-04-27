@@ -33,6 +33,6 @@ public:
 	virtual ~Persona();
 };
 
-typedef unique_ptr<Persona> persona_ref;
+typedef shared_ptr<Persona> persona_ref;
 
 #endif /* PERSONA_H_ */

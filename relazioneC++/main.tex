@@ -64,15 +64,52 @@
 %	INTRODUCTION	
 %----------------------------------------------------------------------------------------
 \section*{Introduzione} 
-Progetto C++ di Programmazione Avanzata
+L’applicazione progettata permette di gestire le informazioni relative a delle visite mediche, mediante l’inserimento di alcune informazioni riguardanti l’esame, il paziente sul quale questo viene effettuato e il medico che lo esegue. 
 
 
 %----------------------------------------------------------------------------------------
 %	CAPITOLO 1
 %----------------------------------------------------------------------------------------
-\clearpage
-\newpage
-\section*{Capitolo 1} % Numbered section
+%\clearpage
+%\newpage
+\section*{Funzionamento} 
+L’applicazione è formata da 8 classi: Persona, Dottore, Paziente, Esame, Pet, Mr, PetMr e Metodi (una classe di gestione). Una persona può essere o un paziente o un dottore, entrambi ereditano dalla classe persona in modo pubblico. Entrambe le classi sono caratterizzate da un ID, la classe Dottore possiede un campo specializzazione mentre la classe Paziente un campo per memorizzare la categoria alla quale appartiene. Ereditano i campi di nome, cognome, codice fiscale e anno di nascita dalla classe Persona. I campi nome e cognome sono protected, mentre i campi relativi al codice fiscale e all’anno di nascita sono public. La gerarchia delle classi che descrivono gli esami formano un diamante, perché sia la classe Pet che la classe Mr hanno come classe base Esame, la classe PetMr invece rappresenta un esame ibrido fra i due precedenti, questa classe eredita sia dalla classe Pet che dalla classe Mr (mediante il meccanismo dell’ereditarietà multipla del C++). La classe Metodi raccoglie invece tutte le funzionalità che che vengono offerte dal programma e che sono poi richiamate nel main del programma. L’utente digita la lettera corrispondente all’operazione che intende eseguire, sarà quindi richiamato il metodo corrispondente a quella determinata azione. 
+
+%----------------------------------------------------------------------------------------
+%	CAPITOLO 3
+%----------------------------------------------------------------------------------------
+%\clearpage
+%\newpage
+\section*{Scelte implementative} 
+Stl, ered multi, (guarda sito così metti tutto). 
+I metodi che richiamano i costruttori di una classe sono private così utente non può creare a caso e così come metodi di controllo
+
+%----------------------------------------------------------------------------------------
+%	CAPITOLO 2
+%----------------------------------------------------------------------------------------
+%\clearpage
+%\newpage
+\section*{Diagramma delle classi}
+Di seguito si riportano i diagrammi delle classi dell’applicazione. 
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=\columnwidth]{diagrammiClassi/gerarchiaPersone}
+ \caption{Diagramma delle classi - Gerarchia utenti.}
+\end{figure}
+\\
+\begin{figure}[h]
+ \centering
+ \includegraphics[width=\columnwidth]{diagrammiClassi/gerarchiaEsami}
+ \caption{Diagramma delle classi - Gerarchia esami.}
+\end{figure}
+\\
+\begin{figure}[h]
+ \centering
+ \includegraphics[height=0.9\textheight]{diagrammiClassi/metodi}
+ \caption{Diagramma delle classi - Metodi resi disponibili nel programma principale.}
+\end{figure}
+
+
 
 
 %----------------------------------------------------------------------------------------
