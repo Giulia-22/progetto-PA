@@ -115,11 +115,24 @@ Di seguito si riportano i diagrammi delle classi dell’applicazione. \\
 \clearpage
 \newpage
 \section*{Scelte implementative} 
-Stl, ered multi, (guarda sito così metti tutto). 
-classi friend
- I campi nome e cognome sono protected, mentre i campi relativi al codice fiscale e all’anno di nascita sono public. 
+I costruttori sono stati dichiarati protected, in modo tale che possano essere richiamati solo dalle classi derivate. Tutte le classi di Utenti e Visite sono friend della classe Metodi, in modo tale che la classe di gestione possa accedere a tutti i campi e a tutti i metodi di cui necessita. In questa classe inoltre i metodi che si occupano della creazione di un nuovo oggetto sono stati dichiarati private, così che nel main non possano essere richiamati in modo illecito. Anche i metodi utilizzati per il controllo del valore delle variabili sono stati dichiarati private, mentre tutti gli altri metodi sono public. \\
+La classe Metodi ha il costruttore privato perché mette a disposizione una singola istanza che verrà poi utilizzata nel main (design pattern \textit{Singleton}). \textbf{ricordati di farlo!!!}\\
+Per ogni altra classe invece esiste più di un costruttore (\textit{overloading} degli operatori): se non vengono passati i parametri vengono assegnati dei valori di default, in caso contrario si assegnano i parametri passati dall'utente. L'overloading viene anche sfruttato nella classe Metodi, nei metodi di creazione di un nuovo oggetto da inserire. \\
+altro
+\\X costruttore e distruttore \\
+X campi pubblici e privati \\
+- membri virtual e non \\
+X overloading \\
+- ereditarietà multipla \\
+- STL (puntatori safe, algoritmi sort, vector)
+classi friend\\
+ I campi nome e cognome sono protected, mentre i campi relativi al codice fiscale e all’anno di nascita sono public. \\
 I metodi che richiamano i costruttori di una classe sono private così utente non può creare a caso e così come metodi di controllo
 La gerarchia delle classi che descrivono gli esami formano un diamante, perché sia la classe Pet che la classe Mr hanno come classe base Esame, la classe PetMr invece rappresenta un esame ibrido fra i due precedenti, questa classe eredita sia dalla classe Pet che dalla classe Mr (mediante il meccanismo dell’ereditarietà multipla del C++). 
+
+
+
+
 
 
 %----------------------------------------------------------------------------------------
