@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  27 APR 2022 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  27 APR 2022 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,26 +935,26 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
-Package chemgreek Info: Activating mapping `default' on line 18.
+Package chemgreek Info: Activating mapping `default' on line 19.
 
 
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -987,7 +987,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1000,18 +1000,18 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count362
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 Package translations Info: no dictionary file `translations-basic-dictionary-it
-alian.trsl' found. on input line 18.
-LaTeX Info: Redefining \it@ocap on input line 18.
-LaTeX Info: Redefining \it@ccap on input line 18.
+alian.trsl' found. on input line 19.
+LaTeX Info: Redefining \it@ocap on input line 19.
+LaTeX Info: Redefining \it@ccap on input line 19.
 \c@lstlisting=\count363
 
 *geometry* driver: auto-detecting
@@ -1051,11 +1051,11 @@ LaTeX Info: Redefining \it@ccap on input line 18.
 <immagini/imgproj.png, id=7, 331.83975pt x 295.70474pt>
 File: immagini/imgproj.png Graphic file (type png)
 <use immagini/imgproj.png>
-Package pdftex.def Info: immagini/imgproj.png  used on input line 27.
+Package pdftex.def Info: immagini/imgproj.png  used on input line 28.
 (pdftex.def)             Requested size: 128.0374pt x 114.09709pt.
 
 LaTeX Font Warning: Font shape `T1/cmr/m/scit' undefined
-(Font)              using `T1/cmr/m/it' instead on input line 38.
+(Font)              using `T1/cmr/m/it' instead on input line 39.
 
 [1
 
@@ -1064,48 +1064,54 @@ roj.png>]pdfTeX warning (ext4): destination with the same identifier (name{page
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \newpage
-              [1]
-<diagrammiClassi/gerarchiaPersone.png, id=23, 1946.472pt x 1175.592pt>
+l.61 \newpage
+              [1] [2]
+<diagrammiClassi/gerarchiaPersone.png, id=30, 1946.472pt x 1175.592pt>
 File: diagrammiClassi/gerarchiaPersone.png Graphic file (type png)
 <use diagrammiClassi/gerarchiaPersone.png>
 Package pdftex.def Info: diagrammiClassi/gerarchiaPersone.png  used on input li
-ne 96.
+ne 91.
 (pdftex.def)             Requested size: 455.24411pt x 274.93674pt.
-<diagrammiClassi/gerarchiaEsami.png, id=24, 1529.715pt x 1370.721pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--95
+
+ []
+
+[3
+
+ <./diagrammiClassi/gerarchiaPersone.png>]
+<diagrammiClassi/gerarchiaEsami.png, id=38, 1529.715pt x 1370.721pt>
 File: diagrammiClassi/gerarchiaEsami.png Graphic file (type png)
 <use diagrammiClassi/gerarchiaEsami.png>
 Package pdftex.def Info: diagrammiClassi/gerarchiaEsami.png  used on input line
- 102.
+ 99.
 (pdftex.def)             Requested size: 455.24411pt x 407.91483pt.
-<diagrammiClassi/metodi.png, id=25, 804.606pt x 1638.12pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--103
+
+ []
+
+[4 <./diagrammiClassi/gerarchiaEsami.png>]
+<diagrammiClassi/metodi.png, id=45, 804.606pt x 1638.12pt>
 File: diagrammiClassi/metodi.png Graphic file (type png)
 <use diagrammiClassi/metodi.png>
-Package pdftex.def Info: diagrammiClassi/metodi.png  used on input line 108.
-(pdftex.def)             Requested size: 304.3784pt x 619.69682pt.
+Package pdftex.def Info: diagrammiClassi/metodi.png  used on input line 107.
+(pdftex.def)             Requested size: 246.88388pt x 502.64345pt.
+ [5 <./diagrammiClassi/metodi.png>]
+[6
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[2] [3 <./diagrammiClassi/gerarchiaPersone.png>] [4 <./diagrammiClassi/gerarchi
-aEsami.png>] [5 <./diagrammiClassi/metodi.png>] (./main.aux)
+] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29911 strings out of 478353
- 580353 string characters out of 5852101
- 881588 words of memory out of 5000000
+ 29912 strings out of 478353
+ 580359 string characters out of 5852101
+ 880588 words of memory out of 5000000
  47566 multiletter control sequences out of 15000+600000
  410906 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,7n,105p,1314b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 109i,7n,105p,826b,835s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/t
 exmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><c:/texlive/2021/texmf-dist/
@@ -1113,10 +1119,10 @@ fonts/type1/public/cm-super/sfcc1728.pfb><c:/texlive/2021/texmf-dist/fonts/type
 1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/c
 m-super/sfti1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
 xc2074.pfb>
-Output written on main.pdf (6 pages, 484005 bytes).
+Output written on main.pdf (7 pages, 486119 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 56 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
