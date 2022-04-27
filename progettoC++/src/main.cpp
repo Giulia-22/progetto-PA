@@ -3,14 +3,13 @@
 #include <memory>
 
 #include "Funzionalita/Metodi.h"
-#include "Visite/Pet.h"
 
 using namespace std;
 
 int main() {
 
 	char scelta1,scelta2;
-	unique_ptr<Metodi> m (new Metodi());
+	unique_ptr<Metodi> m (Metodi::getOggetto());
 	do{
 		cout<<endl;
 		cout<<"***** Benvenuto nel menu *****"<<endl;

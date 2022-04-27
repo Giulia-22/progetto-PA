@@ -29,15 +29,17 @@ private:
 	vector<mr_ref> lista_esami_mr;
 	vector<petmr_ref> lista_esami_petmr;
 private:
+	Metodi();
+	static Metodi* mOgg; //singleton
 	void caricadati();
 	bool ctrl_paz(string); // Overloading
 	bool ctrl_dott(string);
 	int ctrl_paz(int); // Overloading
 	int ctrl_dott(int);
-	void cerca_paz(int); // Ridefinizione --> cambio nome metodo
+	void cerca_paz(int);
 	void cerca_dott(int);
 public:
-	Metodi();
+	static Metodi* getOggetto();
 	// paziente
 	void inserisciPaziente();
 	void stampaElenco_paz();

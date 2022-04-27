@@ -11161,3 +11161,100 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
 Info: Nothing to build for progettoC++
+12:10:30 **** Rebuild of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:13:35: error: 'Metodi::Metodi()' is private within this context
+  unique_ptr<Metodi> m (new Metodi());
+                                   ^
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:32:2: note: declared private here
+  Metodi();
+  ^~~~~~
+12:10:53 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:39:5: error: 'm' was not declared in this scope
+     m->inserisciPaziente();
+     ^
+..\src\main.cpp:70:5: error: 'm' was not declared in this scope
+     m->inserisciDottore();
+     ^
+..\src\main.cpp:110:6: error: 'm' was not declared in this scope
+      m->inserisciEsame();
+      ^
+12:12:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:12:24: error: 'getO' is not a member of 'Metodi'
+  unique_ptr<Metodi> m (Metodi::getO);
+                        ^~~~~~
+12:14:45 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+src\Funzionalita\Metodi.o: In function `ZN6Metodi10getOggettoEv':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:12: undefined reference to `Metodi::mOgg'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:13: undefined reference to `Metodi::mOgg'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:14: undefined reference to `Metodi::mOgg'
+collect2.exe: error: ld returned 1 exit status
+12:15:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+src\Funzionalita\Metodi.o: In function `ZN6Metodi10getOggettoEv':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:12: undefined reference to `Metodi::m'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:13: undefined reference to `Metodi::m'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:14: undefined reference to `Metodi::m'
+collect2.exe: error: ld returned 1 exit status
+12:17:29 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+12:18:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+12:18:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+12:19:33 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp:58:14: error: prototype for 'paziente_ref Metodi::creaPaziente(Paziente*)' does not match any in class 'Metodi'
+ paziente_ref Metodi::creaPaziente(Paziente* pazref){
+              ^~~~~~
+..\src\Funzionalita\Metodi.cpp:53:14: error: candidates are: paziente_ref Metodi::creaPaziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, category)
+ paziente_ref Metodi::creaPaziente(int an, string cod, string name, string surname, category cat){
+              ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:75:15: error:                 paziente_ref Metodi::creaPaziente()
+  paziente_ref creaPaziente();
+               ^~~~~~~~~~~~
+..\src\Funzionalita\Metodi.cpp:134:13: error: prototype for 'dottore_ref Metodi::creaDottore(Dottore*)' does not match any in class 'Metodi'
+ dottore_ref Metodi::creaDottore(Dottore* dottref){
+             ^~~~~~
+..\src\Funzionalita\Metodi.cpp:129:13: error: candidates are: dottore_ref Metodi::creaDottore(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+ dottore_ref Metodi::creaDottore(int an, string cod, string name, string surname, string spe){
+             ^~~~~~
+In file included from ..\src\Funzionalita\Metodi.cpp:2:0:
+..\src\Funzionalita\../Funzionalita/Metodi.h:77:14: error:                 dottore_ref Metodi::creaDottore()
+  dottore_ref creaDottore();
+              ^~~~~~~~~~~
+12:20:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 

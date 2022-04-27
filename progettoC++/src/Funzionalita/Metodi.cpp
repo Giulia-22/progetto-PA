@@ -6,6 +6,14 @@ Metodi::Metodi(){
 	caricadati();
 }
 
+Metodi* Metodi::mOgg = NULL;
+
+Metodi* Metodi::getOggetto(){
+	if(mOgg == NULL)
+		mOgg = new Metodi();
+	return mOgg;
+}
+
 void Metodi::caricadati(){
 	// Paziente
 	lista_pazienti.push_back(creaPaziente(1956,"codFiscmr","Mario","Rossi",adulto));
