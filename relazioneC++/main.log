@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  28 APR 2022 10:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.12.7)  28 APR 2022 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1092,11 +1092,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--103
  []
 
 [4 <./diagrammiClassi/gerarchiaEsami.png>]
-<diagrammiClassi/metodi.png, id=45, 797.379pt x 1682.08424pt>
+<diagrammiClassi/metodi.png, id=45, 794.97pt x 1712.19675pt>
 File: diagrammiClassi/metodi.png Graphic file (type png)
 <use diagrammiClassi/metodi.png>
 Package pdftex.def Info: diagrammiClassi/metodi.png  used on input line 107.
-(pdftex.def)             Requested size: 238.26651pt x 502.64345pt.
+(pdftex.def)             Requested size: 233.37387pt x 502.64345pt.
  [5 <./diagrammiClassi/metodi.png>]
 [6
 
@@ -1120,7 +1120,7 @@ fonts/type1/public/cm-super/sfcc1728.pfb><c:/texlive/2021/texmf-dist/fonts/type
 m-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sf
 ti1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfxc2074.pfb
 >
-Output written on main.pdf (8 pages, 524233 bytes).
+Output written on main.pdf (8 pages, 526790 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
