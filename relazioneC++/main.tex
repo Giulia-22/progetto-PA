@@ -115,20 +115,14 @@ Di seguito si riportano i diagrammi delle classi dell’applicazione. \\
 \clearpage
 \newpage
 \section*{Scelte implementative} 
-I costruttori sono stati dichiarati protected, in modo tale che possano essere richiamati solo dalle classi derivate. Tutte le classi di Utenti e Visite sono friend della classe Metodi, in modo tale che la classe di gestione possa accedere a tutti i campi e a tutti i metodi di cui necessita. In questa classe inoltre i metodi che si occupano della creazione di un nuovo oggetto sono stati dichiarati private, così che nel main non possano essere richiamati in modo illecito. Anche i metodi utilizzati per il controllo del valore delle variabili sono stati dichiarati private, mentre tutti gli altri metodi sono public. \\
-La classe Metodi ha il costruttore privato perché mette a disposizione una singola istanza che verrà poi utilizzata nel main (design pattern \textit{Singleton}). \textbf{ricordati di farlo!!!}\\
-Per ogni altra classe invece esiste più di un costruttore (\textit{overloading} degli operatori): se non vengono passati i parametri vengono assegnati dei valori di default, in caso contrario si assegnano i parametri passati dall'utente. L'overloading viene anche sfruttato nella classe Metodi, nei metodi di creazione di un nuovo oggetto da inserire. \\
-altro
-\\X costruttore e distruttore \\
-X campi pubblici e privati \\
-- membri virtual e non \\
-X overloading \\
-- ereditarietà multipla \\
-- STL (puntatori safe, algoritmi sort, vector)
-classi friend\\
- I campi nome e cognome sono protected, mentre i campi relativi al codice fiscale e all’anno di nascita sono public. \\
-I metodi che richiamano i costruttori di una classe sono private così utente non può creare a caso e così come metodi di controllo
-La gerarchia delle classi che descrivono gli esami formano un diamante, perché sia la classe Pet che la classe Mr hanno come classe base Esame, la classe PetMr invece rappresenta un esame ibrido fra i due precedenti, questa classe eredita sia dalla classe Pet che dalla classe Mr (mediante il meccanismo dell’ereditarietà multipla del C++). 
+I costruttori sono stati dichiarati \textit{protected}, in modo tale che possano essere richiamati solo dalle classi derivate. Tutte le classi di Utenti e Visite sono \textit{friend} della classe Metodi, in modo tale che la classe di gestione possa accedere a tutti i campi e a tutti i metodi di cui necessita. In questa classe inoltre i metodi che si occupano della creazione di un nuovo oggetto sono stati dichiarati \textit{private}, così che nel main non possano essere richiamati in modo illecito. Anche i metodi utilizzati per il controllo del valore delle variabili sono stati dichiarati \textit{private}, mentre tutti gli altri metodi sono \textit{public}. \\
+La classe Metodi ha il costruttore privato perché mette a disposizione una singola istanza che verrà poi utilizzata nel main (design pattern \textit{Singleton}). \\
+Per ogni altra classe invece esiste più di un costruttore (\textit{overloading} degli operatori): se non vengono passati i parametri vengono assegnati dei valori di default, in caso contrario si assegnano i parametri passati dall'utente. L'\textit{overloading} viene anche sfruttato nella classe Metodi, nei metodi di creazione di un nuovo oggetto da inserire e nei metodi di controllo. \\
+I metodi che si occupano della visualizzazione (stampa) sono stati dichiarati \textit{virtual} per sfruttare il \textit{dinamic binding}: in questo modo viene richiamato il metodo di stampa in base all'oggetto che esegue il metodo e non sulla base del tipo con cui questo oggetto viene dichiarato (a patto che si utilizzino dei puntatori, altrimenti il binding dimanico non verrà eseguito). \\
+La gerarchia delle classi che descrivono gli esami forma un diamante, perché sia la classe Pet che la classe Mr hanno come classe base Esame, mentre la classe PetMr eredita sia dalla classe Pet che dalla classe Mr (mediante il meccanismo dell’\textit{ereditarietà multipla} del C++). Per non avere problemi di name clash e duplicazione di campi nella classe derivata PetMr, le classi Pet e Mr ereditano in modo \textit{virtual} dalla classe base Esame.  \\
+Al posto di utilizzare i puntatori tradizionali (\textit{raw pointers}), sono stati utilizzati gli \textit{smart pointers} della libreria memory. Questi puntatori si utilizzano come i puntatori raw, ma hanno il vantaggio che il programmatore non deve occuparsi della gestione della memoria come invece avviene per i puntatori tradizionali. Per semplificare il codice, per ogni classe viene dichiarato un tipo di dato che rappresenta uno \textit{shared\_pointer} così da utilizzare poi questo tipo di variabile nel programma. \\
+Viene anche utilizzata la libreria STL, in particolare si utilizzano i \textit{vector} come struttura dati per memorizzare la lista di ogni tipo di oggetto (Paziente, Dottore, Esami, Per, Mr e PetMr). Con i \textit{vector} è possibile utilizzare gli \textit{iterator} per scandirli. Gli \textit{iterator} vengono utilizzati nel programma ogni volta che è necessario compiere una detrminata azione su tutti gli elementi della lista, come avviene per esempio nei metodi di stampa. I \textit{vector} possono anche essere ordinati tramite la funzione \textit{sort()}, un algoritmo di ordinamento che richiede tre parametri (il primo e l'ultimo elemento da ordinare e un \textit{comparator}, che indica come va effettuato l'ordinamento). \\
+Per le stringhe si utilizza il tipo \textit{string} messo a disposizione dall'omonima libreria, che permette di gestire le stringhe in modo facile e sicuro.
 
 
 
