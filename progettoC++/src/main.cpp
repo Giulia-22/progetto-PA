@@ -101,6 +101,7 @@ int main() {
 				cout<<"m) Inserimento di un nuovo esame PET/MR nel sistema "<<endl;
 				cout<<"n) Visualizzazione di tutti gli esami PET/MR del sistema "<<endl;
 				cout<<"o) Visualizzazione di tutti gli esami PET/MR forti e brevi del sistema "<<endl;
+				cout<<"p) Eliminazione di un esame PET/MR del sistema "<<endl;
 				cout<<"0) Torna al MENU PRINCIPALE "<<endl<<endl;
 				cout<<"La tua scelta: ";
 				cin>>scelta2;
@@ -143,6 +144,9 @@ int main() {
 					break;
 				case 'o':
 					m->stampaEsami_PETMR_corti_forti();
+					break;
+				case 'p':
+					m->eliminaEsame_PETMR();
 					break;
 				case '0':
 					break;

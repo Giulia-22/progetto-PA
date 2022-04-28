@@ -488,6 +488,24 @@ void Metodi::stampaEsami_PETMR_corti_forti(){
 
 }
 
+void Metodi::eliminaEsame_PETMR(){
+	int id_es = -1;
+	bool trovato = false;
+	do{
+		cout<<"Inserisci ID esame: ";
+		cin>>id_es;
+	} while (id_es < 0);
+	for(vector<petmr_ref>::iterator i = lista_esami_petmr.begin(); i != lista_esami_petmr.end(); ++i){
+		if(i->get()->ID_esame == id_es){
+			lista_esami_petmr.erase(i);
+			trovato = true;
+			break;
+		}
+	}
+	if(!(trovato))
+		cout<<"Esame non presente nel sistema! "<<endl;
+}
+
 int Metodi::getYear(){
 	return this->annocorrente;
 }

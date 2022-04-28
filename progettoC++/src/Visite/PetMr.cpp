@@ -23,8 +23,9 @@ int PetMr::getDurataMr(){
 }
 
 void PetMr::stampa(){
+	cout<<"***************"<<endl;
 	cout<<"ID esame PET/MR: "<<this->getIdEsame()<<endl;
-	cout<<"Durata totale prevista: "<<this->getDurata()<<endl;
+	cout<<"Durata totale prevista: "<<this->getDurata()<<endl<<endl;
 	cout<<"INFORMAZIONI PET: "<<endl;
 	this->Pet::stampa();
 	cout<<"INFORMAZIONI MR: "<<endl;

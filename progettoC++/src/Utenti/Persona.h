@@ -6,16 +6,18 @@
 #include <memory>
 #include <vector>
 #include <ctime>
+#include <string>
+
 using namespace std;
 
 class Persona {
 public:
 	int annonascita = 1900;
-	string cf = "";
+	string cf;
 	friend class Metodi;
 protected:
-	string nome = "";
-	string cognome = "";
+	string nome;
+	string cognome;
 protected:
 	Persona();
 	Persona(int, string, string, string);

@@ -1,9 +1,0 @@
-
-#ifndef UTENTI_CATEGORIA_H_
-#define UTENTI_CATEGORIA_H_
-
-
-enum category : int { bambino = 0, adulto = 1, anziano = 2, sconosciuto = 3 };
-
-
-#endif /* UTENTI_CATEGORIA_H_ */
