@@ -7,7 +7,6 @@
 using namespace std;
 
 int main() {
-
 	char scelta1,scelta2;
 	unique_ptr<Metodi> m (Metodi::getOggetto());
 	do{

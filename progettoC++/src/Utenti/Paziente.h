@@ -16,7 +16,7 @@ static int ID_paz_count = 0;
 class Paziente : public Persona {
 public:
 	int ID_paz = ID_paz_count;
-	category categoria;
+	category categoria = sconosciuto;
 	friend class Metodi;
 protected:
 	Paziente();

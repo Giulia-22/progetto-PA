@@ -1,7 +1,7 @@
 
 #include "Persona.h"
 
-Persona::Persona(){
+Persona::Persona(){	 // @suppress("Class members should be properly initialized")
 
 	this->annonascita = 1900;
 	this->cf = "";
@@ -10,18 +10,15 @@ Persona::Persona(){
 
 }
 
-Persona::Persona(int a, string codfisc, string n, string c) {
+Persona::Persona(int a, string codfisc, string n, string c) { 	// @suppress("Class members should be properly initialized")
 	this->annonascita = a;
 	this->cf = codfisc;
 	this->nome = n;
 	this->cognome = c;
 }
 
-Persona::Persona(Persona *p){
-	this->annonascita = p->getAnnonascita();
-	this->cf = p->getCf();
-	this->nome = p->getNome();
-	this->cognome = p->getCognome();
+Persona::Persona(const Persona &p){	 // @suppress("Class members should be properly initialized")
+	Persona(p.annonascita,p.cf,p.nome,p.cognome);
 }
 
 int Persona::getAnnonascita() {
@@ -66,4 +63,3 @@ void Persona::stampa(){
 Persona::~Persona() {
 	cout<<"distruggo persona"<<endl;
 }
-

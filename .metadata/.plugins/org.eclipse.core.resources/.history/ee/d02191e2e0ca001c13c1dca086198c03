@@ -1,0 +1,18 @@
+/*
+ * Persona.h
+ *
+ *  Created on: 3 mag 2022
+ *      Author: giuly
+ */
+
+#ifndef UTENTI_PERSONA_H_
+#define UTENTI_PERSONA_H_
+
+class Persona {
+public:
+	Persona();
+	virtual ~Persona();
+	Persona(const Persona &other) = default;
+};
+
+#endif /* UTENTI_PERSONA_H_ */

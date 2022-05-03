@@ -11541,3 +11541,1049 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visi
 Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+17:55:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+17:57:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:06:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:10:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:168:60: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona* p1 = new Persona(1987,"prova1","gvvbk","gyughbiu");
+                                                            ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:23:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:170:26: error: no matching function for call to 'Persona::Persona(Persona*&)'
+  Persona* p2 = Persona(p1);
+                          ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:25:2: note: candidate: Persona::Persona(const Persona&)
+  Persona(const Persona&);
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Persona.h:25:2: note:   no known conversion for argument 1 from 'Persona*' to 'const Persona&'
+..\src\Funzionalita/../Utenti/Persona.h:23:2: note: candidate: Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Persona.h:23:2: note:   candidate expects 4 arguments, 1 provided
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: candidate: Persona::Persona()
+  Persona();
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note:   candidate expects 0 arguments, 1 provided
+11:10:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:168:60: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona& p1 = new Persona(1987,"prova1","gvvbk","gyughbiu");
+                                                            ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:23:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:168:16: error: invalid initialization of non-const reference of type 'Persona&' from an rvalue of type 'Persona*'
+  Persona& p1 = new Persona(1987,"prova1","gvvbk","gyughbiu");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\main.cpp:170:26: error: cannot convert 'Persona' to 'Persona*' in initialization
+  Persona* p2 = Persona(p1);
+                          ^
+11:13:54 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:168:59: error: 'Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)' is protected within this context
+  Persona p1 = new Persona(1987,"prova1","gvvbk","gyughbiu");
+                                                           ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:23:2: note: declared protected here
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\main.cpp:168:15: error: conversion from 'Persona*' to non-scalar type 'Persona' requested
+  Persona p1 = new Persona(1987,"prova1","gvvbk","gyughbiu");
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:14:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:168:15: error: conversion from 'Persona*' to non-scalar type 'Persona' requested
+  Persona p1 = new Persona(1987,"prova1","gvvbk","gyughbiu");
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:14:43 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:170:25: error: no matching function for call to 'Persona::Persona(Persona*&)'
+  Persona p2 = Persona(p1);
+                         ^
+In file included from ..\src\Funzionalita/Metodi.h:10:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Persona.h:25:2: note: candidate: Persona::Persona(const Persona&)
+  Persona(const Persona&);
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Persona.h:25:2: note:   no known conversion for argument 1 from 'Persona*' to 'const Persona&'
+..\src\Funzionalita/../Utenti/Persona.h:24:2: note: candidate: Persona::Persona(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  Persona(int, string, string, string);
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Persona.h:24:2: note:   candidate expects 4 arguments, 1 provided
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note: candidate: Persona::Persona()
+  Persona();
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Persona.h:22:2: note:   candidate expects 0 arguments, 1 provided
+11:15:12 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:168:15: error: conversion from 'Persona*' to non-scalar type 'Persona' requested
+  Persona p1 = new Persona(1987,"prova1","gvvbk","gyughbiu");
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:15:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:16:08 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:170:26: error: cannot convert 'Persona' to 'Persona*' in initialization
+  Persona* p2 = Persona(p1);
+                          ^
+11:16:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:16:52 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:17:50 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:18:22 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:18:49 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:172:11: error: type 'class Persona' argument given to 'delete', expected pointer
+  delete(p1);
+           ^
+..\src\main.cpp:173:11: error: type 'class Persona' argument given to 'delete', expected pointer
+  delete(p2);
+           ^
+11:19:02 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:21:24 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+11:22:04 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:22:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:23:02 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:23:34 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:23:59 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+11:25:19 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+16:58:12 **** Rebuild of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+..\src\Visite\Esame.cpp:8:1: error: prototype for 'Esame::Esame(const int&)' does not match any in class 'Esame'
+ Esame::Esame(const &e){
+ ^~~~~
+In file included from ..\src\Visite\Esame.cpp:2:0:
+..\src\Visite\Esame.h:33:2: error: candidates are: Esame::Esame(dottore_ref, paziente_ref)
+  Esame(dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Visite\Esame.h:32:2: error:                 Esame::Esame(const Esame&)
+  Esame(const Esame &);
+  ^~~~~
+..\src\Visite\Esame.cpp:4:1: error:                 Esame::Esame()
+ Esame::Esame() {
+ ^~~~~
+17:00:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:26: error: no matching function for call to 'Esame::Esame(NULL, Persona&)'
+  Esame e1 = Esame(NULL,p1);
+                          ^
+In file included from ..\src\Funzionalita/Metodi.h:13:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(dottore_ref, paziente_ref)
+  Esame(dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from 'Persona' to 'paziente_ref {aka std::shared_ptr<Paziente>}'
+..\src\Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame(const Esame&)
+  Esame(const Esame &);
+  ^~~~~
+..\src\Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 1 argument, 2 provided
+..\src\Funzionalita/../Visite/Esame.h:31:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita/../Visite/Esame.h:31:2: note:   candidate expects 0 arguments, 2 provided
+..\src\main.cpp:174:10: error: redeclaration of 'Persona p2'
+  Persona p2 = p1;
+          ^~
+..\src\main.cpp:170:10: note: 'Persona p2' previously declared here
+  Persona p2 = p1;
+          ^~
+17:01:11 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:26: error: no matching function for call to 'Esame::Esame(NULL, Persona&)'
+  Esame e1 = Esame(NULL,p1);
+                          ^
+In file included from ..\src\Funzionalita/Metodi.h:13:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Visite/Esame.h:33:2: note: candidate: Esame::Esame(dottore_ref, paziente_ref)
+  Esame(dottore_ref,paziente_ref);
+  ^~~~~
+..\src\Funzionalita/../Visite/Esame.h:33:2: note:   no known conversion for argument 2 from 'Persona' to 'paziente_ref {aka std::shared_ptr<Paziente>}'
+..\src\Funzionalita/../Visite/Esame.h:32:2: note: candidate: Esame::Esame(const Esame&)
+  Esame(const Esame &);
+  ^~~~~
+..\src\Funzionalita/../Visite/Esame.h:32:2: note:   candidate expects 1 argument, 2 provided
+..\src\Funzionalita/../Visite/Esame.h:31:2: note: candidate: Esame::Esame()
+  Esame();
+  ^~~~~
+..\src\Funzionalita/../Visite/Esame.h:31:2: note:   candidate expects 0 arguments, 2 provided
+17:01:26 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+17:02:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:28: error: no matching function for call to 'Dottore::Dottore(Persona&)'
+  Esame e1 = Esame((Dottore)p1,(Paziente)p1);
+                            ^~
+In file included from ..\src\Funzionalita/Metodi.h:12:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Dottore.h:23:2: note: candidate: Dottore::Dottore(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string)
+  Dottore(int, string, string, string, string);
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Dottore.h:23:2: note:   candidate expects 5 arguments, 1 provided
+..\src\Funzionalita/../Utenti/Dottore.h:22:2: note: candidate: Dottore::Dottore(Dottore*)
+  Dottore(Dottore*);
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Dottore.h:22:2: note:   no known conversion for argument 1 from 'Persona' to 'Dottore*'
+..\src\Funzionalita/../Utenti/Dottore.h:21:2: note: candidate: Dottore::Dottore()
+  Dottore();
+  ^~~~~~~
+..\src\Funzionalita/../Utenti/Dottore.h:21:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Funzionalita/../Utenti/Dottore.h:15:7: note: candidate: Dottore::Dottore(const Dottore&)
+ class Dottore : public Persona {
+       ^~~~~~~
+..\src\Funzionalita/../Utenti/Dottore.h:15:7: note:   no known conversion for argument 1 from 'Persona' to 'const Dottore&'
+..\src\main.cpp:173:41: error: no matching function for call to 'Paziente::Paziente(Persona&)'
+  Esame e1 = Esame((Dottore)p1,(Paziente)p1);
+                                         ^~
+In file included from ..\src\Funzionalita/Metodi.h:11:0,
+                 from ..\src\main.cpp:5:
+..\src\Funzionalita/../Utenti/Paziente.h:24:2: note: candidate: Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, category)
+  Paziente(int, string, string, string, category);
+  ^~~~~~~~
+..\src\Funzionalita/../Utenti/Paziente.h:24:2: note:   candidate expects 5 arguments, 1 provided
+..\src\Funzionalita/../Utenti/Paziente.h:23:2: note: candidate: Paziente::Paziente(Paziente*)
+  Paziente(Paziente*);
+  ^~~~~~~~
+..\src\Funzionalita/../Utenti/Paziente.h:23:2: note:   no known conversion for argument 1 from 'Persona' to 'Paziente*'
+..\src\Funzionalita/../Utenti/Paziente.h:22:2: note: candidate: Paziente::Paziente()
+  Paziente();
+  ^~~~~~~~
+..\src\Funzionalita/../Utenti/Paziente.h:22:2: note:   candidate expects 0 arguments, 1 provided
+..\src\Funzionalita/../Utenti/Paziente.h:16:7: note: candidate: Paziente::Paziente(const Paziente&)
+ class Paziente : public Persona {
+       ^~~~~~~~
+..\src\Funzionalita/../Utenti/Paziente.h:16:7: note:   no known conversion for argument 1 from 'Persona' to 'const Paziente&'
+17:04:10 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:32: error: no matching function for call to 'std::shared_ptr<Dottore>::shared_ptr(Persona&)'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:327:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp>&, std::nothrow_t) [with _Tp = Dottore]
+       shared_ptr(const weak_ptr<_Tp>& __r, std::nothrow_t)
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:327:7: note:   candidate expects 2 arguments, 1 provided
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:317:2: note: candidate: template<class _Alloc, class ... _Args> std::shared_ptr<_Tp>::shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...)
+  shared_ptr(_Sp_make_shared_tag __tag, const _Alloc& __a,
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:317:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   candidate expects at least 2 arguments, 1 provided
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:269:17: note: candidate: constexpr std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t) [with _Tp = Dottore; std::nullptr_t = std::nullptr_t]
+       constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+                 ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:269:17: note:   no known conversion for argument 1 from 'Persona' to 'std::nullptr_t'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:262:2: note: candidate: template<class _Tp1, class _Del, class> std::shared_ptr<_Tp>::shared_ptr(std::unique_ptr<_Up, _Ep>&&)
+  shared_ptr(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:262:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   'Persona' is not derived from 'std::unique_ptr<_Tp, _Dp>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:255:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(std::auto_ptr<_Up>&&)
+  shared_ptr(std::auto_ptr<_Tp1>&& __r);
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:255:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   'Persona' is not derived from 'std::auto_ptr<_Up>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:250:11: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp1>&)
+  explicit shared_ptr(const weak_ptr<_Tp1>& __r)
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:250:11: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   'Persona' is not derived from 'const std::weak_ptr<_Tp>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:238:2: note: candidate: template<class _Tp1, class> std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp1>&&)
+  shared_ptr(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:238:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   'Persona' is not derived from 'std::shared_ptr<_Tp1>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:229:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp>&&) [with _Tp = Dottore]
+       shared_ptr(shared_ptr&& __r) noexcept
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:229:7: note:   no known conversion for argument 1 from 'Persona' to 'std::shared_ptr<Dottore>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:221:2: note: candidate: template<class _Tp1, class> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp1>&)
+  shared_ptr(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:221:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   'Persona' is not derived from 'const std::shared_ptr<_Tp1>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:210:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp1>&, _Tp*)
+  shared_ptr(const shared_ptr<_Tp1>& __r, _Tp* __p) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:210:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   'Persona' is not derived from 'const std::shared_ptr<_Tp1>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:188:2: note: candidate: template<class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter, _Alloc)
+  shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:188:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   candidate expects 3 arguments, 1 provided
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:169:2: note: candidate: template<class _Tp1, class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(_Tp1*, _Deleter, _Alloc)
+  shared_ptr(_Tp1* __p, _Deleter __d, _Alloc __a)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:169:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:150:2: note: candidate: template<class _Deleter> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter)
+  shared_ptr(nullptr_t __p, _Deleter __d)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:150:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   candidate expects 2 arguments, 1 provided
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:133:2: note: candidate: template<class _Tp1, class _Deleter> std::shared_ptr<_Tp>::shared_ptr(_Tp1*, _Deleter)
+  shared_ptr(_Tp1* __p, _Deleter __d)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:133:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:116:11: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(_Tp1*)
+  explicit shared_ptr(_Tp1* __p)
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:116:11: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:32: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:107:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp>&) [with _Tp = Dottore]
+       shared_ptr(const shared_ptr&) noexcept = default;
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:107:7: note:   no known conversion for argument 1 from 'Persona' to 'const std::shared_ptr<Dottore>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:104:17: note: candidate: constexpr std::shared_ptr<_Tp>::shared_ptr() [with _Tp = Dottore]
+       constexpr shared_ptr() noexcept
+                 ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:104:17: note:   candidate expects 0 arguments, 1 provided
+..\src\main.cpp:173:49: error: no matching function for call to 'std::shared_ptr<Paziente>::shared_ptr(Persona&)'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:327:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp>&, std::nothrow_t) [with _Tp = Paziente]
+       shared_ptr(const weak_ptr<_Tp>& __r, std::nothrow_t)
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:327:7: note:   candidate expects 2 arguments, 1 provided
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:317:2: note: candidate: template<class _Alloc, class ... _Args> std::shared_ptr<_Tp>::shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...)
+  shared_ptr(_Sp_make_shared_tag __tag, const _Alloc& __a,
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:317:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   candidate expects at least 2 arguments, 1 provided
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:269:17: note: candidate: constexpr std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t) [with _Tp = Paziente; std::nullptr_t = std::nullptr_t]
+       constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+                 ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:269:17: note:   no known conversion for argument 1 from 'Persona' to 'std::nullptr_t'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:262:2: note: candidate: template<class _Tp1, class _Del, class> std::shared_ptr<_Tp>::shared_ptr(std::unique_ptr<_Up, _Ep>&&)
+  shared_ptr(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:262:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   'Persona' is not derived from 'std::unique_ptr<_Tp, _Dp>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:255:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(std::auto_ptr<_Up>&&)
+  shared_ptr(std::auto_ptr<_Tp1>&& __r);
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:255:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   'Persona' is not derived from 'std::auto_ptr<_Up>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:250:11: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp1>&)
+  explicit shared_ptr(const weak_ptr<_Tp1>& __r)
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:250:11: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   'Persona' is not derived from 'const std::weak_ptr<_Tp>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:238:2: note: candidate: template<class _Tp1, class> std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp1>&&)
+  shared_ptr(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:238:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   'Persona' is not derived from 'std::shared_ptr<_Tp1>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:229:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp>&&) [with _Tp = Paziente]
+       shared_ptr(shared_ptr&& __r) noexcept
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:229:7: note:   no known conversion for argument 1 from 'Persona' to 'std::shared_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:221:2: note: candidate: template<class _Tp1, class> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp1>&)
+  shared_ptr(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:221:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   'Persona' is not derived from 'const std::shared_ptr<_Tp1>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:210:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp1>&, _Tp*)
+  shared_ptr(const shared_ptr<_Tp1>& __r, _Tp* __p) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:210:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   'Persona' is not derived from 'const std::shared_ptr<_Tp1>'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:188:2: note: candidate: template<class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter, _Alloc)
+  shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:188:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   candidate expects 3 arguments, 1 provided
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:169:2: note: candidate: template<class _Tp1, class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(_Tp1*, _Deleter, _Alloc)
+  shared_ptr(_Tp1* __p, _Deleter __d, _Alloc __a)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:169:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:150:2: note: candidate: template<class _Deleter> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter)
+  shared_ptr(nullptr_t __p, _Deleter __d)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:150:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   candidate expects 2 arguments, 1 provided
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:133:2: note: candidate: template<class _Tp1, class _Deleter> std::shared_ptr<_Tp>::shared_ptr(_Tp1*, _Deleter)
+  shared_ptr(_Tp1* __p, _Deleter __d)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:133:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:116:11: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(_Tp1*)
+  explicit shared_ptr(_Tp1* __p)
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:116:11: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:49: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame((dottore_ref)p1,(paziente_ref)p1);
+                                                 ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:107:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp>&) [with _Tp = Paziente]
+       shared_ptr(const shared_ptr&) noexcept = default;
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:107:7: note:   no known conversion for argument 1 from 'Persona' to 'const std::shared_ptr<Paziente>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:104:17: note: candidate: constexpr std::shared_ptr<_Tp>::shared_ptr() [with _Tp = Paziente]
+       constexpr shared_ptr() noexcept
+                 ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:104:17: note:   candidate expects 0 arguments, 1 provided
+17:04:57 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:19: error: 'lista_' was not declared in this scope
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                   ^~~~~~
+..\src\main.cpp:173:40: error: no matching function for call to 'std::shared_ptr<Paziente>::shared_ptr(Persona&)'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:327:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp>&, std::nothrow_t) [with _Tp = Paziente]
+       shared_ptr(const weak_ptr<_Tp>& __r, std::nothrow_t)
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:327:7: note:   candidate expects 2 arguments, 1 provided
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:317:2: note: candidate: template<class _Alloc, class ... _Args> std::shared_ptr<_Tp>::shared_ptr(std::_Sp_make_shared_tag, const _Alloc&, _Args&& ...)
+  shared_ptr(_Sp_make_shared_tag __tag, const _Alloc& __a,
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:317:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   candidate expects at least 2 arguments, 1 provided
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:269:17: note: candidate: constexpr std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t) [with _Tp = Paziente; std::nullptr_t = std::nullptr_t]
+       constexpr shared_ptr(nullptr_t) noexcept : shared_ptr() { }
+                 ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:269:17: note:   no known conversion for argument 1 from 'Persona' to 'std::nullptr_t'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:262:2: note: candidate: template<class _Tp1, class _Del, class> std::shared_ptr<_Tp>::shared_ptr(std::unique_ptr<_Up, _Ep>&&)
+  shared_ptr(std::unique_ptr<_Tp1, _Del>&& __r)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:262:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   'Persona' is not derived from 'std::unique_ptr<_Tp, _Dp>'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:255:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(std::auto_ptr<_Up>&&)
+  shared_ptr(std::auto_ptr<_Tp1>&& __r);
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:255:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   'Persona' is not derived from 'std::auto_ptr<_Up>'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:250:11: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(const std::weak_ptr<_Tp1>&)
+  explicit shared_ptr(const weak_ptr<_Tp1>& __r)
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:250:11: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   'Persona' is not derived from 'const std::weak_ptr<_Tp>'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:238:2: note: candidate: template<class _Tp1, class> std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp1>&&)
+  shared_ptr(shared_ptr<_Tp1>&& __r) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:238:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   'Persona' is not derived from 'std::shared_ptr<_Tp1>'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:229:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(std::shared_ptr<_Tp>&&) [with _Tp = Paziente]
+       shared_ptr(shared_ptr&& __r) noexcept
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:229:7: note:   no known conversion for argument 1 from 'Persona' to 'std::shared_ptr<Paziente>&&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:221:2: note: candidate: template<class _Tp1, class> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp1>&)
+  shared_ptr(const shared_ptr<_Tp1>& __r) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:221:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   'Persona' is not derived from 'const std::shared_ptr<_Tp1>'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:210:2: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp1>&, _Tp*)
+  shared_ptr(const shared_ptr<_Tp1>& __r, _Tp* __p) noexcept
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:210:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   'Persona' is not derived from 'const std::shared_ptr<_Tp1>'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:188:2: note: candidate: template<class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter, _Alloc)
+  shared_ptr(nullptr_t __p, _Deleter __d, _Alloc __a)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:188:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   candidate expects 3 arguments, 1 provided
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:169:2: note: candidate: template<class _Tp1, class _Deleter, class _Alloc> std::shared_ptr<_Tp>::shared_ptr(_Tp1*, _Deleter, _Alloc)
+  shared_ptr(_Tp1* __p, _Deleter __d, _Alloc __a)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:169:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:150:2: note: candidate: template<class _Deleter> std::shared_ptr<_Tp>::shared_ptr(std::nullptr_t, _Deleter)
+  shared_ptr(nullptr_t __p, _Deleter __d)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:150:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   candidate expects 2 arguments, 1 provided
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:133:2: note: candidate: template<class _Tp1, class _Deleter> std::shared_ptr<_Tp>::shared_ptr(_Tp1*, _Deleter)
+  shared_ptr(_Tp1* __p, _Deleter __d)
+  ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:133:2: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:116:11: note: candidate: template<class _Tp1> std::shared_ptr<_Tp>::shared_ptr(_Tp1*)
+  explicit shared_ptr(_Tp1* __p)
+           ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:116:11: note:   template argument deduction/substitution failed:
+..\src\main.cpp:173:40: note:   mismatched types '_Tp1*' and 'Persona'
+  Esame e1 = Esame(lista_,(paziente_ref)p1);
+                                        ^~
+In file included from c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory:82:0,
+                 from ..\src\main.cpp:3:
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:107:7: note: candidate: std::shared_ptr<_Tp>::shared_ptr(const std::shared_ptr<_Tp>&) [with _Tp = Paziente]
+       shared_ptr(const shared_ptr&) noexcept = default;
+       ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:107:7: note:   no known conversion for argument 1 from 'Persona' to 'const std::shared_ptr<Paziente>&'
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:104:17: note: candidate: constexpr std::shared_ptr<_Tp>::shared_ptr() [with _Tp = Paziente]
+       constexpr shared_ptr() noexcept
+                 ^~~~~~~~~~
+c:\users\giuly\desktop\eclipsepa\eclipse-info3-2021-06\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h:104:17: note:   candidate expects 0 arguments, 1 provided
+17:05:46 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:19: error: 'lista_dottori' was not declared in this scope
+  Esame e1 = Esame(lista_dottori[0],lista_pazienti[0]);
+                   ^~~~~~~~~~~~~
+..\src\main.cpp:173:36: error: 'lista_pazienti' was not declared in this scope
+  Esame e1 = Esame(lista_dottori[0],lista_pazienti[0]);
+                                    ^~~~~~~~~~~~~~
+17:06:07 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:27: error: invalid use of non-static data member 'Metodi::lista_dottori'
+  Esame e1 = Esame(Metodi::lista_dottori[0],Metodi::lista_pazienti[0]);
+                           ^~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:27:22: note: declared here
+  vector<dottore_ref> lista_dottori;
+                      ^~~~~~~~~~~~~
+..\src\main.cpp:173:52: error: invalid use of non-static data member 'Metodi::lista_pazienti'
+  Esame e1 = Esame(Metodi::lista_dottori[0],Metodi::lista_pazienti[0]);
+                                                    ^~~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:26:23: note: declared here
+  vector<paziente_ref> lista_pazienti;
+                       ^~~~~~~~~~~~~~
+17:06:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:27: error: invalid use of non-static data member 'Metodi::lista_dottori'
+  Esame e1 = Esame(Metodi::lista_dottori[0].get(),Metodi::lista_pazienti[0].get());
+                           ^~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:27:22: note: declared here
+  vector<dottore_ref> lista_dottori;
+                      ^~~~~~~~~~~~~
+..\src\main.cpp:173:58: error: invalid use of non-static data member 'Metodi::lista_pazienti'
+  Esame e1 = Esame(Metodi::lista_dottori[0].get(),Metodi::lista_pazienti[0].get());
+                                                          ^~~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:26:23: note: declared here
+  vector<paziente_ref> lista_pazienti;
+                       ^~~~~~~~~~~~~~
+17:08:01 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:30: error: invalid use of non-static data member 'Metodi::lista_pazienti'
+  paziente_ref paz1 = Metodi::lista_pazienti[0];
+                              ^~~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:26:23: note: declared here
+  vector<paziente_ref> lista_pazienti;
+                       ^~~~~~~~~~~~~~
+..\src\main.cpp:174:30: error: invalid use of non-static data member 'Metodi::lista_dottori'
+  dottore_ref dott1 = Metodi::lista_dottori[0];
+                              ^~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:27:22: note: declared here
+  vector<dottore_ref> lista_dottori;
+                      ^~~~~~~~~~~~~
+17:08:25 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+..\src\main.cpp: In function 'int main()':
+..\src\main.cpp:173:30: error: invalid use of non-static data member 'Metodi::lista_pazienti'
+  paziente_ref paz1 = Metodi::lista_pazienti[0].get();
+                              ^~~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:26:23: note: declared here
+  vector<paziente_ref> lista_pazienti;
+                       ^~~~~~~~~~~~~~
+..\src\main.cpp:174:30: error: invalid use of non-static data member 'Metodi::lista_dottori'
+  dottore_ref dott1 = Metodi::lista_dottori[0];
+                              ^~~~~~~~~~~~~
+In file included from ..\src\main.cpp:5:0:
+..\src\Funzionalita/Metodi.h:27:22: note: declared here
+  vector<dottore_ref> lista_dottori;
+                      ^~~~~~~~~~~~~
+17:09:55 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+17:12:41 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+14:59:39 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+src\Funzionalita\Metodi.o: In function `ZN6Metodi8ctrl_pazENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:99: undefined reference to `Persona::getCf[abi:cxx11]()'
+src\Funzionalita\Metodi.o: In function `ZN6Metodi9ctrl_dottENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Funzionalita/Metodi.cpp:164: undefined reference to `Persona::getCf[abi:cxx11]()'
+src\Utenti\Dottore.o: In function `ZN7DottoreC2EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:10: undefined reference to `Persona::getAnnonascita()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:11: undefined reference to `Persona::getCf[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:12: undefined reference to `Persona::getNome[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:13: undefined reference to `Persona::getCognome[abi:cxx11]()'
+src\Utenti\Dottore.o: In function `ZN7DottoreC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_S5_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:18: undefined reference to `Persona::Persona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+src\Utenti\Dottore.o: In function `ZN7Dottore6stampaEv':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:36: undefined reference to `Persona::getNome[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:37: undefined reference to `Persona::getCognome[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:38: undefined reference to `Persona::getAnnonascita()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Dottore.cpp:39: undefined reference to `Persona::getCf[abi:cxx11]()'
+src\Utenti\Paziente.o: In function `ZN8PazienteC2EPS_':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:10: undefined reference to `Persona::getAnnonascita()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:11: undefined reference to `Persona::getCf[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:12: undefined reference to `Persona::getNome[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:13: undefined reference to `Persona::getCognome[abi:cxx11]()'
+src\Utenti\Paziente.o: In function `ZN8PazienteC2EiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_8category':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:18: undefined reference to `Persona::Persona(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
+src\Utenti\Paziente.o: In function `ZN8Paziente6stampaEv':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:36: undefined reference to `Persona::getNome[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:37: undefined reference to `Persona::getCognome[abi:cxx11]()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:38: undefined reference to `Persona::getAnnonascita()'
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Paziente.cpp:39: undefined reference to `Persona::getCf[abi:cxx11]()'
+src\Utenti\Persona.o: In function `ZN7PersonaC2Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Persona.cpp:10: undefined reference to `vtable for Persona'
+src\Utenti\Persona.o: In function `ZN7PersonaD2Ev':
+C:\Users\giuly\Desktop\progetto-PA\progettoC++\Debug/../src/Utenti/Persona.cpp:15: undefined reference to `vtable for Persona'
+collect2.exe: error: ld returned 1 exit status
+15:00:48 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
+15:02:21 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+15:02:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+15:03:35 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+15:06:15 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+15:06:30 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+15:07:17 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+15:09:28 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+..\src\Utenti\Paziente.cpp: In constructor 'Paziente::Paziente(Paziente*)':
+..\src\Utenti\Paziente.cpp:10:8: error: 'class Paziente' has no member named 'annonascita'; did you mean 'setAnnonascita'?
+  this->annonascita = pers->getAnnonascita();
+        ^~~~~~~~~~~
+15:10:13 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Dottore.o" "..\\src\\Utenti\\Dottore.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+15:14:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+In file included from ..\src\Visite\../Visite/Esame.h:10:0,
+                 from ..\src\Visite\Mr.h:9,
+                 from ..\src\Visite\Mr.cpp:2:
+..\src\Visite\../Visite/../Utenti/Paziente.h:23:25: error: invalid constructor; you probably meant 'Paziente (const Paziente&)'
+  Paziente(const Paziente);
+                         ^
+15:15:05 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Persona.o" "..\\src\\Utenti\\Persona.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+..\src\Funzionalita\Metodi.cpp: In member function 'paziente_ref Metodi::creaPaziente(Paziente*)':
+..\src\Funzionalita\Metodi.cpp:59:37: error: no matching function for call to 'Paziente::Paziente(Paziente*&)'
+  paziente_ref p (new Paziente(pazref));
+                                     ^
+In file included from ..\src\Funzionalita\../Funzionalita/Metodi.h:11:0,
+                 from ..\src\Funzionalita\Metodi.cpp:2:
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:24:2: note: candidate: Paziente::Paziente(int, std::__cxx11::string, std::__cxx11::string, std::__cxx11::string, category)
+  Paziente(int, string, string, string, category);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:24:2: note:   candidate expects 5 arguments, 1 provided
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note: candidate: Paziente::Paziente(const Paziente&)
+  Paziente(const Paziente&);
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:23:2: note:   no known conversion for argument 1 from 'Paziente*' to 'const Paziente&'
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:22:2: note: candidate: Paziente::Paziente()
+  Paziente();
+  ^~~~~~~~
+..\src\Funzionalita\../Funzionalita/../Utenti/Paziente.h:22:2: note:   candidate expects 0 arguments, 1 provided
+15:15:47 **** Incremental Build of configuration Debug for project progettoC++ ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Mr.o" "..\\src\\Visite\\Mr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\PetMr.o" "..\\src\\Visite\\PetMr.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Funzionalita\\Metodi.o" "..\\src\\Funzionalita\\Metodi.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Pet.o" "..\\src\\Visite\\Pet.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\main.o" "..\\src\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\Utenti\\Paziente.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
+g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
+Info: Nothing to build for progettoC++
