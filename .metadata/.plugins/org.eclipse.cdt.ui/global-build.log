@@ -12587,3 +12587,4 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Utenti\\Paziente.o" "..\\src\\U
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Visite\\Esame.o" "..\\src\\Visite\\Esame.cpp" 
 g++ -o progettoC++.exe "src\\Funzionalita\\Metodi.o" "src\\Utenti\\Dottore.o" "src\\Utenti\\Paziente.o" "src\\Utenti\\Persona.o" "src\\Visite\\Esame.o" "src\\Visite\\Mr.o" "src\\Visite\\Pet.o" "src\\Visite\\PetMr.o" "src\\main.o" 
 Info: Nothing to build for progettoC++
+Info: Nothing to build for progettoC++
