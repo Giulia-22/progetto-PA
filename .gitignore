@@ -1,6 +1,6 @@
 
 relazioneC++/main.pdf
 
-*.metadata/**
-*.Debug/**
-*.Release/**
+*/metadata/**
+*/Debug/**
+*/Release/**
