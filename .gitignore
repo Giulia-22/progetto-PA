@@ -1,6 +1,7 @@
 
 relazioneC++/main.pdf
 
-*/metadata/**
-*/Debug/**
-*/Release/**
+.metadata/**
+progettoC++/Debug/**
+progettoC++/.cproject
+progettoC++/.project
